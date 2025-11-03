@@ -22,7 +22,7 @@ This repository contains the material for the SAP TechEd 2025 session called [DT
 Ensuring optimal performance and stability of your ABAP Cloud-based extensions is crucial to long-term success. 
 Learn techniques and best practices for troubleshooting and optimizing custom code in the Cloud ERP. 
 Use powerful tools like the ABAP Cross Trace to get deep insights into execution flows and resource consumption.
-This session introduces attendees how to analyze custom extensions in SAP Fiori Apps within ABAP Cloud  💎 using tools like ABAP Debugger, Feed Reader,  ABAP Cross Trace, ABAP Trace, SQL Trace, Memory Analyzer, Table Comparison Tool.
+This session introduces attendees how to analyze custom extensions in SAP Fiori Apps within ABAP Cloud using tools like ABAP Debugger, Feed Reader,  ABAP Cross Trace, ABAP Trace, SQL Trace, Memory Analyzer, Table Comparison Tool.
 
 ---
 > ℹ️**DISCLAIMER**:  
