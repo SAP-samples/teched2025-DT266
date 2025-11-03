@@ -169,7 +169,7 @@ The double-click opened the properties view. When inspecting the traced content 
 
  <kbd><img src="images/CrossTrace_Search_Validate.png" alt="Search for validate" width="100%"></kbd> 
 
- There we see for a procedure "Call Handler (Validation On Save) ta processed object. In the record properties of the validation trace record we can see that this validation outputs 1 failed key and two reported messages in the column **`Record Properties`**. Therefore, we want to inspect this validation further by navigating to the validation implementation which is accessible in column **`Processed Objects`** via **`CTRL`** + Click.
+There we see for a procedure "Call Handler (Validation On Save) in the column processed object. In the record properties of the validation trace record we can see that this validation outputs 1 failed key and two reported messages in the column **`Record Properties`**. Therefore, we want to inspect this validation further by navigating to the validation implementation. You can reach the context menu of the record via right-click. There first select **`Navigate to Processed Objects`** and then select click on the mentioned method implementation to navigate.
 
 After navigation, we can inspect the validation implementation:
 
