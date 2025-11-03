@@ -207,7 +207,7 @@ In the last exercise we saw that the Currency Code field gets cleared in case an
 
 <kbd> <img src="images/Fiori_OP_CurrencyCodeDefault.png" alt="Second new Error" width="90%"> </kbd>
 
-We don't want to trace too much, therefore we try to geet as far as possible to the state where we can reproduce the new error. For this we click the button **`Edit`** again. 
+We don't want to trace to much, therefore we try to get as far as possible to the state where we can reproduce the new error. For this we click the button **`Edit`** again. 
 
 <kbd> <img src="images/OP_Edit2.png" alt="Go to Edit Mode again" width="90%"> </kbd>
 
