@@ -4,13 +4,6 @@
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2025-DT266)](https://api.reuse.software/info/github.com/SAP-samples/teched2025-DT266)
 
-Teched Session DT266
-
-Link to GitHub Code Sources:
-https://github.com/SAP-samples/teched2025-DT266/tree/main
-
-
-
 ## Description
 
 This repository contains the material for the SAP TechEd 2025 session called [DT266 | Troubleshoot and optimize extensions for ABAP Cloud in cloud ERP](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749650347432001y6fi).
