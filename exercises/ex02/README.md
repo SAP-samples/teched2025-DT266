@@ -58,8 +58,8 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
         </table>      
 
       By this we remove the old code where all the supplement prices and categories are selected from table **`ZDT266_SUP_I_###`**:
-      - even if for the Airline ID there are no connections or bookings, so also no bookings
-      - independent of the supplement categories of interest (``meal, beverages, luggage``)
+      - even if for the Airline ID there are no connections or bookings, so we also have no bookings,
+      - independent of the supplement categories of interest (``meal, beverages, luggage``).
     
    2. Replace it with new coding where we only select by the relevant bookings (part 1 of code) or by the relevant categories (part 2 of code).
 
