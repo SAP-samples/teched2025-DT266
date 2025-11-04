@@ -153,9 +153,7 @@ Finally we solve the issue by a small change of ABAP code.
 
       - Run again the step for **Airline ID = 'AC'**:
       
-        - Due to the breakpoint the processing stops there and the debugger opens. 
-
-        - Confirm the perspective switch by pressing Switch in the appearing dialog if needed,
+        - Due to the breakpoint the processing stops there and the debugger opens (Confirm the perspective switch by pressing Switch in the appearing dialog if needed)
           <kbd><img src="images/Breakpoint.png" alt="Open ABAP Trace Requests" width="75%"></kbd> 
       
         - Hover the mouse over **`suppl_price_sum`**, then its value is shown. It is zero, so the Divsor is zero:
