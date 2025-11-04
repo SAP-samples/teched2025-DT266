@@ -155,10 +155,12 @@ There we can see two created traces. By double-clicking, we navigate to the trac
 
 
 The trace with all its properties can be overwhelming. Luckily there is a search feature included in the trace view which we can use to search for the error behavior we have encountered.
- <kbd><img src="images/CrossTrace_Search_Failed.png" alt="Search for failed" width="100%"></kbd> 
 
 The error message on the UI could be created in the business object implementation, as it tries to highlight data inconsistencies. Therefore, in case of error messages on the UI, it makes a lot of sense to search for the message in the cross trace.
 To do so, we use the search bar above the table and search for **`failed`** (In RAP, errors are propagated trough failed keys, they are marked as such and are searchable in the cross trace).  
+
+ <kbd><img src="images/CrossTrace_Search_Failed.png" alt="Search for failed" width="100%"></kbd> 
+
 
 The trace is filtered to entries applicable to our search term. We see that the processing of the changeset has failed. The reason for this failed execution lays in the trace entries before. There we see that the procedure "Call Handler ( Validation On Save ) has a record property containing failed keys ( failed: 1 ).
 
