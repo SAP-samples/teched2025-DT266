@@ -39,7 +39,7 @@ In order to understand and analyse different ABAP Cloud components which include
 
   
    1. First we have to open the **`ABAP Cross Trace`** tool in the ABAP Development Tools (ADT). It can be accessed either by navigation
-      **`Window`** -> **`Show View`** -> **`Other...`** or by pressing **`CTRL+3`** in ADT (and search in both cases for _Cross Trace_):
+      **`Window`** -> **`Show View`** -> **`Other...`** or by click **`CTRL+3`** in ADT (and search in both cases for _Cross Trace_):
 
       <table>
        <tr>
@@ -54,7 +54,7 @@ In order to understand and analyse different ABAP Cloud components which include
       </table>
       
 
-   2. This opened a new tab **`ABAP Cross Trace`** at the bottom of your ADT perspective. For this exercise, create a new personal trace configuration via right-click  and **`Create...`** in the tab **`Trace Configurations`**. 
+   2. This opened a new tab **`ABAP Cross Trace`** at the bottom of your ADT perspective. For this exercise, create a new personal trace configuration via right click  and **`Create...`** in the tab **`Trace Configurations`**. 
         <kbd><img src="images/CreateConfiguration.png" alt="Create Cross Trace Configuration" width="90%"></kbd>
        
    3. Now you can configure the trace configuration.  
@@ -160,16 +160,21 @@ The trace with all its properties can be overwhelming. Luckily there is a search
 The error message on the UI could be created in the business object implementation, as it tries to highlight data inconsistencies. Therefore, in case of error messages on the UI, it makes a lot of sense to search for the message in the cross trace.
 To do so, we use the search bar above the table and search for **`failed`** (In RAP, errors are propagated trough failed keys, they are marked as such and are searchable in the cross trace).  
 
-The trace is filtered to entries applicable to our search term. We see that the processing of the changeset has failed. The reason for this failed execution lays in the trace entries before. There we see that the procedure "Call Handler ( Validation On Save ) has two a record property containing failed keys ( failed: 1 ).
-With a double-click on the entry in the cross trace, we can expand the content which was logged. 
+The trace is filtered to entries applicable to our search term. We see that the processing of the changeset has failed. The reason for this failed execution lays in the trace entries before. There we see that the procedure "Call Handler ( Validation On Save ) has a record property containing failed keys ( failed: 1 ).
+
+<kbd><img src="images/CrossTrace_Search_Failed2.png" alt="Search for failed" width="50%"></kbd> 
+
+With a right-click on the trace record in the cross trace, we open a context menu. There we click **`Open Record Properties`**. This opens a view Properties in the bottom section of ADT were we can explore the Record Properties logged in the trace record. 
 
  <kbd><img src="images/CrossTraceIssue1.png" alt="Search for validate" width="100%"></kbd> 
 
-The double-click opened the properties view. When inspecting the traced content of the record, we can find the error message "Airline Name should not be initial" in the trace, which was logged additionally to the failed key to reported. The procedure under inspection is called "Call Handler (Validation On Save), which hints that the error message might originate from a validation on save. Therefore, we continue to search for validation procedures in the trace by searching for "validate" in the search bar:
+When inspecting the traced content of the record, we can find the error message "Airline Name should not be initial" in the trace, which was logged additionally to the failed key to reported. The procedure under inspection is called "Call Handler (Validation On Save), which hints that the error message might originate from a validation on save. Therefore, we continue to search for validation procedures in the trace by searching for "validate" in the search bar:
+
+
+There we see for a procedure "Call Handler (Validation On Save) in the column processed object. In the record properties of the validation trace record we can see that this validation outputs 1 failed key and two reported messages in the column **`Record Properties`**. Therefore, we want to inspect this validation further by navigating to the validation implementation. You can reach the context menu of the record via right-click. There first select **`Navigate to Processed Objects`** and then select click on the mentioned method implementation to navigate.
 
  <kbd><img src="images/CrossTrace_Search_Validate.png" alt="Search for validate" width="100%"></kbd> 
 
- There we see for a procedure "Call Handler (Validation On Save) ta processed object. In the record properties of the validation trace record we can see that this validation outputs 1 failed key and two reported messages in the column **`Record Properties`**. Therefore, we want to inspect this validation further by navigating to the validation implementation which is accessible in column **`Processed Objects`** via **`CTRL`** + Click.
 
 After navigation, we can inspect the validation implementation:
 
@@ -207,7 +212,7 @@ In the last exercise we saw that the Currency Code field gets cleared in case an
 
 <kbd> <img src="images/Fiori_OP_CurrencyCodeDefault.png" alt="Second new Error" width="90%"> </kbd>
 
-We don't want to trace too much, therefore we try to geet as far as possible to the state where we can reproduce the new error. For this we click the button **`Edit`** again. 
+We don't want to trace to much, therefore we try to get as far as possible to the state where we can reproduce the new error. For this we click the button **`Edit`** again. 
 
 <kbd> <img src="images/OP_Edit2.png" alt="Go to Edit Mode again" width="90%"> </kbd>
 
@@ -240,16 +245,15 @@ We now can go back to ADT and deactivate the trace configuration again to preven
 
 <kbd><img src="images/ADT_Error2_DeactivateTrace.png" alt="Deactivate Trace" width="90%"></kbd> 
 
-We now see that the Number of Traces has increased. In case the trace does not yet appear, refresh the trace records by pressing either **`F5`** or right-click **`Refresh`**. To inspect the new trace, we switch to the tab **`Trace Results`** and select the most recent, new trace and open it via double-click:
+We now see that the Number of Traces has increased. In case the trace does not yet appear, refresh the trace records by clicking either **`F5`** or right-click **`Refresh`**To inspect the new trace, we switch to the tab **`Trace Results`** and select the most recent, new trace and open it via right-click and open:
 
-   <table>
-       <tr>
-           <td><kbd><img src="images/ADT_MoveToResults2.png" alt="Move to Cross Trace Results" width="99%"></kbd></td>
-           <td><kbd><img src="images/ADT_NewTraceRequest.png" alt="Selection of new Trace" width="99%"></kbd></td>
-       </tr>
-      </table>
+  
+<td><kbd><img src="images/ADT_MoveToResults2.png" alt="Move to Cross Trace Results" width="99%"></kbd></td>
 
-After double-clicking, a new trace opened. To expand the trace for further inspection, we can expand all entries using the corresponding button:
+<td><kbd><img src="images/ADT_NewTraceRequest.png" alt="Selection of new Trace" width="99%"></kbd></td>
+     
+
+This openes a new trace. To expand the trace for further inspection, we can expand all entries using the corresponding button:
 
 <kbd><img src="images/ADT_Expand_CrossTrace.png" alt="Expand Cross Trace" width="90%"></kbd> 
 
@@ -265,7 +269,7 @@ By selecting the MODIFY trace entry below, the tab **`Properties`** refreshes an
 
 <kbd><img src="images/Error2_Content.png" alt="Error 2 Content" width="90%"></kbd> 
 
-From the data, we can see that this MODIFY is of type update 'U', the key 'AA' matches the faulty behavior on the UI of the airline. Additionally, we can see, that the modify operation is an update for the field currency code ( %control ), and an initial value is passed for this field( currency code ). This precisely describes the observed behavior. Therefore, we navigate to the implementation via **`CTRL`** + Click. 
+From the data, we can see that this MODIFY is of type update 'U', the key 'AA' matches the faulty behavior on the UI of the airline. Additionally, we can see, that the modify operation is an update for the field currency code ( %control ), and an initial value is passed for this field( currency code ). This precisely describes the observed behavior. Therefore, we navigate to the implementation again as in the section before: Select the trace entry, right click, select **`Navigate to Processed Objects`** and then click on the method implementation to navigate. 
 
 <kbd><img src="images/ADT_Navigation_Extension.png" alt="Navigation to Extension" width="90%"></kbd> 
 
@@ -309,7 +313,7 @@ Now, both Airline Name and Currency Code have been saved successfully: you have 
  
  In this hands-on exercise group, you gained insights into the powerful ABAP Cloud trace tool ABAP cross trace, how to configure if and how to use it. 
 
-Now that you've used the cross trace, you now can set up a ABAP cross trace configuration and use the trace tool to troubleshoot your runtime issues. You now are able trace an issue across ABAP Cloud components, narrow down the runtime scope of the error to analyse the root cause either in or between different participating components.
+ Now that you've used the cross trace, you now can set up a ABAP cross trace configuration to your troubleshooting needs and use it while reproducing an issue to trace across ABAP Cloud components, narrow down the runtime scope of the error to analyse the root cause either in or between different participating components.
   
  You can now ...
  - continue with the next exercise block (B) ► **[Exercise 4: Analyse Performance Issues with ABAP Trace and Table Comparison Tool](../ex04/README.md)**   
