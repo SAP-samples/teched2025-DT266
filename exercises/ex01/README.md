@@ -147,7 +147,7 @@ Finally we solve the issue by a small change of ABAP code.
       -----
 
    4. Anaylze the Error in the **`Debugger`**: 
-      - Set a breakpoint where the exception was raised:
+      - Set a breakpoint (by clicking on the number 462) where the exception was raised:
 
         <kbd><img src="images/Breakpoint.png" alt="Open ABAP Trace Requests" width="75%"></kbd> 
 
