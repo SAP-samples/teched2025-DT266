@@ -30,8 +30,8 @@ In order to understand and analyse different ABAP Cloud components which include
 
 > Here we learn about the cross trace tool and how to set it up:
 > 1. Access the ABAP Cross Trace Tool in ADT
-> 2. Understand how to configure a ABAP Cross Trace configuration
-> 3. Create an ABAP Cross Trace configuration
+> 2. Understand how to configure a ABAP Cross Trace Configuration
+> 3. Create an ABAP Cross Trace Configuration
 
  
  <details>
