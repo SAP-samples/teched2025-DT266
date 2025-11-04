@@ -41,7 +41,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 > Even the ABAP Test Cockpit (ATC) check shows this finding:
 > <kbd><img src="images/ATC1.png" alt="Open ABAP Trace Requests" width="70%"></kbd>
 
-**Accordingly, we implement code changes that we read only the supplements for the bookings for the Airline ID specified or for specific supplement categories which we show in the output of the Fiori App.**
+**Accordingly, we implement code changes introducing a `WHERE`-cluase with which we specfiy the selection of only the supplements for the bookings for the Airline ID specified or selection only for the specific supplement categories which we show in the output of the Fiori App.**
 
  <details>
   <summary>🔵 Click to expand!</summary>
