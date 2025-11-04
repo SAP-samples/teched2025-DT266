@@ -130,7 +130,7 @@ After reproduction, we deactivate the trace configuration again via right-click 
 
  <kbd><img src="images/DeactivateTrace.png" alt="Deactivate Trace" width="90%"></kbd> 
 
-We now created a trace of the error which we can analyse in the next exercise. 
+We now created a trace of the error which we now can analyse. 
 
 
 
