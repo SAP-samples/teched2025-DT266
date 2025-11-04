@@ -3,8 +3,8 @@
 # Getting started and Overview of the Model and ABAP Code
 
 ### Introduction
-Here we provide some information on how to conduct the exercises.  And we provide an introduction to the model and ABAP code used.
-In this section we outline how to logon to the system and to access your package for these exercises.  We shortly introduce the Fiori App to use in the exercises.  
+In this section we provide information on how to conduct the exercises and provide an introduction to the model and ABAP code used.
+We outline how to logon to the system and how to access your package for these exercises.  We briefly introduce the Fiori App to use in the exercises.  
 
 - [0.1 - About the Session](#getting-started-01-about-the-session)
 - [0.2 - Overview of the Model and ABAP Code](#getting-started-02-overview-of-the-model-and-abap-code)
