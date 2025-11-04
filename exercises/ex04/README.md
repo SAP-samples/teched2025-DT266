@@ -952,7 +952,7 @@ So let us start with improving the runtime in the following exercises._
 > In the previous exercise 4.2 we have partially improved the runtime just changing settings for buffering.  
 > But accesses to the Table Buffer by different fields as the key fields showed bad performance for larger tables.
 > - The table buffer stores the table sorted by the table key fields in the Extended Memory like sorted internal tables.
-> - The access is always fast if we select or read by the key fields used in the databaes table definition or in the definition of a sorted internal table. So if we select by criteria for which those objects are sorted.
+> - The access is always fast if we select or read by the key fields used in the database table definition or in the definition of a sorted internal table. So if we select by criteria for which those objects are sorted.
 > - But the tables accesses are slow if the access is by other fields even if they are selective.
 > - A similar issue we have for a READ TABLE statement where the table is defined as standard table.  
 
