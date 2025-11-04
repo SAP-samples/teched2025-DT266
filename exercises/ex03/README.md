@@ -318,7 +318,7 @@ Now, both Airline Name and Currency Code have been saved successfully: you have 
  Now that you've used the cross trace, you now can set up a ABAP cross trace configuration to your troubleshooting needs and use it while reproducing an issue to trace across ABAP Cloud components, narrow down the runtime scope of the error to analyse the root cause either in or between different participating components.
   
  You can now ...
- - continue with the next exercise block (B) ► **[Exercise 4: Analyse Performance Issues with ABAP Trace and Table Comparison Tool](../ex04/README.md)**   
+ - continue with the next exercise block ► **[Exercise 4: Analyse Performance Issues with ABAP Trace and Table Comparison Tool](../ex04/README.md)**   
  - or return to ► **[Home - DT266](/README.md#exercises)**.
  
  ## License
