@@ -978,7 +978,7 @@ So let us start with improving the runtime in the following exercises._
 > In this exercise we address two performance issues, Table Buffer accesses (_labeled as 3._) and `READ TABLE LT_SUPPLEMENT... WHERE...` statements on an internal table **`LT_SUPPLEMENT`** (_labeled as 4._):
 >  <kbd><img src="images/Index_Key_1.png" alt="Open ABAP Trace Requests" width="70%"></kbd> <br>
 > The Table Buffer accesses and the  `READ TABLE LT_SUPPLEMENT... WHERE...` statement shall be improved by secondary index / key:
->   - this is similar to creation of an index for a Database Index.
+>   - this is similar to creation of an index for a database table.
 >   - Searching by name in a phone book is fast as it is sorted
 >     - Similar it is fast to search in the Table Buffer for Key fields as in the Table Buffer the table is sorted by the key fields,
 >     - Similar it is fast to search a row of a sorted internal table (defined as sorted) if we search by the corresponding key fields, 
