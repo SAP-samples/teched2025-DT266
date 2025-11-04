@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In exercise 1, we have learned to work with the **`Feed Reader`** for analysis of runtime errors. (see [Exercise 1](../ex01/README.md)). With the feed reader, you can navigate to errors in case there is already a specific error location assigned to the error. 
+In exercise 1, we have learned how to work with the **`Feed Reader`** for analysis of runtime errors. (see [Exercise 1](../ex01/README.md)). With the feed reader, you can navigate to errors in case there is already a specific error location assigned to the error. 
 
 This is not always the case. In this exercise we get an error message on the UI with an initially unclear origin in the RAP BO stack. 
 
