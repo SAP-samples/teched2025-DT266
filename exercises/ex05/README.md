@@ -23,7 +23,7 @@ Here we learn to create an `SQL trace` and analyze the `execution plan` in the `
 
 > [!TIP]
 > - **Alternatively you can also directly start with Exercise 5.3 and use there the already recorded traces:**
->   - **`teched_expensive.plv`**
+>   - [teched_expensive.plv](../teched_expensive.plv)
 >   - **`teched_fast.plv`** 
 
 In the first section we explain the usage of this Tool to discover the performance issues in our custom extension in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ in method _`GET_PRICES_CDS`_. 
