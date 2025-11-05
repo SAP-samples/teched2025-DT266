@@ -134,7 +134,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
 > [!TIP]
 > - Alternatively you can also directly start with Exercise 5.3 and use there the already recorded traces:
->   - **`teched_expensive.plv`**
+>   - [teched_expensive.plv](../teched_expensive.plv)
 
 
 
@@ -236,7 +236,10 @@ In the first section we explain the usage of this Tool to discover the performan
 
     - Then either upload: 
       - the PlanViz you created in the previous exercise, 
-      - _Or as an alternative:_ Navigate to directory Documents `DT266_00`. There choose the file **teched_expensive.plv** to open: 
+      - _Or as an alternative:_  Use the already recorded trace (open the link and click on download raw file, then you find the file in your downloads): 
+        <kbd><img src="images/download_raw.png" alt="generate UI service" width="35%"></kbd>
+        [teched_expensive.plv](../teched_expensive.plv)
+      - Navigate to directory where you saved the PlanViz file: 
 
       <table>
        <tr>
