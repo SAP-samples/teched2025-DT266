@@ -22,7 +22,7 @@ Here we learn to create an `SQL trace` and analyze the `execution plan` in the `
 >   - to deactivate youre trace as soon as the response is back in the Fiori App
 
 > [!TIP]
-> - **Alternatively you can also directly start with Exercise 5.3 and use there the already recorded traces (open the link and click on download raw file, then you find the file in your downloads):**
+> - **Alternatively you can also directly start with Exercise 5.3 and use there the already recorded traces (open the link and click on download raw file, then you find the file in your downloads):** <br>
 > <kbd><img src="images/download_raw.png" alt="generate UI service" width="35%"></kbd>
 >   - [teched_expensive.plv](../teched_expensive.plv)
 >   - [teched_fast.plv](../teched_fast.plv)
