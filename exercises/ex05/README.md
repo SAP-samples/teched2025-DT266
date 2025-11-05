@@ -446,8 +446,8 @@ In the first section we explain the usage of this Tool to discover the performan
 
     Then either 
     - upload the PlanViz just saved above in this exercise, 
-    
-    - or navigate to directory Documents DT266_00. There choose the **teched_fast.plv** file to open: 
+    - _Or as an alternative:_  Use the already recorded trace [teched_fast.plv](../teched_fast.plv) (open the link and click on download raw file, then you find the file in your downloads): 
+        <kbd><img src="images/download_raw.png" alt="generate UI service" width="35%"></kbd>
 
       <table>
        <tr>
