@@ -373,8 +373,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
 
 > [!TIP]
-> - Alternatively you can also directly start with Exercise 5.3 and use there the already recorded traces:
->   - **`teched_fast.plv`**
+> - Alternatively you can also use the already recorded trace: [teched_fast.plv](../teched_fast.plv).
 
 
 
