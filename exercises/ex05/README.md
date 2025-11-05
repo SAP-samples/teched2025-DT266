@@ -236,9 +236,8 @@ In the first section we explain the usage of this Tool to discover the performan
 
     - Then either upload: 
       - the PlanViz you created in the previous exercise, 
-      - _Or as an alternative:_  Use the already recorded trace (open the link and click on download raw file, then you find the file in your downloads): 
+      - _Or as an alternative:_  Use the already recorded trace [teched_expensive.plv](../teched_expensive.plv) (open the link and click on download raw file, then you find the file in your downloads): 
         <kbd><img src="images/download_raw.png" alt="generate UI service" width="35%"></kbd>
-        [teched_expensive.plv](../teched_expensive.plv)
       - Navigate to directory where you saved the PlanViz file: 
 
       <table>
