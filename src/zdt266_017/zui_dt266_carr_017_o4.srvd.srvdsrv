@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_DT266_CARR_017'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_DT266_CARR_017'
+  }
+}
+define service ZUI_DT266_CARR_017_O4 provider contracts odata_v4_ui {
+  expose ZC_DT266_CARR_017;
+}

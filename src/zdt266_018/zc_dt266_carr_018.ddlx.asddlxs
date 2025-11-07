@@ -1,0 +1,171 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'CarrierID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'CarrierID'
+annotate view ZC_DT266_CARR_018 with
+{
+  @UI.facet: [ {
+    label: 'General Information',
+    id: 'GeneralInfo',
+    purpose: #STANDARD,
+    position: 10 ,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10
+  } ]
+  @UI.lineItem: [ {
+    position: 10
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  CarrierID;
+
+  @UI.identification: [ {
+    position: 20
+  } ]
+  @UI.lineItem: [ {
+    position: 20
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 20
+  //  } ]
+  Name;
+
+  @UI.identification: [ {
+    position: 30
+  } ]
+  @UI.lineItem: [ {
+    position: 30
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 30
+  //  } ]
+  CurrencyCode;
+
+  @UI.identification: [ {
+    position: 32
+  } ]
+  @UI.lineItem: [ {
+    position: 32
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 32
+  //  } ]
+  aggregatesupplementprice;
+
+  @UI.identification: [ {
+   position: 33
+  } ]
+  @UI.lineItem: [ {
+    position: 33
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 33
+  //  } ]
+  percmeal;
+
+  @UI.identification: [ {
+  position: 34
+  } ]
+  @UI.lineItem: [ {
+    position: 34
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 34
+  //  } ]
+  percbeverages;
+
+  @UI.identification: [ {
+  position: 35
+  } ]
+  @UI.lineItem: [ {
+    position: 35
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 35
+  //  } ]
+  percluggage;
+
+  @UI.identification: [ {
+  position: 36
+  } ]
+  @UI.lineItem: [ {
+    position: 36
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 36
+  //  } ]
+  aggregateflightprice;
+
+  @UI.identification: [ {
+    position: 40
+  } ]
+  //  @UI.lineItem: [ {
+  //    position: 40
+  //  } ]
+  //  @UI.selectionField: [ {
+  //    position: 40
+  //  } ]
+  LocalCreatedBy;
+
+  @UI.identification: [ {
+    position: 50
+  } ]
+  //  @UI.lineItem: [ {
+  //    position: 50
+  //  } ]
+  //  @UI.selectionField: [ {
+  //    position: 50
+  //  } ]
+  LocalCreatedAt;
+
+  @UI.identification: [ {
+    position: 60
+  } ]
+  //  @UI.lineItem: [ {
+  //    position: 60
+  //  } ]
+  //  @UI.selectionField: [ {
+  //    position: 60
+  //  } ]
+  LocalLastChangedBy;
+
+  @UI.identification: [ {
+    position: 70
+  } ]
+  //  @UI.lineItem: [ {
+  //    position: 70
+  //  } ]
+  //  @UI.selectionField: [ {
+  //    position: 70
+  //  } ]
+  LocalLastChangedAt;
+
+  @UI.identification: [ {
+    position: 80
+  } ]
+  //  @UI.lineItem: [ {
+  //    position: 80
+  //  } ]
+  //  @UI.selectionField: [ {
+  //    position: 80
+  //  } ]
+  LastChangedAt;
+
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 90 ,
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 ,
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 90
+  } ]
+  _BaseEntity;
+}
