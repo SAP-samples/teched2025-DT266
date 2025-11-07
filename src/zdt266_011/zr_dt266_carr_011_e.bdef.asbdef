@@ -1,6 +1,0 @@
-extension implementation in class zbp_r_dt266_carr_011_e unique;
-
-extend behavior for Carrier
-{
-  determination zzdefault_currency on save { create; update; }
-}

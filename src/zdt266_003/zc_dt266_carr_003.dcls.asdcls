@@ -1,6 +1,0 @@
-@EndUserText.label: 'ZC_DT266_CARR_003'
-@MappingRole: true
-define role ZC_DT266_CARR_003 {
-  grant select on ZC_DT266_CARR_003
-  where INHERITING CONDITIONS FROM ENTITY ZR_DT266_CARR_003 REPLACING { ROOT WITH _BaseEntity };
-}

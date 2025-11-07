@@ -1,6 +1,0 @@
-@EndUserText.label: 'ZR_DT266_CARR_033'
-@MappingRole: true
-define role ZR_DT266_CARR_033 {
-  grant select on ZR_DT266_CARR_033
-  where TRUE;
-}
