@@ -126,7 +126,7 @@ In our example we want to provide a list of Airline IDs = Carrier_Id(s) for whic
 The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
 
 
-<!--
+
 
 
    🟠 _**REMARK:**_ The following overviews are only optional information. This is **not required** to execute the exercises. We recommend to skip reading this additional information and directly continue with [Exercise 1](../ex01/README.md).
@@ -194,7 +194,7 @@ We use in the Exercises the following tables:
 
 </details>   
 
--->
+
  
 ## Summary & First Exercise
 
