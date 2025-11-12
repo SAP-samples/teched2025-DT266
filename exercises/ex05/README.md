@@ -78,7 +78,7 @@ In the first section we explain the usage of this Tool to discover the performan
      <summary>🟡📄Click to expand and replace the source code if not performed the previous exercises!</summary>
 
      > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
-     > - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+
 
 
             @EndUserText.label : '1000 records supplement'
@@ -106,18 +106,80 @@ In the first section we explain the usage of this Tool to discover the performan
 
     </details>
 
+    > - 💡 Activate the changes.
 
 
- 4. Fill the table **`ZDT266_SUP_L_000`**:
+ 4. Fill the table **`ZDT266_SUP_L_000`** by the class **`zcl_dt266_gen_sup_l_000 `**:
+
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Source Code Library` > `Classes` and right-click on `Classes` and select **`New ABAP Class`**: <br>
+    <kbd><img src="../images/Create_Class.png" alt="generate UI service" width="65%"></kbd>
+    
+    and replace all the source code there with:
 
     <details>
      <summary>🟡📄Click to expand and replace the source code if not performed the previous exercises!</summary>
 
-   > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
-   > - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+      > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
+
+          CLASS zcl_dt266_gen_sup_l_000 DEFINITION
+            PUBLIC
+            FINAL
+            CREATE PUBLIC .
+
+            PUBLIC SECTION.
+
+                INTERFACES if_oo_adt_classrun.
+            PROTECTED SECTION.
+            PRIVATE SECTION.
+          ENDCLASS.
+
+
+
+          CLASS ZCL_DT266_GEN_SUP_L_000 IMPLEMENTATION.
+
+
+            METHOD if_oo_adt_classrun~main.
+
+
+
+
+              DATA:
+                group_id   TYPE string VALUE '000',
+                id         TYPE int4.
+
+          *   clear data
+              DELETE FROM zdt266_sup_l_000.
+              id = 0.
+                    DO 200000 TIMES.
+
+              INSERT zdt266_sup_l_000  FROM (
+                  SELECT
+                    FROM /dmo/supplement AS suppl
+                    FIELDS
+                    suppl~supplement_id AS supplement_id,
+                    @id AS id,
+                    suppl~supplement_category AS supplement_category,
+                    suppl~price AS price,
+                    suppl~currency_code AS currency_code,
+                    suppl~local_created_by AS local_created_by,
+                    suppl~local_created_at AS local_created_at,
+                    suppl~local_last_changed_by AS local_last_changed_by,
+                    suppl~local_last_changed_at AS local_last_changed_at,
+                    suppl~last_changed_at AS last_changed_at
+                    ).
+                    id = id + 1.
+                    ENDDO.
+              COMMIT WORK.
+              out->write( |[DT266] Demo data generated for table ZDT266_SUP_L_{ group_id }. | ).
+            ENDMETHOD.
+          ENDCLASS.
     
 
     </details>
+    > - 💡 Activate the changes.
+    > Run the class once by pressing **`F9`** or click on 
+      <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
+
 
 </details>
 
