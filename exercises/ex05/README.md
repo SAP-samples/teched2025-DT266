@@ -123,11 +123,12 @@ In the first section we explain the usage of this Tool to discover the performan
     Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Source Code Library` > `Classes` and right-click on `Classes` and select **`New ABAP Class`**: <br>
     <kbd><img src="../images/Create_Class.png" alt="generate UI service" width="65%"></kbd>
     
-    - Name: **`ZDT266_SUP_L_000`** 
-    - Description: **`Large Supplement Table`**
-
-
-    <kbd><img src="images/SUP_L_1.png" alt="base BO view" width="60%"></kbd> <br>  
+    And in the pop-up: 
+    <br/><kbd><img src="images/SUP_L_2.png" alt="base BO view" width="60%"></kbd> <br>
+    <br>Enter the following values
+    
+    - Name: **`ZCL_DT266_GEN_SUP_L_000`** 
+    - Description: **`Generate large Table from Supplement table`**
 
     Delete the complete template in new class **`zcl_dt266_gen_sup_l_000`**, insert the code snippet provided below (🟡📄).
     and replace all the source code there with:
