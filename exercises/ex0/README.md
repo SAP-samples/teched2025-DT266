@@ -195,7 +195,7 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ 
       <kbd><img src="../images/Create_Class.png" alt="generate UI service" width="65%"></kbd>
       Or right-click on your ABAP package **`ZDT266_###`** and select `New` > `ABAP Class` from the context menu. 
       <br/><kbd><img src="images/Create_Carrier_Copy_2.png" alt="base BO view" width="60%"></kbd> <br>
-      Search for `database table`, select it, and click `Next >`. <br>     
+      
       And in the pop-up: <br/><kbd><img src="images/Create_Carrier_Copy_3.png" alt="base BO view" width="60%"></kbd> <br>
 
       <br>Enter the following values
