@@ -121,7 +121,9 @@ In the first section we explain the usage of this Tool to discover the performan
     - Name: **`ZDT266_SUP_L_000`** 
     - Description: **`Large Supplement Table`**
 
-    <br/><kbd><img src="SUP_L_1.png" alt="base BO view" width="60%"></kbd> <br>
+    <br/><kbd><img src="images/SUP_L_1.png" alt="base BO view" width="60%"></kbd> <br>
+
+  
 
 
     Delete the complete template in new class **`zcl_dt266_gen_sup_l_000`**, insert the code snippet provided below (🟡📄).
