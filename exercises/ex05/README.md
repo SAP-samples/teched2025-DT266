@@ -115,7 +115,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
     </details>
 
-    > - Activate the table by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
+    - Activate the table by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
 
 
  4. Fill the table **`ZDT266_SUP_L_000`** by the class ![ ](../images/adt_class.png)**`zcl_dt266_gen_sup_l_000`**:
@@ -194,9 +194,181 @@ In the first section we explain the usage of this Tool to discover the performan
 
     </details>
 
-    > - 💡 Activate the class by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
-    > - Run the class once by pressing **`F9`** or click on 
+    - 💡 Activate the class by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
+    - Run the class once by pressing **`F9`** or click on 
       <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
+
+
+ 5. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_BOOK_SUPPL`**:
+
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New ABAP Class`**: <br>
+    <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
+    
+    And in the pop-up: 
+    <br/><kbd><img src="images/SUP_L_3.png" alt="base BO view" width="60%"></kbd> <br>
+    <br>Enter the following values
+    
+    - Name: **`Z_I_BOOK_SUPPL`** 
+    - Description: **`Booking Supplements Base View`**
+
+    Delete the complete template in new Data Definition  ![ ](../images/adt_ddls.png)**`Z_I_BOOK_SUPPL`**, insert the code snippet provided below (🟡📄).
+    and replace all the source code there with:
+
+    <details>
+     <summary>🟡📄Click to expand and replace the source code!</summary>
+
+      > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
+
+            @AbapCatalog.sqlViewName: 'ZBOOK_SUPPL'
+            @AccessControl.authorizationCheck: #NOT_REQUIRED
+            @EndUserText.label: 'CDS View to calculate the PRICE_SUM'
+            @Metadata.ignorePropagatedAnnotations: true
+            define view  Z_I_BOOK_SUPPL 
+            as select from zdt266_bo_su_000 as bo_su
+            {
+            key bo_su.travel_id,
+            bo_su.booking_id as booking_id,
+            bo_su.id as id,
+            bo_su.booking_supplement_id as booking_supplement_id,
+            bo_su.supplement_id as supplement_id
+            } 
+
+    </details>
+
+    - 💡 Activate the Data Definition by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
+
+
+ 6. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_PRICE_000`**:
+
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New ABAP Class`**: <br>
+    <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
+    
+    And in the pop-up: 
+    <br/><kbd><img src="images/SUP_L_4.png" alt="base BO view" width="60%"></kbd> <br>
+    <br>Enter the following values
+    
+    - Name: **`Z_I_PRICE_000`** 
+    - Description: **`Supplements Prices View`**
+
+    Delete the complete template in new Data Definition  ![ ](../images/adt_ddls.png)**`Z_I_PRICE_000`**, insert the code snippet provided below (🟡📄).
+    and replace all the source code there with:
+
+    <details>
+     <summary>🟡📄Click to expand and replace the source code!</summary>
+
+      > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
+
+
+            @AbapCatalog.sqlViewName: 'ZPRICE_000'
+            @AbapCatalog.preserveKey: true
+            @AccessControl.authorizationCheck: #NOT_REQUIRED
+            @EndUserText.label: 'CDS View to calculate the PRICE_SUM'
+            @Metadata.ignorePropagatedAnnotations: true
+            define view  Z_I_PRICE_000 
+            as select from /dmo/connection as conn
+            inner join /dmo/booking as book on conn.connection_id = book.connection_id
+            inner join Z_I_BOOK_SUPPL as book_suppl on book_suppl.booking_id = book.booking_id and book_suppl.travel_id = book.travel_id
+            association [1..1] to Z_I_SUPPL as suppl on suppl.supplement_id = book_suppl.supplement_id 
+            and suppl.id = book_suppl.id
+            {
+            key conn.carrier_id as CarrierId,
+            suppl.id + 1 as id,
+            //suppl.id as id,
+            sum(suppl.price) as suppl_price_sum,
+            sum(suppl.price_lugg) as suppl_price_sum_lugg,
+            sum(suppl.price_meal) as suppl_price_sum_meal,
+            sum(suppl.price_bev) as suppl_price_sum_bev
+            } group by conn.carrier_id, suppl.id
+
+
+    </details>
+
+    - 💡 Activate the Data Definition by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
+
+
+ 7. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_PRICE_FLIGHT`**:
+
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New ABAP Class`**: <br>
+    <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
+    
+    And in the pop-up: 
+    <br/><kbd><img src="images/SUP_L_5.png" alt="base BO view" width="60%"></kbd> <br>
+    <br>Enter the following values
+    
+    - Name: **`Z_I_PRICE_FLIGHT`** 
+    - Description: **`Flight Prices View`**
+
+    Delete the complete template in new Data Definition  ![ ](../images/adt_ddls.png)**`Z_I_PRICE_FLIGHT`**, insert the code snippet provided below (🟡📄).
+    and replace all the source code there with:
+
+    <details>
+     <summary>🟡📄Click to expand and replace the source code!</summary>
+
+      > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
+
+
+            @AbapCatalog.sqlViewName: 'ZPRICEFLIGHT'
+            @AbapCatalog.preserveKey: true
+            @AccessControl.authorizationCheck: #NOT_REQUIRED
+            @EndUserText.label: 'CDS View to calculate the PRICE_SUM'
+            @Metadata.ignorePropagatedAnnotations: true
+            define view  Z_I_PRICE_FLIGHT 
+            as select from /dmo/connection as conn
+            inner join /dmo/booking as book on conn.connection_id = book.connection_id
+            {
+            key conn.carrier_id as CarrierId,
+            sum(book.flight_price) as flight_price_sum
+            } group by conn.carrier_id
+
+
+
+    </details>
+
+    - 💡 Activate the Data Definition by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
+
+
+ 8. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_SUPPL`**:
+
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New ABAP Class`**: <br>
+    <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
+    
+    And in the pop-up: 
+    <br/><kbd><img src="images/SUP_L_6.png" alt="base BO view" width="60%"></kbd> <br>
+    <br>Enter the following values
+    
+    - Name: **`Z_I_SUPPL`** 
+    - Description: **`Supplements Base View`**
+
+    Delete the complete template in new Data Definition  ![ ](../images/adt_ddls.png)**`Z_I_SUPPL`**, insert the code snippet provided below (🟡📄).
+    and replace all the source code there with:
+
+    <details>
+     <summary>🟡📄Click to expand and replace the source code!</summary>
+
+      > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
+
+
+
+
+            @AbapCatalog.sqlViewName: 'ZSUPPL'
+            @AccessControl.authorizationCheck: #NOT_REQUIRED
+            @EndUserText.label: 'CDS View to calculate the PRICE_SUM'
+            @Metadata.ignorePropagatedAnnotations: true
+            define view  Z_I_SUPPL 
+            as select from zdt266_sup_l_000 as suppl
+            {
+            key supplement_id,
+            suppl.id as id,
+            case when suppl.supplement_category = 'LU' then suppl.price end as price_lugg,
+            case when suppl.supplement_category = 'ML' then suppl.price end as price_meal,
+            case when suppl.supplement_category = 'BV' then suppl.price end as price_bev,
+            suppl.price as price
+            } 
+
+
+    </details>
+
+    - 💡 Activate the Data Definition by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
 
 
 </details>
