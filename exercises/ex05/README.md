@@ -67,6 +67,57 @@ In the first section we explain the usage of this Tool to discover the performan
    
     We are done with this exercise 5.1. Below is just some further information on the involved CDS views and ABAP coce.
 
+ 3. Create  the table **`ZDT266_SUP_L_000`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Dictionary` > `Database Tables` and right-click on `Database Tables` and select **`New Database Table`**: <br>
+    <kbd><img src="../images/Create_DB_Table.png" alt="generate UI service" width="65%"></kbd>
+    
+    and replace all the source code there with:
+
+
+    <details>
+     <summary>🟡📄Click to expand and replace the source code if not performed the previous exercises!</summary>
+
+   > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
+   > - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+
+            @EndUserText.label : '1000 records supplement'
+            @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+            @AbapCatalog.tableCategory : #TRANSPARENT
+            @AbapCatalog.deliveryClass : #A
+            @AbapCatalog.dataMaintenance : #RESTRICTED
+            define table zdt266_sup_l_000 {
+
+              key client            : abap.clnt not null;
+              key supplement_id     : /dmo/supplement_id not null;
+              key id                : int4 not null;
+              supplement_category   : /dmo/supplement_category;
+              @Semantics.amount.currencyCode : 'zdt266_sup_l_000.currency_code'
+              price                 : /dmo/supplement_price;
+              currency_code         : /dmo/currency_code;
+              local_created_by      : abp_creation_user;
+              local_created_at      : abp_creation_tstmpl;
+              local_last_changed_by : abp_locinst_lastchange_user;
+              local_last_changed_at : abp_locinst_lastchange_tstmpl;
+              last_changed_at       : abp_lastchange_tstmpl;
+
+            }
+
+
+    </details>
+
+</details>
+
+ 4. Fill the table **`ZDT266_SUP_L_000`**:
+
+    <details>
+     <summary>🟡📄Click to expand and replace the source code if not performed the previous exercises!</summary>
+
+   > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
+   > - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+    
+
+    </details>
+
 </details>
 
  We are done with this exercise 5.1. Below is just some further information on the involved CDS views and ABAP code.
