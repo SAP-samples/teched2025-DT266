@@ -118,7 +118,7 @@ In the first section we explain the usage of this Tool to discover the performan
     > - Activate the table by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
 
 
- 4. Fill the table **`ZDT266_SUP_L_000`** by the class **`zcl_dt266_gen_sup_l_000`**:
+ 4. Fill the table **`ZDT266_SUP_L_000`** by the class ![ ](../images/adt_class.png)**`zcl_dt266_gen_sup_l_000`**:
 
     Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Source Code Library` > `Classes` and right-click on `Classes` and select **`New ABAP Class`**: <br>
     <kbd><img src="../images/Create_Class.png" alt="generate UI service" width="65%"></kbd>
