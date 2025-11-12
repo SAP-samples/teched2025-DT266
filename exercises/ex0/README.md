@@ -106,7 +106,11 @@ All the ABAP code and database tables to change are in:
 ## Getting Started 0.2: Overview of the Model and ABAP Code
 [^Top of page](#)
 
-> Todays scenario is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).   <!-- For an overview of the available database tables, see ABAP Flight Reference Scenario. They are available in the package /DMO/FLIGHT_LEGACY. This package also includes a data generator with which you can fill the database tables. -->
+> Todays scenario is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).   For an overview of the available database tables, see ABAP Flight Reference Scenario. They are available in the package /DMO/FLIGHT_LEGACY. This package also includes a data generator with which you can fill the database tables.
+
+> 🟠 _**REMARK:**_ Prerequisite is that you have implemented and activated the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight) and filled the demo database tables with sample business data: 
+1. Expand the package structure in the Project Explorer `/DMO/FLIGHT_LEGACY` > `Source Code Library` > `Classes`.
+2. Select the data generator class `/DMO/CL_FLIGHT_DATA_GENERATOR` and press `F9` (Run as Console Application). 
 
 In our example we want to provide a list of Airline IDs = Carrier_Id(s) for which we get in the result list additional column fields calculated by customer extension:
 - the total of all corresponding flight prices 
