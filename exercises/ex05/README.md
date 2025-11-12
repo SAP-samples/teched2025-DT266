@@ -176,8 +176,9 @@ In the first section we explain the usage of this Tool to discover the performan
     
 
     </details>
+
     > - 💡 Activate the changes.
-    > Run the class once by pressing **`F9`** or click on 
+    > - Run the class once by pressing **`F9`** or click on 
       <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
 
 
