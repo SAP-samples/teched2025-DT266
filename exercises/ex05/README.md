@@ -77,8 +77,9 @@ In the first section we explain the usage of this Tool to discover the performan
     <details>
      <summary>🟡📄Click to expand and replace the source code if not performed the previous exercises!</summary>
 
-   > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
-   > - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+     > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
+     > - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+     
 
             @EndUserText.label : '1000 records supplement'
             @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
