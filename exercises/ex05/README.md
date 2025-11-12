@@ -71,7 +71,11 @@ In the first section we explain the usage of this Tool to discover the performan
     Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Dictionary` > `Database Tables` and right-click on `Database Tables` and select **`New Database Table`**: <br>
     <kbd><img src="../images/Create_DB_Table.png" alt="generate UI service" width="65%"></kbd>
     
-    and replace all the source code there with:
+    - Name: **`ZDT266_SUP_L_000`** 
+    - Description: **`Large Supplement Table`**
+
+      <br/><kbd><img src="SUP_L_1.png" alt="base BO view" width="60%"></kbd> 
+      and replace all the source code there with the following lines of code:
 
 
     <details>
