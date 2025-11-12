@@ -74,8 +74,8 @@ In the first section we explain the usage of this Tool to discover the performan
     - Name: **`ZDT266_SUP_L_000`** 
     - Description: **`Large Supplement Table`**
 
-      <br/><kbd><img src="SUP_L_1.png" alt="base BO view" width="60%"></kbd> 
-      and replace all the source code there with the following lines of code:
+      <br/><kbd><img src="SUP_L_1.png" alt="base BO view" width="60%"></kbd> <br>
+      Delete the complete template in new table **`ZDT266_SUP_L_000`**, insert the code snippet provided below (🟡📄).
 
 
     <details>
@@ -85,7 +85,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
 
 
-            @EndUserText.label : '1000 records supplement'
+            @EndUserText.label : 'Large Supplement Table'
             @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
             @AbapCatalog.tableCategory : #TRANSPARENT
             @AbapCatalog.deliveryClass : #A
@@ -110,14 +110,21 @@ In the first section we explain the usage of this Tool to discover the performan
 
     </details>
 
-    > - 💡 Activate the changes.
+    > - Activate the table by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
 
 
- 4. Fill the table **`ZDT266_SUP_L_000`** by the class **`zcl_dt266_gen_sup_l_000 `**:
+ 4. Fill the table **`ZDT266_SUP_L_000`** by the class **`zcl_dt266_gen_sup_l_000`**:
 
     Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Source Code Library` > `Classes` and right-click on `Classes` and select **`New ABAP Class`**: <br>
     <kbd><img src="../images/Create_Class.png" alt="generate UI service" width="65%"></kbd>
     
+    - Name: **`ZDT266_SUP_L_000`** 
+    - Description: **`Large Supplement Table`**
+
+    <br/><kbd><img src="SUP_L_1.png" alt="base BO view" width="60%"></kbd> <br>
+
+
+    Delete the complete template in new class **`zcl_dt266_gen_sup_l_000`**, insert the code snippet provided below (🟡📄).
     and replace all the source code there with:
 
     <details>
@@ -181,7 +188,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
     </details>
 
-    > - 💡 Activate the changes.
+    > - 💡 Activate the class by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
     > - Run the class once by pressing **`F9`** or click on 
       <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
 
