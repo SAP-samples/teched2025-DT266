@@ -115,7 +115,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
     </details>
 
-    - Activate the table by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
+    Activate the table by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
 
 
  4. Fill the table **`ZDT266_SUP_L_000`** by the class ![ ](../images/adt_class.png)**`zcl_dt266_gen_sup_l_000`**:
@@ -194,14 +194,15 @@ In the first section we explain the usage of this Tool to discover the performan
 
     </details>
 
-    - 💡 Activate the class by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
-    - Run the class once by pressing **`F9`** or click on 
+    💡 Activate the class by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
+    <br>
+    Run the class once by pressing **`F9`** or click on 
       <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
 
 
  5. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_BOOK_SUPPL`**:
 
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New ABAP Class`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
     <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
     
     And in the pop-up: 
@@ -240,7 +241,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
  6. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_PRICE_000`**:
 
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New ABAP Class`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
     <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
     
     And in the pop-up: 
@@ -288,7 +289,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
  7. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_PRICE_FLIGHT`**:
 
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New ABAP Class`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
     <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
     
     And in the pop-up: 
@@ -329,7 +330,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
  8. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_SUPPL`**:
 
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New ABAP Class`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
     <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
     
     And in the pop-up: 
