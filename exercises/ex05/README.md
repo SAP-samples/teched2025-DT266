@@ -67,7 +67,7 @@ In the first section we explain the usage of this Tool to discover the performan
    
     We are done with this exercise 5.1. Below is just some further information on the involved CDS views and ABAP coce.
 
- 3. Create  the table **`ZDT266_SUP_L_000`**: <br>
+ 3. Create  the database table ![ ](../images/adt_tabl.png)**`ZDT266_SUP_L_000`**: <br>
     Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Dictionary` > `Database Tables` and right-click on `Database Tables` and select **`New Database Table`**: <br>
     <kbd><img src="../images/Create_DB_Table.png" alt="generate UI service" width="65%"></kbd>
     
