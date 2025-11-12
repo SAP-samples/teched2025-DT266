@@ -70,12 +70,16 @@ In the first section we explain the usage of this Tool to discover the performan
  3. Create  the database table ![ ](../images/adt_tabl.png)**`ZDT266_SUP_L_000`**: <br>
     Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Dictionary` > `Database Tables` and right-click on `Database Tables` and select **`New Database Table`**: <br>
     <kbd><img src="../images/Create_DB_Table.png" alt="generate UI service" width="65%"></kbd>
+
+    <br>Enter the following values
     
     - Name: **`ZDT266_SUP_L_000`** 
     - Description: **`Large Supplement Table`**
 
+    in the pop-up: 
     <br/><kbd><img src="images/SUP_L_1.png" alt="base BO view" width="60%"></kbd> <br>
-    Delete the complete template in new table **`ZDT266_SUP_L_000`**, insert the code snippet provided below (🟡📄).
+    
+    Then delete the complete template in new table **`ZDT266_SUP_L_000`**, insert the code snippet provided below (🟡📄).
 
 
     <details>
