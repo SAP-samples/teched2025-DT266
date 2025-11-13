@@ -91,23 +91,34 @@ We outline how to logon to the system and how to access your package for these e
 
 
 ### Download the ABAP Flight Reference Scenario into the system
+The session material is based on the ABAP Flight Reference Scenario. Therefore downloading and installing it in the system is a mandatory prerequisite. To do so, proceed as follows:
 
-#### Download
+- Go to the repository of the ABAP Flight Scenario: https://github.com/SAP-samples/abap-platform-refscen-flight/tree/ABAP-platform-cloud
+- Dowonload and activate it to your system if not already installed as described in the following readme: https://github.com/SAP-samples/abap-platform-refscen-flight/blob/ABAP-platform-cloud/README.md
+- Run the data generator of the package according to the readme
 
-#### Activate
-
-### Generate Data
 
 ### Download the Session materials into the system
+The sessions code is located in this github. After installing the Flight Reference Scenario as described above, you can install the session material code:
 
-#### Download
+#### Link and clone
+- create an ABAP package in your system called `ZDT266_000`
+- link the package like the flight reference scenario with this repository
+- pull the content from github
 
 #### Activate
+A mass-activation of the sources is currently not possible. The activation has to be executed in the following steps:
 
-#### Generate Data
+- Click Mass Activate and select all Tables, DDLs Sources and Data Model related artifacts, let the activation run
+- Click Mass Activate and select all Behavior related sources, like BDEFs and Behavior Pool classes
+- Click Mass Activate and activate the rest of the artifacts
+
+
+#### Run the Data Generators
 
 
 
+#### Get an overview 
 All the ABAP code and database tables to change are in:
 - one exercise package with your suffix `ZDT266_###` 
 - in this package we have an extended RAP Model with several runtime and application errors and performance issues to analyze and to implement solutions. 
