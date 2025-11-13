@@ -89,28 +89,28 @@ In the first section we explain the usage of this Tool to discover the performan
      > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
 
 
-      
-        @EndUserText.label : 'Large Supplement Table'
-        @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
-        @AbapCatalog.tableCategory : #TRANSPARENT
-        @AbapCatalog.deliveryClass : #A
-        @AbapCatalog.dataMaintenance : #RESTRICTED
-        define table zdt266_sup_l_000 {
 
-          key client            : abap.clnt not null;
-          key supplement_id     : /dmo/supplement_id not null;
-          key id                : int4 not null;
-          supplement_category   : /dmo/supplement_category;
-          @Semantics.amount.currencyCode : 'zdt266_sup_l_000.currency_code'
-          price                 : /dmo/supplement_price;
-          currency_code         : /dmo/currency_code;
-          local_created_by      : abp_creation_user;
-          local_created_at      : abp_creation_tstmpl;
-          local_last_changed_by : abp_locinst_lastchange_user;
-          local_last_changed_at : abp_locinst_lastchange_tstmpl;
-          last_changed_at       : abp_lastchange_tstmpl;
+      @EndUserText.label : 'Large Supplement Table'
+      @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+      @AbapCatalog.tableCategory : #TRANSPARENT
+      @AbapCatalog.deliveryClass : #A
+      @AbapCatalog.dataMaintenance : #RESTRICTED
+      define table zdt266_sup_l_000 {
 
-        }
+        key client            : abap.clnt not null;
+        key supplement_id     : /dmo/supplement_id not null;
+        key id                : int4 not null;
+        supplement_category   : /dmo/supplement_category;
+        @Semantics.amount.currencyCode : 'zdt266_sup_l_000.currency_code'
+        price                 : /dmo/supplement_price;
+        currency_code         : /dmo/currency_code;
+        local_created_by      : abp_creation_user;
+        local_created_at      : abp_creation_tstmpl;
+        local_last_changed_by : abp_locinst_lastchange_user;
+        local_last_changed_at : abp_locinst_lastchange_tstmpl;
+        last_changed_at       : abp_lastchange_tstmpl;
+
+      }
 
 
     </details>
