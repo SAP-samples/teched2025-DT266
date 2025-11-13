@@ -278,6 +278,12 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ 
       Run the class once by pressing **`F9`** or click on 
         <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
 
+      - **Generate the transactional UI Service**:
+        1. Right-click your database table **`ZDT266_CARR_000`** and select **`Generate ABAP Repository Objects`** from the context menu.
+        2. Maintain the required information (### is your group ID) and click Next >:
+           - Description: Travel App ###
+           - Generator: ABAP RESTful Application Programming Model: UI Service
+
 
 
 </details>   
