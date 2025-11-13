@@ -87,7 +87,27 @@ We outline how to logon to the system and how to access your package for these e
    <img src="images/0_Expand_Favorite.png" alt="Expand Favorite" width="50%">   
 
  -----
-### About the ABAP Material
+## 0.2 Getting the scenario into your ABAP system 
+
+
+### Download the ABAP Flight Reference Scenario into the system
+
+#### Download
+
+#### Activate
+
+### Generate Data
+
+### Download the Session materials into the system
+
+#### Download
+
+#### Activate
+
+#### Generate Data
+
+
+
 All the ABAP code and database tables to change are in:
 - one exercise package with your suffix `ZDT266_###` 
 - in this package we have an extended RAP Model with several runtime and application errors and performance issues to analyze and to implement solutions. 
@@ -103,7 +123,7 @@ All the ABAP code and database tables to change are in:
 > Only perform changes in your package `ZDT266_###`. 
 
 
-## Getting Started 0.2: Overview of the Model and ABAP Code
+## Getting Started 0.3: Overview of the Model and ABAP Code
 [^Top of page](#)
 
 > Todays scenario is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).   For an overview of the available database tables, see ABAP Flight Reference Scenario. They are available in the package /DMO/FLIGHT_LEGACY. This package also includes a data generator with which you can fill the database tables.
