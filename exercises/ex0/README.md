@@ -133,7 +133,7 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ 
    When this is finished you can create in a similar way to [``Create Database Table and Generate UI Service``](https://developers.sap.com/tutorials/abap-environment-rap100-generate-ui-service.html) a copy of /DMO/CARRIER with the name `ZDT266_CARR_000` and generated a UI service:
 
  <details>
-  <summary>🔵 Click to expand for Creation of UI Service</summary>
+  <summary>🔵 Click to expand for required Creation of UI Service</summary>
 
   1. Create  the database table ![ ](../images/adt_tabl.png)**`ZDT266_CARR_000`**: <br>
       Navigate in your package **`ZDT266_###`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Dictionary` > `Database Tables` and right-click on `Database Tables` and select **`New Database Table`** <br>
@@ -162,24 +162,24 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ 
   
   
 
-               @EndUserText.label : 'Carrier in Fligth Model'
-               @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
-               @AbapCatalog.tableCategory : #TRANSPARENT
-               @AbapCatalog.deliveryClass : #A
-               @AbapCatalog.dataMaintenance : #RESTRICTED
-               define table zdt266_carr_000 {
+         @EndUserText.label : 'Carrier in Fligth Model'
+         @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+         @AbapCatalog.tableCategory : #TRANSPARENT
+         @AbapCatalog.deliveryClass : #A
+         @AbapCatalog.dataMaintenance : #RESTRICTED
+         define table zdt266_carr_000 {
 
-               key client            : abap.clnt not null;
-               key carrier_id        : /dmo/carrier_id not null;
-               name                  : /dmo/carrier_name;
-               currency_code         : /dmo/currency_code;
-               local_created_by      : abp_creation_user;
-               local_created_at      : abp_creation_tstmpl;
-               local_last_changed_by : abp_locinst_lastchange_user;
-               local_last_changed_at : abp_locinst_lastchange_tstmpl;
-               last_changed_at       : abp_lastchange_tstmpl;
+         key client            : abap.clnt not null;
+         key carrier_id        : /dmo/carrier_id not null;
+         name                  : /dmo/carrier_name;
+         currency_code         : /dmo/currency_code;
+         local_created_by      : abp_creation_user;
+         local_created_at      : abp_creation_tstmpl;
+         local_last_changed_by : abp_locinst_lastchange_user;
+         local_last_changed_at : abp_locinst_lastchange_tstmpl;
+         last_changed_at       : abp_lastchange_tstmpl;
 
-               }
+         }
   
 
   
