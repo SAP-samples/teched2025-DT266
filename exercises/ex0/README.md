@@ -189,7 +189,7 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ 
       Activate the table by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
   
   
-   2. Fill the table **`ZDT266_CARR_000`** by the class ![ ](../images/adt_class.png)**`zcl_dt266_gen_carr_000`**:
+   2. Fill the database table ![ ](../images/adt_tabl.png)**`ZDT266_CARR_000`** by the class ![ ](../images/adt_class.png)**`zcl_dt266_gen_carr_000`**:
   
       Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Source Code Library` > `Classes` and right-click on `Classes` and select **`New ABAP Class`**: <br>
       <kbd><img src="../images/Create_Class.png" alt="generate UI service" width="65%"></kbd>
@@ -278,11 +278,12 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ 
       Run the class once by pressing **`F9`** or click on 
         <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
 
-      - **Generate the transactional UI Service**:
-        1. Right-click your database table **`ZDT266_CARR_000`** and select **`Generate ABAP Repository Objects`** from the context menu.
-        2. Maintain the required information (### is your group ID) and click Next >:
-           - Description: Travel App ###
-           - Generator: ABAP RESTful Application Programming Model: UI Service
+  3. **Generate the transactional UI Service**:
+      - Right-click your database table ![ ](../images/adt_tabl.png)**`ZDT266_CARR_000`** and select **`Generate ABAP Repository Objects`** from the context menu. <br>
+        <kbd><img src="../images/Gen_UI_Service_1.png" alt="generate UI service" width="65%"></kbd>
+      - Maintain the required information (### is your group ID) and click Next >:
+         - Description: Travel App ###
+         - Generator: ABAP RESTful Application Programming Model: UI Service
 
 
 
@@ -306,7 +307,7 @@ We use in the Exercises the following tables:
 |/DMO/CONNECTION| Connections of the Carriers | 20 rows: Combinations of Carrier & Connection | CLIENT, CARRIER_ID, CONNECTION_ID | |
 |/DMO/BOOKING | Booking IDs and travel IDs for each combination of carrer and connection | 9161 rows | CLIENT, TRAVEL_ID, BOOKING_ID | CARRIER_ID, CONNECTION_ID, FLIGHT_PRICE |
 |/DMO/BOOK_SUPPL | Supplements like meal, beverage, luggage | 16211 entries | CLIENT, TRAVEL_ID, BOOKING_ID, BOOKING_SUPPLEMENT_ID | SUPPLEMENT_ID|
-| `ZDT266_BO_SU_000` | _Copy of 10.000 times /DMO/BOOK_SUPPL_ | 162,100,000 entries | CLIENT, TRAVEL_ID, BOOKING_ID, BOOKING_SUPPLEMENT_ID, **ID** (_10,000 different values_) | _used for CDS performance_|
+| `ZDT266_BO_SU_000` | _Copy of 10.000 times /DMO/BOOK_SUPPL_ | 162,110,000 entries | CLIENT, TRAVEL_ID, BOOKING_ID, BOOKING_SUPPLEMENT_ID, **ID** (_10,000 different values_) | _used for CDS performance_|
 | /DMO/SUPPLEMENT | Different kind of Supplements and their categories and prices | 48 entries | CLIENT, SUPPLEMENT_ID | SUPPLEMENT_CATEGORY, PRICE|
 | `ZDT266_SUP_I_###` | _Copy of 500 times /DMO/SUPPLEMENT_ |24,000 entries |  CLIENT, SUPPLEMENT_ID, **ID** (_500 different values_) | _used for ABAP performance_ |
 | `ZDT266_SUP_L_000` | _Copy of 200,000 times /DMO/SUPPLEMENT_ | 9,600,000 entries |  CLIENT, SUPPLEMENT_ID, **ID** (_200,000 different values_) | _used for CDS performance_ |
