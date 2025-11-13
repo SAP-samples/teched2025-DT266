@@ -94,7 +94,7 @@ We outline how to logon to the system and how to access your package for these e
 The session material is based on the ABAP Flight Reference Scenario. Therefore downloading and installing it in the system is a mandatory prerequisite. To do so, proceed as follows:
 
 - Go to the repository of the ABAP Flight Scenario: https://github.com/SAP-samples/abap-platform-refscen-flight/tree/ABAP-platform-cloud
-- Dowonload and activate it to your system if not already installed as described in the following readme: https://github.com/SAP-samples/abap-platform-refscen-flight/blob/ABAP-platform-cloud/README.md
+- Download and activate it to your system if not already installed as described in the following readme: https://github.com/SAP-samples/abap-platform-refscen-flight/blob/ABAP-platform-cloud/README.md
 - Run the data generator of the package according to the readme
 
 
