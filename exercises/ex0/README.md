@@ -213,14 +213,14 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ 
   
 
    
-            CLASS zcl_dt266_gen_carr_000 DEFINITION
-            PUBLIC
+           CLASS zcl_dt266_gen_carr_000 DEFINITION
+           PUBLIC
             FINAL
             CREATE PUBLIC .
 
-            PUBLIC SECTION.
+           PUBLIC SECTION.
 
-               INTERFACES if_oo_adt_classrun.
+             INTERFACES if_oo_adt_classrun.
             PROTECTED SECTION.
             PRIVATE SECTION.
             ENDCLASS.
@@ -240,11 +240,10 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ 
                i = 0.
                DO 1 TIMES.
                group_id = i.
-            *   clear data
+
                table_name = |zdt266_carr_00{ group_id }|.
 
-            *   clear data
-            *    DELETE FROM zdt266_carr_000.
+
                   DELETE FROM (table_name).
 
                   "insert travel demo data
