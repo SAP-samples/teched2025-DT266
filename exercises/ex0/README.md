@@ -132,14 +132,14 @@ Afterwards run two of the Data Generators:
   
    Navigate in your package `ZDT266_000` to `ZDT266_000` > `Source Code Library` > `Classes`. <br> 
      
-   Run the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_CARR_000`** once by pressing **`F9`** or click on <br>
+   Run the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_CARR_000`** once by pressing **`F9`**.
    
 
 2. Fill the database table ![ ](../images/adt_tabl.png)**`ZDT266_SUP_I_000`** by the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_SUP_I_000`**:
   
    Navigate in your package `ZDT266_000` to `ZDT266_000` > `Source Code Library` > `Classes`. <br> 
      
-   Run the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_SUP_I_000`** once by pressing **`F9`** or click on <br>
+   Run the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_SUP_I_000`** once by pressing **`F9`**.
    
 
 
