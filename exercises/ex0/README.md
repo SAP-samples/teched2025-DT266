@@ -181,7 +181,7 @@ In our example we want to provide a list of Airline IDs = Carrier_Id(s) for whic
 
 <kbd><img src="images/Intro_App.png" alt="Open ABAP Trace Requests" width="100%"></kbd>
 
-The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
+The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
 
 <!--
 > 🟠 _**REMARK:**_ Prerequisite is that you have implemented and activated the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight) and filled the demo database tables with sample business data: 
@@ -372,7 +372,7 @@ We use in the Exercises the following tables:
 |/DMO/BOOK_SUPPL | Supplements like meal, beverage, luggage | 16211 entries | CLIENT, TRAVEL_ID, BOOKING_ID, BOOKING_SUPPLEMENT_ID | SUPPLEMENT_ID|
 | `ZDT266_BO_SU_000` | _Copy of 10.000 times /DMO/BOOK_SUPPL_ | 162,110,000 entries | CLIENT, TRAVEL_ID, BOOKING_ID, BOOKING_SUPPLEMENT_ID, **ID** (_10,000 different values_) | _used for CDS performance_|
 | /DMO/SUPPLEMENT | Different kind of Supplements and their categories and prices | 48 entries | CLIENT, SUPPLEMENT_ID | SUPPLEMENT_CATEGORY, PRICE|
-| `ZDT266_SUP_I_###` | _Copy of 500 times /DMO/SUPPLEMENT_ |24,000 entries |  CLIENT, SUPPLEMENT_ID, **ID** (_500 different values_) | _used for ABAP performance_ |
+| `ZDT266_SUP_I_000` | _Copy of 500 times /DMO/SUPPLEMENT_ |24,000 entries |  CLIENT, SUPPLEMENT_ID, **ID** (_500 different values_) | _used for ABAP performance_ |
 | `ZDT266_SUP_L_000` | _Copy of 200,000 times /DMO/SUPPLEMENT_ | 9,600,000 entries |  CLIENT, SUPPLEMENT_ID, **ID** (_200,000 different values_) | _used for CDS performance_ |
 
 
@@ -385,13 +385,13 @@ We use in the Exercises the following tables:
  In a similar way to [``Create Database Table and Generate UI Service``](https://developers.sap.com/tutorials/abap-environment-rap100-generate-ui-service.html) 
  we have created a copy of /DMO/CARRIER with the name `ZDT266_CARR_000` and generated a UI service.
 
- Following [``Using Virtual Elements in CDS Projection Views``](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/319380e0cef94051ae9aa292ffadb59a.html?version=201909.latest&q=ObjectModel.filter.transformedBy) we created ``Virtual Elements`` declared in the CDS projection view ``ZC_DT266_CARR_###`` created in the previous step:
+ Following [``Using Virtual Elements in CDS Projection Views``](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/319380e0cef94051ae9aa292ffadb59a.html?version=201909.latest&q=ObjectModel.filter.transformedBy) we created ``Virtual Elements`` declared in the CDS projection view ``ZC_DT266_CARR_000`` created in the previous step:
  
  <img src="images/Virtual_Element.png" alt="Open ABAP Trace Requests" width="80%">
 
- They shall be calulated in the custom extension class _`ZCL_DT266_CARR_EXTENSION_###`_.
+ They shall be calulated in the custom extension class _`ZCL_DT266_CARR_EXTENSION_000`_.
  
- In this class _`ZCL_DT266_CARR_EXTENSION_###`_ two interface methods have to be created (refer to [``Implementing the Calculation of Virtual Elements``](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/c65942c284dd490a9c3791630d4d4e41.html?version=201909.latest&q=ObjectModel.filter.transformedBy)):
+ In this class _`ZCL_DT266_CARR_EXTENSION_000`_ two interface methods have to be created (refer to [``Implementing the Calculation of Virtual Elements``](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/c65942c284dd490a9c3791630d4d4e41.html?version=201909.latest&q=ObjectModel.filter.transformedBy)):
 
  - IF_SADL_EXIT_CALC_ELEMENT_READ~GET_CALCULATION_INFO
  - IF_SADL_EXIT_CALC_ELEMENT_READ~CALCULATE
