@@ -109,7 +109,7 @@ The session material is based on the ABAP Flight Reference Scenario. Therefore d
 
 
 ### Download the Session materials into the system
-The sessions code is located in this [_github_](../src). After installing the Flight Reference Scenario as described above, you can install the session material code:
+The sessions code is located in this [github](/src). After installing the Flight Reference Scenario as described above, you can install the session material code:
 
 #### Link and clone
 - create an ABAP package in your system called `ZDT266_000`
