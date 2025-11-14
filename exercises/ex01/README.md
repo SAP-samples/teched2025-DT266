@@ -52,7 +52,7 @@ Finally we solve the issue by a small change of ABAP code.
 
       | Call of the Fiori App | Details |
       |---|---|
-      | <img src="images/Navigate_to_Preview.png" alt="generate UI service" width="3000">| Navigate to `APB_EN` > `Favorite Packages` > `ZLOCAL` > `ZDT266` > `ZDT266_`**`###`** <br> (**`###`** should be replaced by your suffix) <br> > `Business Services` > **`Service Bindings`**. <br> <br> Double-click on **`ZUI_DT266_CARR_###_O4`**.  |
+      | <img src="images/Navigate_to_Preview.png" alt="generate UI service" width="3000">| Navigate to `APB_EN` > `Favorite Packages` > `ZLOCAL` > `ZDT266` > `ZDT266_`**`000`**  <br> > `Business Services` > **`Service Bindings`**. <br> <br> Double-click on **`ZUI_DT266_CARR_000_O4`**.  |
       | <img src="images/Show_Preview.png" alt="generate UI service" width="100%"> | In the new screen click on **`Preview...`**|
 
       - Run the Fiori App first for **Airline ID = 'AA'** by entering the ID and clicking on **`Go`** where you get a reponse:
@@ -134,7 +134,7 @@ Finally we solve the issue by a small change of ABAP code.
 
         The call stack in the figure above shows 
         - that the dump is finally written by the **`SADL framework`** in class `CL_SADL_SHORTDUMP` and 
-        - that this dump creation is triggered by an exception in the method `GET_PRICES_ABAP` of class `ZCL_DT266_CARR_EXTENSION_###`.  
+        - that this dump creation is triggered by an exception in the method `GET_PRICES_ABAP` of class `ZCL_DT266_CARR_EXTENSION_000`.  
         
         🟠 _**REMARK:**_ It is usually important to focus on the first coding from an API or application code and not to focus on the framework exception handling (_here:_ the SADL framework in class `CL_SADL_...`)
       
