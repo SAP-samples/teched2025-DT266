@@ -67,6 +67,24 @@ In the first section we explain the usage of this Tool to discover the performan
    
     We are done with this exercise 5.1. Below is just some further information on the involved CDS views and ABAP coce.
 
+
+ 3. Run the Data Generators
+    
+    Afterwards run two of the Data Generators:
+    
+    - Fill the database table ![ ](../images/adt_tabl.png)**`ZDT266_BO_SU_000`** by the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_BOOK_SUP_L_000`**:
+      - Navigate in your package `ZDT266_000` to `ZDT266_000` > `Source Code Library` > `Classes`. 
+      - Run the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_BOOK_SUP_L_000`** once by pressing **`F9`** or click on <br>
+        <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
+        > 🟠 **Remark:** To avoid timeout: Set a breakpoint in line 48 of class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_BOOK_SUP_L_000`** before running the class. By this the timer for the time out is reset. Each of the 5 times you reach the Breakpoint press F8. 
+        
+
+    - Fill the database table ![ ](../images/adt_tabl.png)**`ZDT266_SUP_L_000`** by the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_SUP_L_000`**:
+      - Navigate in your package `ZDT266_000` to `ZDT266_000` > `Source Code Library` > `Classes`. <br> 
+      - Run the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_SUP_L_000`** once by pressing **`F9`** or click on <br>
+        <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
+
+<!--
  3. Create  the database table ![ ](../images/adt_tabl.png)**`ZDT266_SUP_L_000`**: <br>
     Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_000` > `Dictionary` > `Database Tables` and right-click on `Database Tables` and select **`New Database Table`**: <br>
     <kbd><img src="../images/Create_DB_Table.png" alt="generate UI service" width="65%"></kbd>
@@ -373,6 +391,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
 
 </details>
+-->
 
  We are done with this exercise 5.1. Below is just some further information on the involved CDS views and ABAP code.
 
