@@ -28,7 +28,7 @@ Here we learn to create an `SQL trace` and analyze the `execution plan` in the `
 >   - [teched_fast.plv](../teched_fast.plv)
 
 
-In the first section we explain the usage of this Tool to discover the performance issues in our custom extension in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ in method _`GET_PRICES_CDS`_. 
+In the first section we explain the usage of this Tool to discover the performance issues in our custom extension in the ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_ in method _`GET_PRICES_CDS`_. 
 
 
 ### Optional Exercises
@@ -57,7 +57,7 @@ In the first section we explain the usage of this Tool to discover the performan
   <summary>🔵 Click to expand!</summary>
 
  
- 1. Ensure that in you implementation class **`ZCL_DT266_CARR_EXTENSION_###`** ![class](images/adt_class.png)  the interface method **`IF_SADL_EXIT_CALC_ELEMENT_READ~CALCULATE`** calls the method **`get_prices_CDS`** instead of method **`get_prices_ABAP`**:
+ 1. Ensure that in you implementation class **`ZCL_DT266_CARR_EXTENSION_000`** ![class](images/adt_class.png)  the interface method **`IF_SADL_EXIT_CALC_ELEMENT_READ~CALCULATE`** calls the method **`get_prices_CDS`** instead of method **`get_prices_ABAP`**:
 
     | Change of Code| |
     |---|---|
@@ -68,7 +68,7 @@ In the first section we explain the usage of this Tool to discover the performan
     We are done with this exercise 5.1. Below is just some further information on the involved CDS views and ABAP coce.
 
  3. Create  the database table ![ ](../images/adt_tabl.png)**`ZDT266_SUP_L_000`**: <br>
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Dictionary` > `Database Tables` and right-click on `Database Tables` and select **`New Database Table`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_000` > `Dictionary` > `Database Tables` and right-click on `Database Tables` and select **`New Database Table`**: <br>
     <kbd><img src="../images/Create_DB_Table.png" alt="generate UI service" width="65%"></kbd>
 
     And in the pop-up: 
@@ -120,7 +120,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
  4. Fill the table **`ZDT266_SUP_L_000`** by the class ![ ](../images/adt_class.png)**`zcl_dt266_gen_sup_l_000`**:
 
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Source Code Library` > `Classes` and right-click on `Classes` and select **`New ABAP Class`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_000` > `Source Code Library` > `Classes` and right-click on `Classes` and select **`New ABAP Class`**: <br>
     <kbd><img src="../images/Create_Class.png" alt="generate UI service" width="65%"></kbd>
     
     And in the pop-up: 
@@ -202,7 +202,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
  5. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_BOOK_SUPPL`**:
 
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_000` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
     <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
     
     And in the pop-up: 
@@ -241,7 +241,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
  6. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_PRICE_000`**:
 
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_000` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
     <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
     
     And in the pop-up: 
@@ -289,7 +289,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
  7. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_PRICE_FLIGHT`**:
 
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_000` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
     <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
     
     And in the pop-up: 
@@ -330,7 +330,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
  8. Create the  Data Definition ![ ](../images/adt_ddls.png)**`Z_I_SUPPL`**:
 
-    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
+    Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_000` > `Core Data Services` > `Data Definitions` and right-click on `Data Definitions` and select **`New Data Definition`**: <br>
     <kbd><img src="../images/Create_DDLS.png" alt="generate UI service" width="65%"></kbd>
     
     And in the pop-up: 
@@ -379,12 +379,12 @@ In the first section we explain the usage of this Tool to discover the performan
  <details>
   <summary>🟠 Additional background information. </summary>
     
-  In the method **`get_prices_CDS`** of **`ZCL_DT266_CARR_EXTENSION_###`**:  
+  In the method **`get_prices_CDS`** of **`ZCL_DT266_CARR_EXTENSION_000`**:  
   - after the data declarations:
     
     <kbd><img src="images/SC_DATA_declare.png" alt="generate UI service" width="35%"></kbd>
 
-  - we have the 2 Selects from the CDS views **`Z_I_PRICE_###`** and **`Z_I_PRICE_FLIGHT`** 
+  - we have the 2 Selects from the CDS views **`Z_I_PRICE_000`** and **`Z_I_PRICE_FLIGHT`** 
     - to get the supplements and flight priceses for specific carrier 
     - all the totals of the prices for each carrier we calculate in those CDS views
 
@@ -400,7 +400,7 @@ In the first section we explain the usage of this Tool to discover the performan
     
       <kbd><img src="images/SC_fill_output.png" alt="generate UI service" width="70%"></kbd>
 
-  The JOIN of the tables and the calculation of the totals of the prices we have pushed into the CDS views: **`Z_I_PRICE_FLIGHT`** and **`Z_I_PRICE_###`**:
+  The JOIN of the tables and the calculation of the totals of the prices we have pushed into the CDS views: **`Z_I_PRICE_FLIGHT`** and **`Z_I_PRICE_000`**:
   <table>
       <tr>
           <td><img src="images/Expensive_Z_I_PRICE.png" alt="generate UI service" width="100%"></td>
@@ -408,7 +408,7 @@ In the first section we explain the usage of this Tool to discover the performan
       </tr>
   </table>
 
-  where **`Z_I_PRICE_###`** calls 2 other CDS views **`Z_I_BOOK_SUPPL`** and **`Z_I_SUPPL`**:
+  where **`Z_I_PRICE_000`** calls 2 other CDS views **`Z_I_BOOK_SUPPL`** and **`Z_I_SUPPL`**:
 
   <table>
       <tr>
@@ -427,7 +427,7 @@ In the first section we explain the usage of this Tool to discover the performan
 > [!NOTE] 
 > **This exercise is optional and only one active SQL trace on a system is possible.** <br>
 
-> In an `ABAP Trace` you would just see a runtime of about 9 seconds and that most time is for a database statement: **`Open Z_I_PRICE_###`**. But no further details are shown... <br>
+> In an `ABAP Trace` you would just see a runtime of about 9 seconds and that most time is for a database statement: **`Open Z_I_PRICE_000`**. But no further details are shown... <br>
 > **For performance investigation of the CDS views we need an `SQL trace` and analyze it in the `SQL Analyzer`.**
 
 
@@ -634,7 +634,7 @@ In the first section we explain the usage of this Tool to discover the performan
   <summary>🔵 Click to expand!</summary>
 
  
- 1. Open the CDS view **`Z_i_PRICE_###`** and define the ID without any calculation. So we have to change: 
+ 1. Open the CDS view **`Z_i_PRICE_000`** and define the ID without any calculation. So we have to change: 
     - Mark line 14  and comment it by pressing **`Ctrl+<`**
     - Mark line 15 and remove the comment by pressing **`Ctrl+>`**.
 
