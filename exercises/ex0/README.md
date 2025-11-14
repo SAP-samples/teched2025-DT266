@@ -109,10 +109,10 @@ The session material is based on the ABAP Flight Reference Scenario. Therefore d
 
 
 ### Download the Session materials into the system
-The sessions code is located in this [github](/src). After installing the Flight Reference Scenario as described above, you can install the session material code:
+After installing the Flight Reference Scenario as described above, you can install the session material code (The sessions code is located in this [github](/src)): 
 
 #### Link and clone
-- create an ABAP package in your system called `ZDT266_000`
+- create an ABAP package in your system called `ZDT266_000` (see [Creating ABAP packages](https://help.sap.com/docs/abap-cloud/abap-development-tools-user-guide/creating-abap-packages) )
 - link the package like the flight reference scenario with this repository
 - pull the content from github
 
@@ -126,7 +126,96 @@ A mass-activation of the sources is currently not possible. The activation has t
 
 #### Run the Data Generators
 
-tbd
+Afterwards run two of the Data Generators:
+
+1. Fill the database table ![ ](../images/adt_tabl.png)**`ZDT266_CARR_000`** by the class ![ ](../images/adt_class.png)**`zcl_dt266_gen_carr_000`**:
+  
+      Navigate in your package **`ZDT266_000`** to `Favorite Packages` >  `ZLOCAL` > `ZDT266` > `ZDT266_###` > `Source Code Library` > `Classes` and right-click on `Classes` and select **`New ABAP Class`**: <br>
+      <kbd><img src="../images/Create_Class.png" alt="generate UI service" width="65%"></kbd>
+      Or right-click on your ABAP package **`ZDT266_###`** and select `New` > `ABAP Class` from the context menu. 
+      <br/><kbd><img src="images/Create_Carrier_Copy_2.png" alt="base BO view" width="60%"></kbd> <br>
+      
+      And in the pop-up: <br/><kbd><img src="images/Create_Carrier_Copy_3.png" alt="base BO view" width="60%"></kbd> <br>
+
+      <br>Enter the following values
+      
+      - Name: **`ZCL_DT266_GEN_CARR_000`** 
+      - Description: **`Generate Carrier Table Content`**
+  
+      Delete the complete template in new class **`ZCL_DT266_GEN_CARR_000`**, insert the code snippet provided below (🟡📄).
+      and replace all the source code there with:
+  
+      <details>
+       <summary>🟡📄Click to expand and replace the source code!</summary>
+  
+        > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
+  
+
+   
+           CLASS zcl_dt266_gen_carr_000 DEFINITION
+           PUBLIC
+            FINAL
+            CREATE PUBLIC .
+
+           PUBLIC SECTION.
+
+             INTERFACES if_oo_adt_classrun.
+            PROTECTED SECTION.
+            PRIVATE SECTION.
+            ENDCLASS.
+
+
+
+            CLASS ZCL_DT266_GEN_CARR_000 IMPLEMENTATION.
+
+
+            METHOD if_oo_adt_classrun~main.
+               DATA:
+                  group_id   TYPE string VALUE '000',
+                  table_name TYPE tabname,
+                  i          TYPE i.
+
+
+               i = 0.
+               DO 1 TIMES.
+               group_id = i.
+
+               table_name = |zdt266_carr_00{ group_id }|.
+
+
+                  DELETE FROM (table_name).
+
+                  "insert travel demo data
+                  INSERT (table_name)  FROM (
+                     SELECT
+                        FROM /dmo/carrier AS carr
+                        FIELDS
+                        carr~carrier_id AS carrier_id,
+                        carr~name AS name,
+                        carr~currency_code AS currency_code,
+                        carr~local_created_by  AS local_created_by,
+                        carr~local_created_at        AS local_created_at,
+                        carr~local_last_changed_by    AS local_last_changed_by,
+                        carr~local_last_changed_at    AS local_last_changed_at,
+                        carr~last_changed_at   AS last_changed_at
+                  ).
+                  COMMIT WORK.
+                  out->write( |[DT266] Demo data generated for table ZDT266_CARR_00{ group_id }. | ).
+
+                  i = i + 1.
+               ENDDO.
+            ENDMETHOD.
+            ENDCLASS.
+
+
+
+  
+      </details>
+  
+      💡 Activate the class by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
+      <br>
+      Run the class once by pressing **`F9`** or click on 
+        <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
 
 
 
