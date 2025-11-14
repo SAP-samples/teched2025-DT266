@@ -6,8 +6,12 @@
 In this section we provide information on how to conduct the exercises and provide an introduction to the model and ABAP code used.
 We outline how to logon to the system and how to access your package for these exercises.  We briefly introduce the Fiori App to use in the exercises.  
 
+<!--
 - [0.1 - About the Session](#getting-started-01-about-the-session)
+-->
+- [0.1 - Getting the scenario into your ABAP system ](#getting-started-01-getting-the-scenario-into-your-ABAP-system)
 - [0.2 - Overview of the Model and ABAP Code](#getting-started-02-overview-of-the-model-and-abap-code)
+
 
 
 ### Summary:  
@@ -15,7 +19,7 @@ We outline how to logon to the system and how to access your package for these e
 
 
 
-
+<!--
 ## Getting Started 0.1: About the Session 
 [^Top of page](#)
 
@@ -86,8 +90,11 @@ We outline how to logon to the system and how to access your package for these e
 
    <img src="images/0_Expand_Favorite.png" alt="Expand Favorite" width="50%">   
 
+-->   
  -----
-## 0.2 Getting the scenario into your ABAP system 
+
+
+## Getting Started 0.1: Getting the scenario into your ABAP system 
 
 
 ### Download the ABAP Flight Reference Scenario into the system
@@ -137,7 +144,7 @@ All the ABAP code and database tables to change are in:
 > Only perform changes in your package `ZDT266_###`. 
 
 
-## Getting Started 0.3: Overview of the Model and ABAP Code
+## Getting Started 0.2: Overview of the Model and ABAP Code
 [^Top of page](#)
 
 > Todays scenario is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).   For an overview of the available database tables, see ABAP Flight Reference Scenario. They are available in the package /DMO/FLIGHT_LEGACY. This package also includes a data generator with which you can fill the database tables.
