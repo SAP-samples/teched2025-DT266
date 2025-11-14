@@ -75,7 +75,8 @@ In the first section we explain the usage of this Tool to discover the performan
       - Navigate in your package `ZDT266_000` to `ZDT266_000` > `Source Code Library` > `Classes`. 
       - Run the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_BOOK_SUP_L_000`** once by pressing **`F9`** or click on <br>
         <kbd><img src="../images/Run_Generator.png" alt="generate UI service" width="65%"></kbd>
-        > 🟠 **Remark:** To avoid timeout: Set a breakpoint in line 48 of class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_BOOK_SUP_L_000`** before running the class. By this the timer for the time out is reset. Each of the 5 times you reach the Breakpoint press F8. 
+        > 🟠 **Remark to avoid timeout:** Set a breakpoint in line 48 of class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_BOOK_SUP_L_000`** before running the class. 
+        >    By this the timer for the time out is reset. Each of the 5 times you reach the Breakpoint press F8. 
         
 
     - Fill the database table ![ ](../images/adt_tabl.png)**`ZDT266_SUP_L_000`** by the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_SUP_L_000`**:
