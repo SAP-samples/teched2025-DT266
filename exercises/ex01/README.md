@@ -9,8 +9,10 @@ In the previous Getting Started Section you've made yourself familiar with the d
 In this exercise we focus on error analysis of runtime errors due to an exception thrown during the processing for specific input data.  Here a specific case is not handled correctly in a single line of ABAP code. You learn to use the `FEED_READER` for error analysis. We will do a further deep dive in the error analyis using the `ABAP Debugger`. 
 Finally we solve the issue by a small change of ABAP code.
 
+<!--
 > [!NOTE]
 > For this use **`ZDT266_###`** ![package](../images/package.png), where **`###`** is your suffix.  
+-->
 
 ### Exercises
 
