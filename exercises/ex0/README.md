@@ -163,7 +163,7 @@ All the ABAP code and database tables to change are in:
 ## Getting Started 0.2: Overview of the Model and ABAP Code
 [^Top of page](#)
 
-> The scenario of these exercises is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).  For an overview of the available database tables, see [``ABAP Flight Reference Scenario``](https://help.sap.com/docs/abap-cloud/abap-rap/abap-flight-reference-scenario). 
+> The scenario of these exercises is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).  For an overview of the available database tables, see [``ABAP Flight Reference Scenario Database Tables``](https://help.sap.com/docs/abap-cloud/abap-rap/abap-flight-reference-scenario). 
 
 
 In our example we want to provide a list of Airline IDs = Carrier_Id(s) for which we get in the result list additional column fields calculated by customer extension:
@@ -183,6 +183,7 @@ In our example we want to provide a list of Airline IDs = Carrier_Id(s) for whic
 
 The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
 
+<!--
 > 🟠 _**REMARK:**_ Prerequisite is that you have implemented and activated the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight) and filled the demo database tables with sample business data: 
 1. Expand the package structure in the Project Explorer `/DMO/FLIGHT_LEGACY` > `Source Code Library` > `Classes`.
 2. Select the data generator class `/DMO/CL_FLIGHT_DATA_GENERATOR` and press `F9` (Run as Console Application). 
@@ -346,7 +347,12 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ 
 
 </details>   
 
-   🟠 _**REMARK:**_ The following overviews are only optional information. This is **not required** to execute the exercises. We recommend to skip reading this additional information and directly continue with [Exercise 1](../ex01/README.md).
+-->
+
+   🟠 _**REMARK:**_ The following overviews are only optional information. This is **not required** to execute the exercises. 
+   <!--
+   We recommend to skip reading this additional information and directly continue with [Exercise 1](../ex01/README.md).
+   -->
 
 More details on the involved underlying Data Model:
 
