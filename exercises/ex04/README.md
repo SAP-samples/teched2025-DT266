@@ -9,7 +9,7 @@
 > - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
 > - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
 >
-> **In case they are not yet implemented a code snippet is provided below to speed up the process:** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+> **In case they are not yet implemented a code snippet is provided below to speed up the process:** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_000`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
      
    <details>
      <summary>🟡📄Click to expand and replace the source code if not performed the previous exercises!</summary>
@@ -634,10 +634,12 @@ the _ABAP Trace Tool_ (also called _ABAP Profiler Tool_) is a generic tool to an
 - the program flow, which is useful when you are trying to understand a problem or learn about code you need to analyze or maintain.
 
 
-In the first section we explain the usage of this Tool to discover all the performance issues in our custom extension in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ in method _`GET_PRICES_ABAP`_. 
+In the first section we explain the usage of this Tool to discover all the performance issues in our custom extension in the ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_ in method _`GET_PRICES_ABAP`_. 
 
+<!--
 > [!Note]
 > For this use **`ZDT266_###`** ![package](../images/package.png), where **`###`** is your suffix.   
+-->
 
 ### Exercises
 
@@ -835,11 +837,11 @@ So let us start with improving the runtime in the following exercises._
 
 
 
-**In this exercise enable `Full Table Buffering` for table `ZDT266_SUP_I_###`**.
+**In this exercise enable `Full Table Buffering` for table `ZDT266_SUP_I_000`**.
 
 
-> In the previous exercise 4.1 we have identified long runtime for DB accesses to table **`ZDT266_SUP_I_###`** (_labeled as 2. and 3._).
-> - This database table **`ZDT266_SUP_I_###`** is just a master table containing only the different types of supplements and their categories and prices. 
+> In the previous exercise 4.1 we have identified long runtime for DB accesses to table **`ZDT266_SUP_I_000`** (_labeled as 2. and 3._).
+> - This database table **`ZDT266_SUP_I_000`** is just a master table containing only the different types of supplements and their categories and prices. 
 > - As this table rareley changes it is an optimal candidate for table buffering. 
 
 > [!IMPORTANT]    
@@ -847,25 +849,26 @@ So let us start with improving the runtime in the following exercises._
 > - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
 > - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
 
-**Alternatively, you can implement the code snippet provided above at the beginning of exercise 4 to speed up the process:** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided above (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+**Alternatively, you can implement the code snippet provided above at the beginning of exercise 4 to speed up the process:** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_000`**, insert the code snippet provided above (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
 
 
  <details>
   <summary>🔵 Click to expand!</summary>
    
-   In this exercise we turn on **Table Buffering** for table **`ZDT266_SUP_I_###`** used in two different selects (_labeled with 2. and 3._) in the figure below:  
+   In this exercise we turn on **Table Buffering** for table **`ZDT266_SUP_I_000`** used in two different selects (_labeled with 2. and 3._) in the figure below:  
 
    <img src="images/4_Parts_2_3.png" alt="Open ABAP Trace Requests" width="55%">
 
-   1. **Activate Table Buffering for table  `ZDT266_SUP_I_###`:** 
+   1. **Activate Table Buffering for table  `ZDT266_SUP_I_000`:** 
 
-      - Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`###`** > `Dictionary`> `Database Tables` > <br> `ZDT266_SUP_I_`**`###`** >  `Technical Table Settings` > `ZDT266_SUP_I_`**`###`** 
-      
+      - Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`000`** > `Dictionary`> `Database Tables` > <br> `ZDT266_SUP_I_`**`000`** >  `Technical Table Settings` > `ZDT266_SUP_I_`**`000`** 
+      <!--
         - _where **`###`** is your suffix._
+      <-->  
 
         <kbd><img src="images/Activate_Table_Buffer.png" alt="Open ABAP Trace Requests" width="100%"></kbd>  
       
-      - Then double-click on `ZDT266_SUP_I_`**`###`** and change the settings for **`Buffering`**: 
+      - Then double-click on `ZDT266_SUP_I_`**`000`** and change the settings for **`Buffering`**: 
         - Change first for `State`: From **`Buffering not allowed`** change to **`Buffering switched on`** 
         - Afterwards change for `Type`: From **`No buffering`** change to **`Full table is passed to buffer`**.       
         - ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
@@ -894,13 +897,13 @@ So let us start with improving the runtime in the following exercises._
 
       **Comparison of Traces:**
 
-      | The DB Select (_labeled as 2._) on the table **`ZDT266_SUP_I_###`** | The 3 blocks of DB selects (_labeled as 3._) on the same table |
+      | The DB Select (_labeled as 2._) on the table **`ZDT266_SUP_I_000`** | The 3 blocks of DB selects (_labeled as 3._) on the same table |
       |---|---|
       | **Before buffering (for label 2):** <ul> <li>  shown in orange color (as DB access) </li> <li> taking ~1.5 s </li> </ul> | **Before buffering (for label 3):**  <ul> <li> shown in orange color (as DB access) </li> <li> each taking 0.2 s - 0.6 s </li> </ul> |
       | <img src="images/Buffer_Compare2.png" alt="Open ABAP Trace Requests" width="1700"> | <img src="images/Buffer_Compare3.png" alt="Open ABAP Trace Requests" width="1500"> |
       | **After buffering (for label 2):** <ul> <li> shown in grey (as other access: Table Buffer) </li> <li> **Now only taking ~0.005 s instead of ~1.5 s** </li> </ul>  | **After buffering (for label 3):** <ul> <li> shown in grey (as other access: Table Buffer) </li> <li> ℹ️ **Now each taking 1.2 s - 1.7 s instead of 0.2 - 0.6 s** </li> </ul> |
       | **Source Code for 2.:** <br> <img src="images/Code2.png" alt="Open ABAP Trace Requests" width="100%"> | **Source Code for 3.:** <br> <img src="images/Code3.png" alt="Open ABAP Trace Requests" width="100%">|
-      | The source code is: <br> `WHERE `**`supplement_id`**`= ... AND id = ...`, <br> containing all the **key fields** of the table **`ZDT266_SUP_I_###`**: <ul> <li> `supplement_id` and `id` </li> </ul> <br> | The source code is: <br> `WHERE`**`supplement_category`**`= ... AND id = ...` <br> _Here:_ A **key field** of the table **`ZDT266_SUP_I_###`** is missing:  <ul> <li> ℹ️ The key field **`supplement_id` is missing** </li> <li> Instead `supplement_category` is used  </li>  </ul> |
+      | The source code is: <br> `WHERE `**`supplement_id`**`= ... AND id = ...`, <br> containing all the **key fields** of the table **`ZDT266_SUP_I_000`**: <ul> <li> `supplement_id` and `id` </li> </ul> <br> | The source code is: <br> `WHERE`**`supplement_category`**`= ... AND id = ...` <br> _Here:_ A **key field** of the table **`ZDT266_SUP_I_000`** is missing:  <ul> <li> ℹ️ The key field **`supplement_id` is missing** </li> <li> Instead `supplement_category` is used  </li>  </ul> |
       | Key Fields of **`ZDT266_SUP_I_000`** are: <br> <img src="images/key_of_supplement_i.png" alt="Open ABAP Trace Requests" width="80%">| Key Fields of **`ZDT266_SUP_I_000`** are: <br> <img src="images/key_of_supplement_i_not.png" alt="Open ABAP Trace Requests" width="80%">|
       | **Next required step:** <br> No further action required as tabled is ordered by key fields allowing fast access | **Next required step:**  <br> ℹ️**Secondary Index required to support access by other fields** <br> |
 
@@ -947,7 +950,7 @@ So let us start with improving the runtime in the following exercises._
 ## Exercise 4.3: Use Secondary Index & Key to Improve the Performance
 [^Top of page](#)
 
-**In this exercise we create a secondary key for `lt_supplement` and secondary index for table `ZDT266_SUP_I_###` to improve the performance.**
+**In this exercise we create a secondary key for `lt_supplement` and secondary index for table `ZDT266_SUP_I_000` to improve the performance.**
 
 > In the previous exercise 4.2 we have partially improved the runtime just changing settings for buffering.  
 > But accesses to the Table Buffer by different fields as the key fields showed bad performance for larger tables.
@@ -957,7 +960,7 @@ So let us start with improving the runtime in the following exercises._
 > - A similar issue we have for a READ TABLE statement where the table is defined as standard table.  
 
 > Improve by using secondary index / secondary sorted key the performance of both, 
-> - the selects on table **`ZDT266_SUP_I_###`** and 
+> - the selects on table **`ZDT266_SUP_I_000`** and 
 > - the **`READ TABLE lt_supplement ... WHERE supplement_id = ... and id = 1`**.  
 
 
@@ -1019,7 +1022,7 @@ So let us start with improving the runtime in the following exercises._
 
 <br>
 
-1. **First create an additional secondary key for table `LT_SUPPLEMENT` in the method `GET_PRICES_ABAP` of the class `ZCL_DT266_CARR_EXTENSION_###`:**
+1. **First create an additional secondary key for table `LT_SUPPLEMENT` in the method `GET_PRICES_ABAP` of the class `ZCL_DT266_CARR_EXTENSION_000`:**
    
 
    We need a secondary key for the READ TABLE on **`lt_supplement`** with **27,074 rows** (which are **not sorted**) as the statement is called frequently (**3170 times**) due to the outer loops:
@@ -1071,12 +1074,12 @@ So let us start with improving the runtime in the following exercises._
 
 
 
-2. **Next create an additional secondary index for buffered table `ZDT266_SUP_I_###`:**
+2. **Next create an additional secondary index for buffered table `ZDT266_SUP_I_000`:**
 
       | Steps to create Index | Background Information |
       |---|---|
-      |<img src="images/Index1.png" alt="Open ABAP Trace Requests" width="5200">| <ul> <li> Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`###`** > `Dictionary`> `Database Tables` > `ZDT266_SUP_I_`**`###`** <ul><li> where **`###`** is your suffix </li> </ul>  <li> Right-mouse-click on table `ZDT266_SUP_I_###` and click `New Table Index` </li> <li> A pop-up opens. </li></ul>|
-      | <img src="images/Index2.png" alt="generate UI service" width="120%"> |In the pop-up enter: <ul> <li> Package: **`ZDT266_###`** (with your suffix instead of ###) </li> <li> Name: **`ZDT266_SUP_I_###~CAT`** (with your suffix instead of ###)  </li> <li> Description: _Arbitrary e.g. provide there the fields used which are Category and ID_  </li>  </ul> Then click on **`Next`** | 
+      |<img src="images/Index1.png" alt="Open ABAP Trace Requests" width="5200">| <ul> <li> Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`000`** > `Dictionary`> `Database Tables` > `ZDT266_SUP_I_`**`000`** <ul><li> where **`000`** is your suffix </li> </ul>  <li> Right-mouse-click on table `ZDT266_SUP_I_000` and click `New Table Index` </li> <li> A pop-up opens. </li></ul>|
+      | <img src="images/Index2.png" alt="generate UI service" width="120%"> |In the pop-up enter: <ul> <li> Package: **`ZDT266_000`** (with your suffix instead of 000) </li> <li> Name: **`ZDT266_SUP_I_000~CAT`** (with your suffix instead of 000)  </li> <li> Description: _Arbitrary e.g. provide there the fields used which are Category and ID_  </li>  </ul> Then click on **`Next`** | 
       | <img src="images/Index3.png" alt="generate UI service" width="120%"></td>| As we are in local package no transport is required: <br> Directly click on **`Finish`** |
       | <img src="images/Index4.png" alt="generate UI service" width="120%"> | **Provide the index properties:** <ul> <li> As we only want to access the table buffer set the flag for  **`Index on Table Buffer only`**. </li></ul> **Provide the index fields `CLIENT`, `SUPPLEMENT_CATEGORY`, and `ID`:** <ul> <li> Via the **`Add`** Button you have to **add one by one subsequently** the index fields `CLIENT`, `SUPPLEMENT_CATEGORY`, and `ID` _(as only one field can be chosen and added)_ </li></ul>|
 
@@ -1381,7 +1384,7 @@ So let us start with improving the runtime in the following exercises._
     To improve the runtime we use a `FOR ALL ENTRIES` statement replacing the single selects in the LOOP. 
     Via `FOR ALL ENTRIES` the results for the whole list of travel_id & booking_id values (in lt_booking) are retrieved in one or just a few array select.
 
- 2. **Change the code to a `FOR ALL ENTRIES` select in the method `GET_PRICES_ABAP` of the class `ZCL_DT266_CARR_EXTENSION_###`:**   
+ 2. **Change the code to a `FOR ALL ENTRIES` select in the method `GET_PRICES_ABAP` of the class `ZCL_DT266_CARR_EXTENSION_000`:**   
       
      - Comment out the code in lines 162 to 168 (mark them and press **`Ctrl+<`**) and 
      - Remove the comments in lines 170 to 174 (mark them and press **`Ctrl+>`**). 
@@ -1410,7 +1413,7 @@ So let us start with improving the runtime in the following exercises._
        <img src="images/Results_after_FAE.png" alt="generate UI service" width="80%">
  
 
- 5. **Go back to class `ZCL_DT266_CARR_EXTENSION_###` and implement 4 code changes to compare the differences:** 
+ 5. **Go back to class `ZCL_DT266_CARR_EXTENSION_000` and implement 4 code changes to compare the differences:** 
     - **First change (lines 162 to 168):** 
       - To have both (previous and new) selects for comparison, remove the comments in lines 162 to 168 (mark them and press **`Ctrl+>`**):
         <table>
@@ -1615,7 +1618,7 @@ So let us start with improving the runtime in the following exercises._
 > **This exercise is optional.**
 
 
-**Here we analyze 3 options to improve the runtime of a code part with three nested loops in the class `ZCL_DT266_CARR_EXTENSION_###`.**  
+**Here we analyze 3 options to improve the runtime of a code part with three nested loops in the class `ZCL_DT266_CARR_EXTENSION_000`.**  
 > - **Unoptimized:** Three nested `LOOP AT TABLE... WHERE` statements with all tables defined as STANDARD tables.
 > - **Optimizations:**
 > 1. Three nested `LOOP AT TABLE... WHERE` statements with all tables defined as SORTED tables,
@@ -1638,9 +1641,9 @@ So let us start with improving the runtime in the following exercises._
  <details>
   <summary>🔵 Click to expand!</summary>
 
-1. First we replace the current code in about lines 296 to 330 where we have the `READ TABLE` statement (analyzed in previous exercise 4.4) with a `LOOP AT TABLE`statement in the class `ZCL_DT266_CARR_EXTENSION_###`.
+1. First we replace the current code in about lines 296 to 330 where we have the `READ TABLE` statement (analyzed in previous exercise 4.4) with a `LOOP AT TABLE`statement in the class `ZCL_DT266_CARR_EXTENSION_000`.
     
-    For this replacement, go back to class `ZCL_DT266_CARR_EXTENSION_###`,   mark those lines 296 to 330 and press **`Ctrl+<`** to comment them:
+    For this replacement, go back to class `ZCL_DT266_CARR_EXTENSION_000`,   mark those lines 296 to 330 and press **`Ctrl+<`** to comment them:
       <table>
        <tr>
            <td><img src="images/Nested_Loop0.png" alt="generate UI service" width="99%"></td>
@@ -1703,7 +1706,7 @@ So let us start with improving the runtime in the following exercises._
      <br>
     
 
-4. Go back to class `ZCL_DT266_CARR_EXTENSION_###`  and implement code change providing three alternative performance optimizations:
+4. Go back to class `ZCL_DT266_CARR_EXTENSION_000`  and implement code change providing three alternative performance optimizations:
 
 
     This coding is in lines 365 to 452 and one just has to remove the comment and activate it.
