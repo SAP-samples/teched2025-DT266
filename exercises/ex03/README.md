@@ -10,8 +10,10 @@ This is not always the case. In this exercise we get an error message on the UI 
 
 In order to understand and analyse different ABAP Cloud components which includes RAP BO implementation at runtime, the _ABAP Cross Trace_ can be used. It helps to analyse the runtime between different components like the RAP Runtime and the specific Business Object implementation.
 
+<!--
 > [!NOTE]
 > For this use **`ZDT266_###`** ![package](../images/package.png), where **`###`** is your suffix.  
+-->
 
 ### Exercises
 
@@ -60,7 +62,7 @@ In order to understand and analyse different ABAP Cloud components which include
    3. Now you can configure the trace configuration.  
       - Unmark **`Activate Trace`** to prevent that the trace is active immediately after trace configuration creation. This is especially useful if multiple steps are needed in order to reproduce the issue. We will activate the tracing at a later point in time, which reduces the traced transactions.
       -  Traces are deleted after a few days per default. This can be changed by manually using the time picker in section **`Deletion At`** . We do not need to modify this setting in this exercise.
-      -  In order to distinguish different trace configurations, we can specify the description **`DT266 ###`** where ### is your group number. This description will be applied as a prefix to the traces created using this configuration.
+      -  In order to distinguish different trace configurations, we can specify the description **`DT266 000`** where 000 is your group number. This description will be applied as a prefix to the traces created using this configuration.
       -  The default traced user is your assigned Logon User, see **`Request Filters`** field **`User`**. In case a different ABAP or business user has to be traced, it can be changed here. We do not need to change it for this exercise.
       - We can also filter for specific request entry types, e.g OData V4, RFC or transaction. The interaction in this exercise is based on a OData V4 Service Binding, therefore we choose ODATA V4 as **`Request Entry Type`** .
 
