@@ -67,9 +67,9 @@ In the first section we explain the usage of this Tool to discover the performan
    
 
 
- 3. Run the Data Generators
+ 3. **Run the Data Generators**
     
-    Afterwards run two of the Data Generators:
+    We have to run two Data Generators:
     
     - Fill the database table ![ ](../images/adt_tabl.png)**`ZDT266_BO_SU_000`** by the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_BOOK_SUP_L_000`**:
       - Navigate in your package `ZDT266_000` to `ZDT266_000` > `Source Code Library` > `Classes`. 
