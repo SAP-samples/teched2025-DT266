@@ -389,9 +389,9 @@ In the first section we explain the usage of this Tool to discover the performan
 
     - 💡 Activate the Data Definition by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
 
-
-</details>
 -->
+</details>
+
 
  We are done with this exercise 5.1. Below is just some further information on the involved CDS views and ABAP code.
 
