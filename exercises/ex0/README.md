@@ -145,24 +145,25 @@ Afterwards run two of the Data Generators:
 
 ### Get an overview 
 All the ABAP code and database tables to change are in:
-- one exercise package with your suffix `ZDT266_###` 
+- one exercise package with your suffix `ZDT266_000` 
 - in this package we have an extended RAP Model with several runtime and application errors and performance issues to analyze and to implement solutions. 
 - changes to ABAP code are only necessary in the classes 
-   - `ZCL_DT266_CARR_EXTENSION_###`, 
-   - `ZBP_R_DT266_CARR_###`, 
-   - `ZBP_R_DT266_CARR_###_E`. <br>  
+   - `ZCL_DT266_CARR_EXTENSION_000`, 
+   - `ZBP_R_DT266_CARR_000`, 
+   - `ZBP_R_DT266_CARR_000_E`. <br>  
    
-   In addition changes for the table `ZDT266_SUP_I_###` in your package have to be executed.
+   In addition changes for the table `ZDT266_SUP_I_000` in your package have to be executed.
 
+<!--
 > [!IMPORTANT]
 > **Check the suffix `###` of your demo user (e.g. DT266-###@education.cloud.sap).**
 > Only perform changes in your package `ZDT266_###`. 
-
+-->
 
 ## Getting Started 0.2: Overview of the Model and ABAP Code
 [^Top of page](#)
 
-> Todays scenario is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).   For an overview of the available database tables, see ABAP Flight Reference Scenario. They are available in the package /DMO/FLIGHT_LEGACY. This package also includes a data generator with which you can fill the database tables.
+> The scenario of these exercises is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).  For an overview of the available database tables, see [``ABAP Flight Reference Scenario``](https://help.sap.com/docs/abap-cloud/abap-rap/abap-flight-reference-scenario). 
 
 
 In our example we want to provide a list of Airline IDs = Carrier_Id(s) for which we get in the result list additional column fields calculated by customer extension:
