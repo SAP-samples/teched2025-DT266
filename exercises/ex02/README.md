@@ -15,10 +15,12 @@ In this exercise, after a change in the ABAP code an Out-Of-Memory error is thro
     - Accordingly we get an Out-of-Memory error, the ``TSV_TNEW_PAGE_ALLOC_FAILED`` error.
 - To analyze such memory issues an additional tool, the _Memory_Inspector_ is introduced. We analyze with the `Memory Inspector` the memory consumption and increase.
 
-We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_. This code change is intended to reduce our selections only to bookings of the specified Airline IDs and/or for the specific categories of interest. 
+We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_. This code change is intended to reduce our selections only to bookings of the specified Airline IDs and/or for the specific categories of interest. 
 
+<!--
 > [!NOTE]
 > For this use **`ZDT266_###`** ![package](../images/package.png), where **`###`** is your suffix.  
+-->
 
 ### Exercises
 
@@ -57,7 +59,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
           </tr>
         </table>      
 
-      By this we remove the old code where all the supplement prices and categories are selected from table **`ZDT266_SUP_I_###`**:
+      By this we remove the old code where all the supplement prices and categories are selected from table **`ZDT266_SUP_I_000`**:
       - even if for the Airline ID there are no connections or bookings, so we also have no bookings,
       - independent of the supplement categories of interest (``meal, beverages, luggage``).
     
@@ -74,7 +76,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
       
       <br>
       
-      In the second part shown above on the right side we call for all three different categories (`luggage, beverages, meal`) another method of class **`ZCL_DT266_CARR_EXTENSION_###`** called **`get_supplements_ABAP`**:
+      In the second part shown above on the right side we call for all three different categories (`luggage, beverages, meal`) another method of class **`ZCL_DT266_CARR_EXTENSION_000`** called **`get_supplements_ABAP`**:
 
       <kbd><img src="images/Coding_for_specific_supplements2.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
 
