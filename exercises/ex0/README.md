@@ -103,11 +103,13 @@ The session material is based on the ABAP Flight Reference Scenario. Therefore d
 - Create a new ABAP Cloud Project in ADT (see [Creating an ABAP Cloud Project](https://help.sap.com/docs/abap-cloud/abap-development-tools-user-guide/creating-abap-cloud-project?version=sap_btp) )
 - Go to the repository of the ABAP Flight Scenario: https://github.com/SAP-samples/abap-platform-refscen-flight/tree/ABAP-platform-cloud
 - Download and activate it to your system if not already installed as described in the following readme: https://github.com/SAP-samples/abap-platform-refscen-flight/blob/ABAP-platform-cloud/README.md
-- Run the data generator of the package according to the readme.
+- Run the data generator of the package according to the readme: 
+  - Expand the package structure in the Project Explorer `/DMO/FLIGHT_LEGACY` > `Source Code Library` > `Classes`.
+  - Select the data generator class **`/DMO/CL_FLIGHT_DATA_GENERATOR`** and press **`F9`** (`Run as Console Application`).
 
 
 ### Download the Session materials into the system
-The sessions code is located in this [_github_](src). After installing the Flight Reference Scenario as described above, you can install the session material code:
+The sessions code is located in this [_github_](../src). After installing the Flight Reference Scenario as described above, you can install the session material code:
 
 #### Link and clone
 - create an ABAP package in your system called `ZDT266_000`
