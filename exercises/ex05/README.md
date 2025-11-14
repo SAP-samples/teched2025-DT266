@@ -51,7 +51,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
 > In the previous exercise 4 we have improved the runtime on the ABAP side in method **`GET_PRICES_ABAP`**. 
 
-> **Now we replace this method by **`GET_PRICES_CDS`** where the calculation of the totals is performed in CDS views directly on the HANA DB.**  
+> **Now we replace this method by **`GET_PRICES_CDS`** where the calculation of the totals is performed in CDS views directly on the HANA DB. Furthermore, to have a significant performance issues we increase with Data Generators the number of rows in two tables.**  
 
  <details>
   <summary>🔵 Click to expand!</summary>
@@ -65,7 +65,6 @@ In the first section we explain the usage of this Tool to discover the performan
 
  2. Activate the code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
    
-    We are done with this exercise 5.1. Below is just some further information on the involved CDS views and ABAP coce.
 
 
  3. Run the Data Generators
