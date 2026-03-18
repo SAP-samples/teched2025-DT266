@@ -11,6 +11,7 @@ This repository contains the material for the SAP TechEd 2025 session called [DT
 
 - [Overview](#overview)
 - [Presentation](#presentation)
+- [Requirements for attending this workshop](#requirements-for-attending-this-workshop)
 - [Exercises](#-exercises)
 - [How to obtain support](#how-to-obtain-support) 
 
@@ -24,23 +25,50 @@ Learn techniques and best practices for troubleshooting and optimizing custom co
 Use powerful tools like the ABAP Cross Trace to get deep insights into execution flows and resource consumption.
 This session introduces attendees how to analyze custom extensions in SAP Fiori Apps within ABAP Cloud using tools like ABAP Debugger, Feed Reader,  ABAP Cross Trace, ABAP Trace, SQL Trace, Memory Analyzer, Table Comparison Tool.
 
----
-> ℹ️**DISCLAIMER**:  
-> Please note that information about SAP‘s strategy and possible future developments is subject to change and may be changed by SAP at any time for any reason without prior notice. Check out the [SAP Road Map Explorer](https://roadmaps.sap.com/board?range=CURRENT-LAST&PRODUCT=73555000100800001164#Q4%202024) and the [ABAP Cloud Roadmap](https://help.sap.com/docs/abap-cross-product/roadmap-info/abap-cloud-roadmap-information) for more details. 
->> 
----
-
-
-
+> [!NOTE]    
+> **DISCLAIMER**:   
+> Please note that information about SAP‘s strategy and possible future developments is subject to change and may be changed by SAP at any time for any reason without prior notice. Check out the [SAP Road Map Explorer](https://roadmaps.sap.com/board?range=CURRENT-LAST&PRODUCT=73555000100800001164#Q4%202024)↗ and the [ABAP Cloud Roadmap](https://help.sap.com/docs/abap-cross-product/roadmap-info/abap-cloud-roadmap-information)↗ for more details. 
 
 
 ## Presentation
+[^Top of page](#)
 
 <!--* Watch the live jump-start session on 📅 Wednesday, Nov 5 | 🕐 3:30 PM - 5:30 PM CET.  
   [DT266 | Troubleshoot and optimize extensions for ABAP Cloud in cloud ERP](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749650347432001y6fi)   -->   
-* Access the presentation: 📄[DT266@SAPTechEd2025.pdf (extended version)](/exercises/images/DT266@SAPTechEd2025.pdf)
+  
+- Access the presentation: 📄[DT266@SAPTechEd2025.pdf (extended version)](/exercises/images/DT266@SAPTechEd2025.pdf)↗
 
----
+## Requirements for attending this workshop
+[^Top of page](#)
+
+> Participants should have an interest in exploring topics through guided exercises and should have the following knowledge: 
+> - Basic of [ABAP knowledge](https://pages.community.sap.com/topics/abap/abap-for-newbies)↗
+> - Basic knowledge of [ABAP Development Tools for Eclipse (ADT)](https://help.sap.com/docs/ABAP_DEVELOPMENT_TOOLS_FOR_ECLIPSE?locale=en-US&state=PRODUCTION&version=dev)↗
+> - Basic knowledge of [ABAP Core Data Services (CDS)](https://community.sap.com/t5/technology-blogs-by-sap/getting-started-with-abap-core-data-services-cds/ba-p/13284593)↗
+> - Basic understanding of [ABAP RESTful Application Programming Model (RAP]()↗
+>
+> To complete the practical exercises in this workshop, you need the latest version of the ABAP Development Tools for Eclipse (ADT) on your laptop or PC and the access to a suitable ABAP system - i.e. SAP BTP ABAP Environment, SAP S/4HANA Cloud Public Edition, or at least release 2022 of SAP S/4HANA Cloud Private Edition and SAP S/4HANA.
+> 
+> The [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight)↗ must be imported into the relevant system - e.g. SAP BTP ABAP Environment Trial.
+> 
+> The [latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)↗ must be installed and the [web browser settings in your ADT installation](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/requirements_rap_workshops.md#4-adapt-the-web-browser-settings-in-your-adt-installation)↗ must be adjusted. 
+
+<!--
+<details>
+  <summary>Click to expand!</summary>
+
+The requirements to follow the exercises in this repository are:
+1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
+2. [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html) (_Read exception below_)
+3. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
+4. [Adapt the Web Browser settings in your ADT installation](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/requirements_rap_workshops.md#4-adapt-the-web-browser-settings-in-your-adt-installation)   
+
+>> ⚠ **Exception regarding SAP-led events such as "ABAP Developer Day" and "SAP CodeJam"**:   
+>> → A dedicated ABAP system for the hands-on workshop participants will be provided.   
+>> → Access to the system details for the workshop will be provided by the instructors during the session.
+>> 
+</details>
+--> 
 
 ## 🛠 Exercises
 [^Top of page](#)
@@ -60,13 +88,13 @@ This session introduces attendees how to analyze custom extensions in SAP Fiori 
 | [Exercise 4: Performance Analysis and Improvement using ABAP Trace and Table Comparison Tool](exercises/ex04/README.md) <ul><li> [Exercise 4.4 - Usage of the Table Comparison Tool](exercises/ex04/README.md#exercise-44-usage-of-the-table-comparison-tool) </li> <li> [Exercise 4.5 - Performance of Nested LOOPs](exercises/ex04/README.md#exercise-45-performance-of-nested-loops)</li> </ul> | -- |
 | [Exercise 5: SQL Trace Analysis in SAP HANA SQL Analyzer](exercises/ex05/README.md) | -- |
 
-
-
 <!-- 
 - [4.3 - Use BINARY SEARCH for READ TABLE Performance](#exercise-43-use-binary-search-for-read-table-performance)
 
 -->
 
+<p/>
+  
 In the [_Getting Started_](exercises/ex0/README.md)  section we outline how to logon to the system and to access your package for these exercises.  We shortly introduce the Fiori App to use in the exercises.  
 
 In [_Exercise 1_](exercises/ex01/README.md) a runtime error occurs for specific input data. With the tool `Feed Reader` and the `ABAP Debugger` we examine the root cause. Here a specific case is not handled correctly in a single line of ABAP code. 
@@ -81,11 +109,8 @@ The focus of [_Exercise 4_](exercises/ex04/README.md) is on performance analysis
 
 In [_Exercise 5_](exercises/ex05/README.md) we perform a code push down to the HANA Database using CDS views. Here we learn to create an `SQL trace` and analyze the `execution plan` in the `HANA SQL Analyzer in  Visual Studio Code`.
 
-So let us start and have a look at the _Getting Started_ section.
+So let us start and have a look at the _Getting Started_ section: [Getting Started - Mandatory, please check](exercises/ex0/)
 
-- [Getting Started - Mandatory, please check](exercises/ex0/)
-
----
 
 <!--
 ## 📋Requirements for attending this workshop
@@ -135,7 +160,7 @@ Support for the content in this repository is available during the actual time o
 ## License
 [^Top of page](#)
 
-Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
 
 
 
