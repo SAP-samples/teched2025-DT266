@@ -95,7 +95,7 @@ The focus of [_Exercise 4_](exercises/ex04/README.md) is on performance analysis
 
 In [_Exercise 5_](exercises/ex05/README.md) we perform a code push down to the HANA Database using CDS views. Here we learn to create an `SQL trace` and analyze the `execution plan` in the `HANA SQL Analyzer in  Visual Studio Code`.
 
-So let us start and have a look at the _Getting Started_ section: [Getting Started - Mandatory, please check](exercises/ex0/)
+So let us start and have a look at the _Getting Started_ section: [Getting Started - Mandatory, please check](exercises/ex0/).
 
 
 ## Contributing
