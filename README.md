@@ -38,6 +38,7 @@ This session introduces attendees how to analyze custom extensions in SAP Fiori 
   
 - Access the presentation: 📄[DT266@SAPTechEd2025.pdf (extended version)](/exercises/images/DT266@SAPTechEd2025.pdf)↗
 
+
 ## Requirements for attending this workshop
 [^Top of page](#)
 
@@ -53,28 +54,13 @@ This session introduces attendees how to analyze custom extensions in SAP Fiori 
 > 
 > The [latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)↗ must be installed and the [web browser settings in your ADT installation](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/requirements_rap_workshops.md#4-adapt-the-web-browser-settings-in-your-adt-installation)↗ must be adjusted. 
 
-<!--
-<details>
-  <summary>Click to expand!</summary>
-
-The requirements to follow the exercises in this repository are:
-1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
-2. [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html) (_Read exception below_)
-3. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
-4. [Adapt the Web Browser settings in your ADT installation](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/requirements_rap_workshops.md#4-adapt-the-web-browser-settings-in-your-adt-installation)   
-
->> ⚠ **Exception regarding SAP-led events such as "ABAP Developer Day" and "SAP CodeJam"**:   
->> → A dedicated ABAP system for the hands-on workshop participants will be provided.   
->> → Access to the system details for the workshop will be provided by the instructors during the session.
->> 
-</details>
---> 
+<br/>
 
 ## 🛠 Exercises
 [^Top of page](#)
 
 
-| Exercise Block  | -- |
+| Exercise Blocks  | -- |
 | ------------- |  -- |
 | **Getting Started** | -- |
 | [Getting Started](exercises/ex0/README.md) | -- |
@@ -93,7 +79,7 @@ The requirements to follow the exercises in this repository are:
 
 -->
 
-<p/>
+<br/>
   
 In the [_Getting Started_](exercises/ex0/README.md)  section we outline how to logon to the system and to access your package for these exercises.  We shortly introduce the Fiori App to use in the exercises.  
 
@@ -110,36 +96,6 @@ The focus of [_Exercise 4_](exercises/ex04/README.md) is on performance analysis
 In [_Exercise 5_](exercises/ex05/README.md) we perform a code push down to the HANA Database using CDS views. Here we learn to create an `SQL trace` and analyze the `execution plan` in the `HANA SQL Analyzer in  Visual Studio Code`.
 
 So let us start and have a look at the _Getting Started_ section: [Getting Started - Mandatory, please check](exercises/ex0/)
-
-
-<!--
-## 📋Requirements for attending this workshop
-[^Top of page](#)
-
-> To complete the practical exercises in this workshop, you need the latest version of the ABAP Development Tools for Eclipse (ADT) on your laptop or PC and the access to a suitable ABAP system* and [Visual Studio Code](https://code.visualstudio.com/) and [SAP HANA SQL Analyzer for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=SAPSE.vsc-extension-sa).
-> 
-> The appropriate flavor of the [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight) must be present in the relevant system.  
-> 
-> (*) SAP BTP ABAP environment and SAP S/4HANA Cloud Public Edition - as of release 2505 - are currently supported.
->
->> #### ⚠ Exception regarding SAP-led events, such as TechEd 2025   
->> → A dedicated ABAP system for the hands-on workshop participants will be provided.   
->> → Access to the system details for the workshop will be provided by the SAP instructors during the session.
-
-<details>
-  <summary>🔵 Click to expand!</summary>
-
-  The requirements to follow the exercises in this repository are:
-  1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
-  2. [Install the latest Visual Studio Code](https://code.visualstudio.com/)
-  3. [Install the latest SAP HANA SQL Analyzer for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=SAPSE.vsc-extension-sa)
-  4. [Import the ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight) 
-  5. [Create an ABAP Cloud Project in your ADT installation](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
-  6. [Adapt the Web Browser settings in your ADT installation](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/requirements_rap_workshops.md#4-adapt-the-web-browser-settings-in-your-adt-installation)   
-
-</details>
----
--->
 
 
 ## Contributing
