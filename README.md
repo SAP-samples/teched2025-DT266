@@ -45,8 +45,8 @@ This session introduces attendees how to analyze custom extensions in SAP Fiori 
 > Participants should have an interest in exploring topics through guided exercises and should have the following knowledge: 
 > - Basic of [ABAP knowledge](https://pages.community.sap.com/topics/abap/abap-for-newbies)↗
 > - Basic knowledge of [ABAP Development Tools for Eclipse (ADT)](https://help.sap.com/docs/ABAP_DEVELOPMENT_TOOLS_FOR_ECLIPSE?locale=en-US&state=PRODUCTION&version=dev)↗
-> - Basic knowledge of [ABAP Core Data Services (CDS)](https://community.sap.com/t5/technology-blogs-by-sap/getting-started-with-abap-core-data-services-cds/ba-p/13284593)↗
-> - Basic understanding of [ABAP RESTful Application Programming Model (RAP]()↗
+> - Basic knowledge of [ABAP Core Data Services (CDS)](https://community.sap.com/t5/technology-blog-posts-by-sap/getting-started-with-abap-core-data-services-cds/ba-p/13284593)↗
+> - Basic understanding of [ABAP RESTful Application Programming Model (RAP)](https://community.sap.com/t5/technology-blog-posts-by-sap/getting-started-with-the-abap-restful-application-programming-model-rap/ba-p/13420829)↗
 >
 > To complete the practical exercises in this workshop, you need the latest version of the ABAP Development Tools for Eclipse (ADT) on your laptop or PC and the access to a suitable ABAP system - i.e. SAP BTP ABAP Environment, SAP S/4HANA Cloud Public Edition, or at least release 2022 of SAP S/4HANA Cloud Private Edition and SAP S/4HANA.
 > 
