@@ -20,7 +20,7 @@ Finally we solve the issue by a small change of ABAP code.
 > **A code snippet is provided below to speed up the process:** Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
      
    <details>
-     <summary>🟡📄Click to expand and replace the source code if not performed the previous exercises!</summary>
+     <summary>🟡📄Click to expand and replace the source code!</summary>
 
    > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
    > - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
