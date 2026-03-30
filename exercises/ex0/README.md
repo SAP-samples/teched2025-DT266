@@ -10,9 +10,9 @@ We outline how to logon to the system and how to access your package for these e
 - [0.1 - About the Session](#getting-started-01-about-the-session)
 <!--
 - [0.1 - Getting the scenario into your ABAP system ](#getting-started-01-getting-the-scenario-into-your-ABAP-system)
--->
-- [0.2 - Overview of the Model and ABAP Code](#getting-started-02-overview-of-the-model-and-abap-code)
 
+- [0.2 - Overview of the Model and ABAP Code](#getting-started-02-overview-of-the-model-and-abap-code)
+-->
 
 
 ### Summary:  
