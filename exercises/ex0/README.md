@@ -6,10 +6,11 @@
 In this section we provide information on how to conduct the exercises and provide an introduction to the model and ABAP code used.
 We outline how to logon to the system and how to access your package for these exercises.  We briefly introduce the Fiori App to use in the exercises.  
 
-<!--
+
 - [0.1 - About the Session](#getting-started-01-about-the-session)
--->
+<!--
 - [0.1 - Getting the scenario into your ABAP system ](#getting-started-01-getting-the-scenario-into-your-ABAP-system)
+-->
 - [0.2 - Overview of the Model and ABAP Code](#getting-started-02-overview-of-the-model-and-abap-code)
 
 
@@ -19,7 +20,7 @@ We outline how to logon to the system and how to access your package for these e
 
 
 
-<!--
+
 ## Getting Started 0.1: About the Session 
 [^Top of page](#)
 
@@ -90,10 +91,10 @@ We outline how to logon to the system and how to access your package for these e
 
    <img src="images/0_Expand_Favorite.png" alt="Expand Favorite" width="50%">   
 
--->   
+
  -----
 
-
+<!--
 ## Getting Started 0.1: Getting the scenario into your ABAP system 
 
 
@@ -141,24 +142,24 @@ Afterwards run two of the Data Generators:
      
    Run the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_SUP_I_000`** once by pressing **`F9`**.
    
-
+-->   
 
 ### Get an overview 
 All the ABAP code and database tables to change are in:
-- one exercise package with your suffix `ZDT266_000` 
+- one exercise package with your suffix `ZDT266_###` 
 - in this package we have an extended RAP Model with several runtime and application errors and performance issues to analyze and to implement solutions. 
 - changes to ABAP code are only necessary in the classes 
-   - `ZCL_DT266_CARR_EXTENSION_000`, 
-   - `ZBP_R_DT266_CARR_000`, 
-   - `ZBP_R_DT266_CARR_000_E`. <br>  
+   - `ZCL_DT266_CARR_EXTENSION_###`, 
+   - `ZBP_R_DT266_CARR_###`, 
+   - `ZBP_R_DT266_CARR_###_E`. <br>  
    
-   In addition changes for the table `ZDT266_SUP_I_000` in your package have to be executed.
+   In addition changes for the table `ZDT266_SUP_I_###` in your package have to be executed.
 
-<!--
+
 > [!IMPORTANT]
 > **Check the suffix `###` of your demo user (e.g. DT266-###@education.cloud.sap).**
 > Only perform changes in your package `ZDT266_###`. 
--->
+
 
 ## Getting Started 0.2: Overview of the Model and ABAP Code
 [^Top of page](#)
