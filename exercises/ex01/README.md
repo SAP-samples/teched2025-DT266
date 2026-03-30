@@ -14,11 +14,10 @@ Finally we solve the issue by a small change of ABAP code.
 > For this use **`ZDT266_###`** ![package](../images/package.png), where **`###`** is your suffix.  
 
 
-## Introduction
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you have implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_000`**.
-> **A code snippet is provided below to speed up the process:** Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_000`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`**.
+> **A code snippet is provided below to speed up the process:** Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
      
    <details>
      <summary>🟡📄Click to expand and replace the source code if not performed the previous exercises!</summary>
