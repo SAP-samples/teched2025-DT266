@@ -61,7 +61,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
     | Change of Code| |
     |---|---|
-    | In about line 574 of the code you find the call of method **`get_prices_ABAP`**: <ul><li> So we mark line 573 and press **`Ctrl+<`** to comment call of **`get_prices_ABAP`** </li><li> and mark line 574 and press **`Ctrl+>`** to remove the comment for **`get_prices_CDS`** </li></ul>| **Original Code:** <br> <kbd><img src="images/SC_call_ABAP.png" alt="generate UI service" width="100%"></kbd> <br> **New Code:** <br> <kbd><img src="images/SC_call_CDS.png" alt="generate UI service" width="100%"></kbd> |
+    | In about line 574 of the code you find the call of method **`get_prices_ABAP`**: <ul><li> So we mark line 574 and press **`Ctrl+<`** to comment call of **`get_prices_ABAP`** </li><li> and mark line 575 and press **`Ctrl+>`** to remove the comment for **`get_prices_CDS`** </li></ul>| **Original Code:** <br> <kbd><img src="images/SC_call_ABAP.png" alt="generate UI service" width="100%"></kbd> <br> **New Code:** <br> <kbd><img src="images/SC_call_CDS.png" alt="generate UI service" width="100%"></kbd> |
 
  2. Activate the code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
    
