@@ -521,7 +521,8 @@
           suppl_price_sum_lugg
         FROM
           z_i_price_###
-          FOR ALL ENTRIES IN @lt_carrier WHERE carrierid = @lt_carrier-carrier_id AND id = 2
+        FOR ALL ENTRIES IN @lt_carrier WHERE carrierid = @lt_carrier-carrier_id AND id = 2
+        %_HINTS HDB 'NO_USE_HEX_PLAN'
         INTO TABLE @DATA(lt_cds_result_suppl).
 
         SELECT
@@ -617,6 +618,13 @@
 
 
    </details>
+
+
+
+> [!IMPORTANT]    
+> Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
+
+
 
 **Difference of ABAP Trace Tool to the ABAP Cross Trace**: <br>
 In the previous exercise 3, you've made yourself familiar with the ABAP Cross Trace. (see [Exercise 3](../ex03/README.md)). 
