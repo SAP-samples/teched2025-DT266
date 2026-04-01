@@ -66,7 +66,7 @@ In the first section we explain the usage of this Tool to discover the performan
  2. Activate the code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="3%">
    
 
-
+<!--
  3. **Run the Data Generators**
     
     We have to run two Data Generators:
@@ -82,7 +82,7 @@ In the first section we explain the usage of this Tool to discover the performan
     - Fill the database table ![ ](../images/adt_tabl.png)**`ZDT266_SUP_L_000`** by the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_SUP_L_000`**:
       - Navigate in your package `ZDT266_000` to `ZDT266_000` > `Source Code Library` > `Classes`. <br> 
       - Run the class ![ ](../images/adt_class.png)**`ZCL_DT266_GEN_SUP_L_000`** once by pressing **`F9`**.
-        
+-->        
 
 <!--
  3. Create  the database table ![ ](../images/adt_tabl.png)**`ZDT266_SUP_L_000`**: <br>
