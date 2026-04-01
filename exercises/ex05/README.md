@@ -414,7 +414,6 @@ In the first section we explain the usage of this Tool to discover the performan
   - Then  we just fill the output of our method **`rt_carrier_price_sum = lt_carrier_price_sum`**:
     - We perform the percentage calculation in ABAP as just simple calculations
     - we use **`BINARY SEARCH`**: accordingly, we first sort the results from the CDS views:
-
       <br>
     
       <kbd><img src="images/SC_fill_output.png" alt="generate UI service" width="70%"></kbd>
