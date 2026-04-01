@@ -401,7 +401,7 @@ In the first section we explain the usage of this Tool to discover the performan
   In the method **`get_prices_CDS`** of **`ZCL_DT266_CARR_EXTENSION_000`**:  
   - after the data declarations:
     
-    <kbd><img src="images/SC_DATA_declare.png" alt="generate UI service" width="35%"></kbd>
+    <kbd><img src="images/SC_DATA_declare.png" alt="generate UI service" width="40%"></kbd>
 
   - we have the 2 Selects from the CDS views **`Z_I_PRICE_000`** and **`Z_I_PRICE_FLIGHT`** 
     - to get the supplements and flight priceses for specific carrier 
@@ -409,7 +409,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
 
     
-      <kbd><img src="images/SC_CDS_calls.png" alt="generate UI service" width="50%"></kbd>
+      <kbd><img src="images/SC_CDS_calls.png" alt="generate UI service" width="60%"></kbd>
 
   - Then  we just fill the output of our method **`rt_carrier_price_sum = lt_carrier_price_sum`**:
     - We perform the percentage calculation in ABAP as just simple calculations
