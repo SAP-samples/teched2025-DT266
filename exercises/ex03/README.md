@@ -93,7 +93,7 @@ In order to understand and analyse different ABAP Cloud components which include
   <summary>🔵 Click to expand!</summary>
 
   ### 1. Produce the error message 
-  On List Report just in the last exercises, filter for **Airline ID = 'AA'** by entering the ID and click on **`Go`**.
+  On List Report just in the last exercises, filter for **Airline ID = 'AC'** by entering the ID and click on **`Go`**.
   <kbd><img src="images/FioriAppLRPRtGo.png" alt="ListReport Go" width="80%"></kdb
   
   Then click on the first entry in the table in order to navigate to the Object Page.
