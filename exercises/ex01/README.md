@@ -16,7 +16,8 @@ Finally we solve the issue by a small change of ABAP code.
 
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`** as outlined in point 9 of [Getting Started](../ex0/README.md). 
+> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`** as outlined in point 9 of [Getting Started](../ex0/README.md).
+>  
 > **If you have not already implemented the code snippet in point 9 of [Getting Started](../ex0/README.md) please implement the code snippet which is provided below:** 
 > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, 
 > - insert the code snippet provided below (🟡📄), 
