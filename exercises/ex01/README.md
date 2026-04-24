@@ -226,7 +226,7 @@ Finally we solve the issue by a small change of ABAP code.
 
 
 
-  IF lt_book_suppl IS NOT INITIAL.
+    IF lt_book_suppl IS NOT INITIAL.
     " Exercise 2.1: Memory Analysis -START
     **********************************************************************
     " Get all prices and categories
@@ -301,7 +301,7 @@ Finally we solve the issue by a small change of ABAP code.
     *    lt_supplement_sort = lt_supplement.
     **********************************************************************
     " Exercise 2.1: Memory Analysis -End
-  ENDIF.
+    ENDIF.
 
 
 
