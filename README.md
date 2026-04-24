@@ -76,7 +76,7 @@ In our example we want to provide a list of Airline IDs = Carrier_Id(s) for whic
 > <kbd><img src="images/runtime_error.png" alt="Add package" width="70%"></kbd> <br>
 > **Currently it is only working without error for some specific airlines e.g. Airline ID = 'AA'.
 > This error is analyzed and fixed in** [Exercise 1](../ex01/README.md).
----
+
 The additional column fields calculated by customer extension are the following:
 - the total of all corresponding flight prices 
 - the total price of all corresponding supplements (like meal, beverage, luggage) 
