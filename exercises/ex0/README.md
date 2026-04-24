@@ -706,8 +706,8 @@ We outline how to logon to the system and how to access your package for these e
    </details>
  
 
-    > [!IMPORTANT]    
-    > Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
+   > [!IMPORTANT]    
+   > Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
  -----
 
