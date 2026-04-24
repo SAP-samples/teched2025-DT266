@@ -16,8 +16,11 @@ Finally we solve the issue by a small change of ABAP code.
 
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`**.
-> **A code snippet is provided below to speed up the process:** Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`** as outlined in point 9 of [Getting Started](../ex0/README.md). 
+> **If you have not already implemented the code snippet in point 9 of [Getting Started](../ex0/README.md) please implement the code snippet which is provided below:** 
+> - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, 
+> - insert the code snippet provided below (🟡📄), 
+> - and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
      
    <details>
      <summary>🟡📄Click to expand and replace the source code!</summary>
