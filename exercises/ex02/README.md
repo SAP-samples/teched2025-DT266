@@ -54,8 +54,8 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
         <table>
           <tr>
-           <td><img src="images/Coding_unspecific.png" alt="Open ABAP Trace Requests" width="150%"></td>
-           <td><img src="images/Coding_unspecific_comment.png" alt="Open ABAP Trace Requests" width="60%"></td>
+           <td><kbd><img src="images/Coding_unspecific.png" alt="Open ABAP Trace Requests" width="150%"></kbd></td>
+           <td><kbd><img src="images/Coding_unspecific_comment.png" alt="Open ABAP Trace Requests" width="60%"></kbd></td>
           </tr>
         </table>      
 
