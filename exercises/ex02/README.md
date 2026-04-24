@@ -111,7 +111,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
       - A new runtime error is displayed: _**"No More memory available to add rows to an internal table"**_. 
 
-        <img src="images/Memory_Error.png" alt="Open ABAP Trace Requests" width="60%">
+        <kbd><img src="images/Memory_Error.png" alt="Open ABAP Trace Requests" width="60%"></kbd>
 
       - In the `Summary` tab of the ``Runtime Error Viewer`` go to the **`Error Analysis`** section. 
         
@@ -119,7 +119,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
         <table>
           <tr>
-           <td><img src="images/Error_Analysis1.png" alt="generate UI service" width="90%"></td>
+           <td><kbd><img src="images/Error_Analysis1.png" alt="generate UI service" width="90%"></kbd></td>
            <td><img src="images/Out_of_Memory_Error2.png" alt="generate UI service" width="80%"></td>
           </tr>
         </table>
@@ -128,7 +128,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
         <table>
             <tr>
-                <td><img src="images/Active_Calls1.png" alt="generate UI service" width="90%"></td>
+                <td><kbd><img src="images/Active_Calls1.png" alt="generate UI service" width="90%"></kbd></td>
                 <td><img src="images/Out_of_Memory_Error3.png" alt="generate UI service" width="150%"></td>
             </tr>
         </table>        
@@ -166,7 +166,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
           
          - To terminate the debugging and processing just click on the red button:
 
-            <img src="images/Terminate.png" alt="Open ABAP Trace Requests" width="55%">
+            <kbd><img src="images/Terminate.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
 
          - Switch back to the `ABAP perspective` via the Quick Access (<img src="../images/abap_perspective.png" alt="Open ABAP Trace Requests" width="10%">).    
 
@@ -259,7 +259,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
       By double-click on the oldest (oldest timestamp) memory snapshot the **`Overview`** of the **`Memory Inspector`** opens:
 
-      <img src="images/Overview_Memory_Snapshot.png" alt="Open ABAP Trace Requests" width="80%">
+      <kbd><img src="images/Overview_Memory_Snapshot.png" alt="Open ABAP Trace Requests" width="80%"></kbd>
 
       The **`Overview`** shows the memory consumpion of about 188 million Bytes.
       
@@ -269,7 +269,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
       This view shows that nearly all the memory is consumed by **`lt_supplement`**:
 
-      <img src="images/Memory_Objects_Memory_Snapshot.png" alt="Open ABAP Trace Requests" width="100%">
+      <kbd><img src="images/Memory_Objects_Memory_Snapshot.png" alt="Open ABAP Trace Requests" width="100%"></kbd>
 
       The session table **`lt_supplement`** has already 159,029,984 Bytes due to 3.3 million rows. 
      
@@ -281,15 +281,15 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
         **Compare the first with the second snapshot:** 
         - mark both lines and by right mouse click select **`Compare`**:
         
-          <img src="images/Compare.png" alt="Open ABAP Trace Requests" width="70%">  
+          <kbd><img src="images/Compare.png" alt="Open ABAP Trace Requests" width="70%"></kbd>  
            
         - The **`Overview`** displayed shows now in addition the **delta** in Bytes:
            
-           <img src="images/Delta.png" alt="Open ABAP Trace Requests" width="100%"> 
+           <kbd><img src="images/Delta.png" alt="Open ABAP Trace Requests" width="100%"></kbd> 
            
         - In the Analysis Tool **`Memory Objects`** the **Delta** is also visible on single object level: 
            
-           <img src="images/Memory_Objects_Delta1.png" alt="Open ABAP Trace Requests" width="100%"> 
+           <kbd><img src="images/Memory_Objects_Delta1.png" alt="Open ABAP Trace Requests" width="100%"></kbd> 
 
         **Compare in addition the last two snapshots:** 
         - mark both lines and by right mouse click **`Compare`**:
