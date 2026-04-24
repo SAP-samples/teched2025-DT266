@@ -54,6 +54,7 @@ This session introduces attendees how to analyze custom extensions in SAP Fiori 
 > The [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight)↗ must be imported into the relevant system - e.g. SAP BTP ABAP Environment Trial.-->
 > - The [latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)↗ must be installed 
 > - The [web browser settings in your ADT installation](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/requirements_rap_workshops.md#4-adapt-the-web-browser-settings-in-your-adt-installation)↗ must be adjusted. 
+>
 > And in addition you need the latest version of the MS Visual Studio Code on your laptop or PC with the SQL analyzer tool for SAP HANA 
 > - [MS Visual Studio Code](https://code.visualstudio.com/)
 > - [SQL analyzer tool for SAP HANA](https://help.sap.com/docs/sql-analyzer/sap-hana-sql-analyzer/install-in-visual-studio-code)
