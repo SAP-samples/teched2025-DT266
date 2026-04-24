@@ -303,7 +303,7 @@ We outline how to logon to the system and how to access your package for these e
 
 
 
-
+      IF lt_book_suppl IS NOT INITIAL.
     " Exercise 2.1: Memory Analysis -START
     **********************************************************************
     " Get all prices and categories
@@ -378,7 +378,7 @@ We outline how to logon to the system and how to access your package for these e
     *    lt_supplement_sort = lt_supplement.
     **********************************************************************
     " Exercise 2.1: Memory Analysis -End
-
+      ENDIF.
 
 
 
