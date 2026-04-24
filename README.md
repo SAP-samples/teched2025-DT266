@@ -72,12 +72,12 @@ In our example we want to provide a list of Airline IDs = Carrier_Id(s) for whic
 - the total price of all corresponding supplements (like meal, beverage, luggage) 
 - the percentages %Meals, %Beverages, %Luggage with which those supplement categories contribute to the total price of the supplements
 
-> [!Caution]
+> [!Note]
 > **Runtime error for specific Airlines:**    
 > If you click on **`Go`** without specification of any Airline or e.g. choose Airline ID = 'AC' you get a runtime error: <br>
 > <kbd><img src="images/runtime_error.png" alt="Add package" width="70%"></kbd> <br>
-> **Currently it is only working without error for some specific airlines e.g. Airline ID = 'AA'.**
-> This error is analyzed and fixed in [Exercise 1](../ex01/README.md).
+> **Currently it is only working without error for some specific airlines e.g. Airline ID = 'AA'.
+> This error is analyzed and fixed in** [Exercise 1](../ex01/README.md).
 ---
 
 <kbd><img src="images/Intro_App.png" alt="Open ABAP Trace Requests" width="100%"></kbd>
