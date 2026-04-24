@@ -184,7 +184,7 @@ After navigation, we can inspect the validation implementation:
 
  <kbd><img src="images/Error1_Pre.png" alt="Error in Validation" width="90%"> </kbd>
 
-We can see that there is an issue in our validation: the validation always outputs an error message to fill in data without checking if the data is initial. We can fix this by inserting the code commented in line 32 and 44. After modification and activation of the changes the class should look like this:
+We can see that there is an issue in our validation: the validation always outputs an error message to fill in data without checking if the data is initial. We can fix this by inserting the code commented in line 31 and 43. After modification and activation of the changes the class should look like this:
 
 <kbd> <img src="images/Error1_Post.png" alt="Error in Validation" width="90%"> </kbd>
 
@@ -196,7 +196,7 @@ In order to check if the changes fix the error, we navigate back to our Fiori Ap
 
   <kbd> <img src="images/Fiori_OP_CurrencyCodeDefault.png" alt="Second new Error" width="90%"> </kbd>
  
- However, the UI now shows no Currency Code, which was "USD" beforehand. This unexpected behavior is inspected in the next section of the exercise.
+ However, the UI now shows no Currency Code, which was "CAD" beforehand. This unexpected behavior is inspected in the next section of the exercise.
 
 </details>
 
