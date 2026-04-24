@@ -93,9 +93,9 @@ We outline how to logon to the system and how to access your package for these e
 
 
 10. Perform the following coding change:
-> [!IMPORTANT]    
-> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`**.
-> **A code snippet is provided below to speed up the process:** Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+    > [!IMPORTANT]    
+    > Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`**.
+    > **A code snippet is provided below to speed up the process:** Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
      
    <details>
      <summary>🟡📄Click to expand and replace the source code!</summary>
@@ -704,11 +704,10 @@ We outline how to logon to the system and how to access your package for these e
 
 
    </details>
+ 
 
-
-
-> [!IMPORTANT]    
-> Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
+    > [!IMPORTANT]    
+    > Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
  -----
 
