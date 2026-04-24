@@ -84,10 +84,11 @@ The additional column fields calculated by customer extension are the following:
 
 <kbd><img src="images/Intro_App.png" alt="Open ABAP Trace Requests" width="100%"></kbd>
 
+---
 The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
 
 
-   🟠 _**REMARK:**_ The following overviews are only optional information. This is **not required** to execute the exercises. 
+   🟠 _**REMARK:**_ The following overviews are only provided as optional to read information. This information is **not required** to execute the exercises. 
    <!--
    We recommend to skip reading this additional information and directly continue with [Exercise 1](../ex01/README.md).
    -->
@@ -125,7 +126,7 @@ We use in the Exercises the following tables:
 
  Following [``Using Virtual Elements in CDS Projection Views``](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/319380e0cef94051ae9aa292ffadb59a.html?version=201909.latest&q=ObjectModel.filter.transformedBy) we created ``Virtual Elements`` declared in the CDS projection view ``ZC_DT266_CARR_000`` created in the previous step:
  
- <img src="images/Virtual_Element.png" alt="Open ABAP Trace Requests" width="80%">
+ <kbd><img src="images/Virtual_Element.png" alt="Open ABAP Trace Requests" width="80%"></kbd>
 
  They shall be calulated in the custom extension class _`ZCL_DT266_CARR_EXTENSION_000`_.
  
@@ -133,25 +134,25 @@ We use in the Exercises the following tables:
 
  - IF_SADL_EXIT_CALC_ELEMENT_READ~GET_CALCULATION_INFO
  - IF_SADL_EXIT_CALC_ELEMENT_READ~CALCULATE
- <img src="images/Interface_Methods.png" alt="Open ABAP Trace Requests" width="90%">
+ <kbd><img src="images/Interface_Methods.png" alt="Open ABAP Trace Requests" width="90%"></kbd>
 
  The method ``Calculate`` calls then two alternative methods where we do the calculations:
  - ``GET_PRICES_ABAP`` where the calculations are performed in ABAP code (used in Exercises 1 to 4)
  - ``GET_PRICES_CDS`` where the calculations are performed in CDS views (used in Exercise 5)
 
  The method ``GET_PRICES_ABAP`` first determines for given ``AIRLINE = CARRIER_ID`` the corresponding connections (from table /DMO/CONNECTION) and for the connections the corresponding bookings (from table /DMO/BOOKING): <br>
- <img src="images/Select_Booking.png" alt="Open ABAP Trace Requests" width="55%">
+ <kbd><img src="images/Select_Booking.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
 
  And then the supplements for the bookings: <br>
- <img src="images/Select_Supplement.png" alt="Open ABAP Trace Requests" width="55%">
+ <kbd><img src="images/Select_Supplement.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
 
  and their prices and categories: <br>
- <img src="images/Select_Category.png" alt="Open ABAP Trace Requests" width="55%">
+ <kbd><img src="images/Select_Category.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
 
  Then we just loop over the selected data to calculate the totals and percentages: <br>
- <img src="images/Calculate1.png" alt="Open ABAP Trace Requests" width="55%">
- <img src="images/Calculate2.png" alt="Open ABAP Trace Requests" width="55%">
- <img src="images/Calculate3.png" alt="Open ABAP Trace Requests" width="55%">
+ <kbd><img src="images/Calculate1.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
+ <kbd><img src="images/Calculate2.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
+ <kbd><img src="images/Calculate3.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
 
 </details>   
 
