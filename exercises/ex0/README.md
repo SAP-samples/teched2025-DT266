@@ -94,8 +94,11 @@ We outline how to logon to the system and how to access your package for these e
 
 10. Perform the following coding change:
    > [!IMPORTANT]    
-   > Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`**.
-   > **A code snippet is provided below to speed up the process:** Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+   > ** Prerequisite for this exercise is that you implement the code snippet in class** **`ZCL_DT266_CARR_EXTENSION_###`**.
+   > **A code snippet is provided below to speed up the process:** 
+   > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, 
+   > - insert the code snippet provided below (🟡📄), 
+   > - and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
      
    <details>
      <summary>🟡📄Click to expand and replace the source code!</summary>
