@@ -102,7 +102,7 @@ In order to understand and analyse different ABAP Cloud components which include
   <kbd><img src="images/Fiori_OP_Active_Pre.png" alt="ObjectPage Active" width="90%"></kbd>
 
   
- In Edit Mode, now change the Airline Name to "TechEd 2025". 
+ In Edit Mode, now change the Airline Name to "Teched 2025". 
  <kbd><img src="images/ObjectPageTechedSave.png" alt="Change Airline Name" width="99%"></kbd>
  
  Afterwards save the changes by clicking **`Save`**.
