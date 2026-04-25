@@ -192,7 +192,7 @@ In order to check if the changes fix the error, we navigate back to our Fiori Ap
 
 <kbd> <img src="images/SecondSave.png" alt="Second Save Attempt" width="90%"> </kbd>
 
- This time the changes get saved successfully - the error in the validation has been mitigated: The Airline Name has been modified to "TechEd 2025". 
+ This time the changes get saved successfully - the error in the validation has been mitigated: The Airline Name has been modified to "Teched 2025". 
 
   <kbd> <img src="images/Fiori_OP_CurrencyCodeDefault.png" alt="Second new Error" width="90%"> </kbd>
  
