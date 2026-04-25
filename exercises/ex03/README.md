@@ -220,7 +220,7 @@ We don't want to trace to much, therefore we try to get as far as possible to th
 
 <kbd> <img src="images/OP_Edit2.png" alt="Go to Edit Mode again" width="90%"> </kbd>
 
-Afterwards we use the value help in order to select a new currency code and to fill the field, e.g. "USD".
+Afterwards we use the value help in order to select a new currency code and to fill the field, e.g. "CAD".
 
    <table>
        <tr>
