@@ -102,7 +102,7 @@ In order to understand and analyse different ABAP Cloud components which include
   <kbd><img src="images/Fiori_OP_Active_Pre.png" alt="ObjectPage Active" width="90%"></kbd>
 
   
- In Edit Mode, now change the Airline Name to "Teched 2025". 
+ In Edit Mode, now change the Airline Name to "My Airline". 
  <kbd><img src="images/ObjectPageTechedSave.png" alt="Change Airline Name" width="99%"></kbd>
  
  Afterwards save the changes by clicking **`Save`**.
@@ -192,7 +192,7 @@ In order to check if the changes fix the error, we navigate back to our Fiori Ap
 
 <kbd> <img src="images/SecondSave.png" alt="Second Save Attempt" width="90%"> </kbd>
 
- This time the changes get saved successfully - the error in the validation has been mitigated: The Airline Name has been modified to "Teched 2025". 
+ This time the changes get saved successfully - the error in the validation has been mitigated: The Airline Name has been modified to "My Airline". 
 
   <kbd> <img src="images/Fiori_OP_CurrencyCodeDefault.png" alt="Second new Error" width="90%"> </kbd>
  
