@@ -653,8 +653,8 @@ In the first section we explain the usage of this Tool to discover the performan
 
  
  1. Open the CDS view **`Z_i_PRICE_000`** and define the ID without any calculation. So we have to change: 
-    - Mark line 14  and comment it by pressing **`Ctrl+<`**
-    - Mark line 15 and remove the comment by pressing **`Ctrl+>`**.
+    - Mark line 12  and comment it by pressing **`Ctrl+<`**
+    - Mark line 13 and remove the comment by pressing **`Ctrl+>`**.
 
     <table>
       <tr>
