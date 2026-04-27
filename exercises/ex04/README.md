@@ -44,10 +44,10 @@
         TYPES: BEGIN OF ty_book_suppl,
                 travel_id             TYPE /dmo/travel_id,
                 booking_id            TYPE /dmo/booking_id,
-    *Exercise 4.4: Correction for FOR ALL ENTRIES SELECT -START
+    "Exercise 4.4: Correction for FOR ALL ENTRIES SELECT -START
     **********************************************************************
     *             booking_supplement_id TYPE /dmo/booking_supplement_id,
-    *Exercise 4.4: Correction for FOR ALL ENTRIES SELECT -END
+    "Exercise 4.4: Correction for FOR ALL ENTRIES SELECT -END
     **********************************************************************
                 supplement_id         TYPE /dmo/supplement_id,
                 price                 TYPE /dmo/supplement_price,
@@ -156,14 +156,14 @@
 
         table_supplement = |zdt266_sup_i_{ group_id }|.
 
-    * Select the connections for the carriers
+    " Select the connections for the carriers
         LOOP AT lt_carrier INTO ls_carrier.
           SELECT carrier_id, connection_id FROM /dmo/connection
           WHERE carrier_id = @ls_carrier-carrier_id
           APPENDING TABLE @DATA(lt_connection).
         ENDLOOP.
 
-    * Select the bookings on those connections related to the different carriers
+    " Select the bookings on those connections related to the different carriers
         LOOP AT lt_connection INTO ls_connection.
           SELECT travel_id, booking_id, carrier_id, connection_id, flight_price
           FROM /dmo/booking
@@ -172,14 +172,14 @@
           APPENDING TABLE @DATA(lt_booking).
         ENDLOOP.
 
-    *Sorted tables
+    " Sorted tables
         lt_booking_sort = lt_booking.
 
 
 
-    * Exercise 4.4: Compare with FAE -START
+    " Exercise 4.4: Compare with FAE -START
     **********************************************************************
-    * Get the Supplements (like beverages, meals, luggages) additionally booked.
+    " Get the Supplements (like beverages, meals, luggages) additionally booked.
         LOOP AT lt_booking INTO ls_booking.
           SELECT  travel_id, booking_id, supplement_id, price FROM /dmo/book_suppl
           WHERE travel_id = @ls_booking-travel_id
@@ -193,9 +193,9 @@
     *    AND booking_id = @lt_booking-booking_id
     *    APPENDING TABLE @DATA(lt_book_suppl).
     **********************************************************************
-    * Exercise 4.4: Compare with FAE -END
+    " Exercise 4.4: Compare with FAE -END
 
-    * Exercise 4.4: Table Comparison Tool -START
+    " Exercise 4.4: Table Comparison Tool -START
     **********************************************************************
     *    LOOP AT lt_booking INTO ls_booking.
     *      SELECT  * FROM /dmo/book_suppl
@@ -207,17 +207,17 @@
     *    SORT lt_book_suppl2 BY travel_id booking_id supplement_id price.
     *    SORT lt_book_suppl3 BY travel_id booking_id supplement_id price.
     **********************************************************************
-    * Exercise 4.4: Table Comparison Tool --END
+    " Exercise 4.4: Table Comparison Tool --END
 
-    * Sorted tables
+    " Sorted tables
         lt_book_suppl_sort = lt_book_suppl.
 
 
 
      IF lt_book_suppl IS NOT INITIAL.
-    * Exercise 2.1: Memory Analysis -START
+    " Exercise 2.1: Memory Analysis -START
     **********************************************************************
-    ** Get all prices and categories
+    " Get all prices and categories
     *    SELECT supplement_id,id, supplement_category, price FROM zdt266_sup_i_###
     *    APPENDING TABLE @lt_supplement.
     *
@@ -225,7 +225,7 @@
     *    DELETE ADJACENT DUPLICATES FROM lt_supplement COMPARING supplement_id id.
 
 
-    * Get the prices and categories only for the booked supplements
+    " Get the prices and categories only for the booked supplements
         LOOP AT lt_book_suppl INTO ls_book_suppl.
           SELECT supplement_id,id, supplement_category, price FROM zdt266_sup_i_###
           WHERE supplement_id = @ls_book_suppl-supplement_id
@@ -233,7 +233,7 @@
           APPENDING TABLE @lt_supplement.
         ENDLOOP.
 
-    * Get the prices for specific categories
+    " Get the prices for specific categories
         id = 1.
         WHILE id < 499.
           ls_id-id = id.
@@ -285,10 +285,10 @@
         ENDWHILE.
 
 
-    *Sorted tables
+    " Sorted tables
         lt_supplement_sort = lt_supplement.
     **********************************************************************
-    * Exercise 2.1: Memory Analysis -End
+    " Exercise 2.1: Memory Analysis -End
      ENDIF.
 
 
@@ -298,7 +298,7 @@
 
 
 
-    * Sorting tables for using BINARY SEARCH before the first LOOP starts.
+    " Sorting tables for using BINARY SEARCH before the first LOOP starts.
         SORT lt_supplement BY supplement_id id.
     *    SORT lt_book_suppl BY travel_id booking_id supplement_id.
     *    SORT lt_booking BY carrier_id.
@@ -311,7 +311,7 @@
           flight_price_sum = 0.
 
 
-    * Exercise 4.3: READ TABLE -START
+    " Exercise 4.3: READ TABLE -START
     **********************************************************************
           LOOP AT lt_booking_sort INTO ls_booking WHERE carrier_id = ls_carrier-carrier_id.
             LOOP AT lt_book_suppl_sort INTO ls_book_suppl
@@ -349,13 +349,13 @@
             flight_price_sum = flight_price_sum + ls_booking-flight_price.
           ENDLOOP.
     **********************************************************************
-    * Exercise 4.3: READ TABLE -End
+    " Exercise 4.3: READ TABLE -End
 
 
 
 
 
-    * Exercise 4.5: Nested Loops -START
+    " Exercise 4.5: Nested Loops -START
     **********************************************************************
     *      suppl_price_sum = 0.
     *      suppl_price_sum_meal = 0.
@@ -474,7 +474,7 @@
     *
     *
     **********************************************************************
-    * Exercise 4.5: Nested Loops -End
+    " Exercise 4.5: Nested Loops -End
 
           ls_carrier_price_sum-carrier_id = ls_carrier-carrier_id.
           ls_carrier_price_sum-suppl_price_sum = suppl_price_sum.
@@ -589,12 +589,12 @@
           APPEND ls_carrier TO lt_carrier.
         ENDLOOP.
 
-    * Exercise 5: CDS view Analysis -START
+    " Exercise 5: CDS view Analysis -START
     **********************************************************************
         DATA(lt_carrier_price_sum) = get_prices_ABAP( lt_carrier = lt_carrier ).
     *    DATA(lt_carrier_price_sum) = get_prices_CDS( lt_carrier = lt_carrier ).
     **********************************************************************
-    * Exercise 5: CDS view Analysis -End
+    " Exercise 5: CDS view Analysis -End
 
 
         LOOP AT lt_original_data ASSIGNING FIELD-SYMBOL(<fs_original_data>).
