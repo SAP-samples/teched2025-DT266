@@ -911,8 +911,8 @@ So let us start with improving the runtime in the following exercises._
       | <img src="images/Buffer_Compare2.png" alt="Open ABAP Trace Requests" width="1700"> | <img src="images/Buffer_Compare3.png" alt="Open ABAP Trace Requests" width="1500"> |
       | **After buffering (for label 2):** <ul> <li> shown in grey (as other access: Table Buffer) </li> <li> **Now only taking ~0.005 s instead of ~1.5 s** </li> </ul>  | **After buffering (for label 3):** <ul> <li> shown in grey (as other access: Table Buffer) </li> <li> ℹ️ **Now each taking 1.2 s - 1.7 s instead of 0.2 - 0.6 s** </li> </ul> |
       | **Source Code for 2.:** <br> <img src="images/Code2.png" alt="Open ABAP Trace Requests" width="100%"> | **Source Code for 3.:** <br> <img src="images/Code3.png" alt="Open ABAP Trace Requests" width="100%">|
-      | The source code is: <br> `WHERE `**`supplement_id`**`= ... AND id = ...`, <br> containing all the **key fields** of the table **`ZDT266_SUP_I_000`**: <ul> <li> `supplement_id` and `id` </li> </ul> <br> | The source code is: <br> `WHERE`**`supplement_category`**`= ... AND id = ...` <br> _Here:_ A **key field** of the table **`ZDT266_SUP_I_000`** is missing:  <ul> <li> ℹ️ The key field **`supplement_id` is missing** </li> <li> Instead `supplement_category` is used  </li>  </ul> |
-      | Key Fields of **`ZDT266_SUP_I_000`** are: <br> <img src="images/key_of_supplement_i.png" alt="Open ABAP Trace Requests" width="80%">| Key Fields of **`ZDT266_SUP_I_000`** are: <br> <img src="images/key_of_supplement_i_not.png" alt="Open ABAP Trace Requests" width="80%">|
+      | The source code is: <br> `WHERE `**`supplement_id`**`= ... AND id = ...`, <br> containing all the **key fields** of the table **`ZDT266_SUP_I_###`**: <ul> <li> `supplement_id` and `id` </li> </ul> <br> | The source code is: <br> `WHERE`**`supplement_category`**`= ... AND id = ...` <br> _Here:_ A **key field** of the table **`ZDT266_SUP_I_000`** is missing:  <ul> <li> ℹ️ The key field **`supplement_id` is missing** </li> <li> Instead `supplement_category` is used  </li>  </ul> |
+      | Key Fields of **`ZDT266_SUP_I_###`** are: <br> <img src="images/key_of_supplement_i.png" alt="Open ABAP Trace Requests" width="80%">| Key Fields of **`ZDT266_SUP_I_###`** are: <br> <img src="images/key_of_supplement_i_not.png" alt="Open ABAP Trace Requests" width="80%">|
       | **Next required step:** <br> No further action required as tabled is ordered by key fields allowing fast access | **Next required step:**  <br> ℹ️**Secondary Index required to support access by other fields** <br> |
 
       ----
@@ -958,7 +958,7 @@ So let us start with improving the runtime in the following exercises._
 ## Exercise 4.3: Use Secondary Index & Key to Improve the Performance
 [^Top of page](#)
 
-**In this exercise we create a secondary key for `lt_supplement` and secondary index for table `ZDT266_SUP_I_000` to improve the performance.**
+**In this exercise we create a secondary key for `lt_supplement` and secondary index for table `ZDT266_SUP_I_###` to improve the performance.**
 
 > In the previous exercise 4.2 we have partially improved the runtime just changing settings for buffering.  
 > But accesses to the Table Buffer by different fields as the key fields showed bad performance for larger tables.
@@ -1082,11 +1082,11 @@ So let us start with improving the runtime in the following exercises._
 
 
 
-2. **Next create an additional secondary index for buffered table `ZDT266_SUP_I_000`:**
+2. **Next create an additional secondary index for buffered table `ZDT266_SUP_I_###`:**
 
       | Steps to create Index | Background Information |
       |---|---|
-      |<img src="images/Index1.png" alt="Open ABAP Trace Requests" width="5200">| <ul> <li> Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`###`** > `Dictionary`> `Database Tables` > `ZDT266_SUP_I_`**`###`**  <!-- <ul><li> where **`000`** is your suffix </li> </ul> --> <li> Right-mouse-click on table `ZDT266_SUP_I_###` and click `New Table Index` </li> <li> A pop-up opens. </li></ul>|
+      |<img src="images/Index1.png" alt="Open ABAP Trace Requests" width="5200">| <ul> <li> Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`###`** > `Dictionary`> `Database Tables` > `ZDT266_SUP_I_`**`###`**  <!-- <ul><li> where **`###`** is your suffix </li> </ul> --> <li> Right-mouse-click on table `ZDT266_SUP_I_###` and click `New Table Index` </li> <li> A pop-up opens. </li></ul>|
       | <img src="images/Index2.png" alt="generate UI service" width="120%"> |In the pop-up enter: <ul> <li> Package: **`ZDT266_###`** <!-- (with your suffix instead of 000) --> </li> <li> Name: **`ZDT266_SUP_I_###~CAT`** <!--(with your suffix instead of 000)-->  </li> <li> Description: _Arbitrary e.g. provide there the fields used which are Category and ID_  </li>  </ul> Then click on **`Next`** | 
       | <img src="images/Index3.png" alt="generate UI service" width="120%"></td>| As we are in local package no transport is required: <br> Directly click on **`Finish`** |
       | <img src="images/Index4.png" alt="generate UI service" width="120%"> | **Provide the index properties:** <ul> <li> As we only want to access the table buffer set the flag for  **`Index on Table Buffer only`**. </li></ul> **Provide the index fields `CLIENT`, `SUPPLEMENT_CATEGORY`, and `ID`:** <ul> <li> Via the **`Add`** Button you have to **add one by one subsequently** the index fields `CLIENT`, `SUPPLEMENT_CATEGORY`, and `ID` _(as only one field can be chosen and added)_ </li></ul>|
