@@ -28,11 +28,11 @@ We outline how to logon to the system and how to access your package for these e
 <table>
     <tr>
     <td>System</td>
-    <td>??? (<i> System URL provided in the session </i> )</td>
+    <td><i>System Id  provided in the session</i></td>
   </tr>
   <tr>
     <td>User</td>
-     <td>DT266-###@education.cloud.sap</td>
+     <td><i>User provided in the session</i></td>
   </tr>
       <tr>
     <td>Password</td>
