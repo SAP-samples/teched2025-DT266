@@ -9,7 +9,7 @@
 > - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
 > - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
 >
-> **In case they are not yet implemented a code snippet is provided below to speed up the process:** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_000`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+> **In case they are not yet implemented a code snippet is provided below to speed up the process:** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
      
    <details>
      <summary>🟡📄Click to expand and replace the source code if not performed the previous exercises!</summary>
@@ -642,7 +642,7 @@ the _ABAP Trace Tool_ (also called _ABAP Profiler Tool_) is a generic tool to an
 - the program flow, which is useful when you are trying to understand a problem or learn about code you need to analyze or maintain.
 
 
-In the first section we explain the usage of this Tool to discover all the performance issues in our custom extension in the ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_ in method _`GET_PRICES_ABAP`_. 
+In the first section we explain the usage of this Tool to discover all the performance issues in our custom extension in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ in method _`GET_PRICES_ABAP`_. 
 
 <!--
 > [!Note]
@@ -709,7 +709,7 @@ In the first section we explain the usage of this Tool to discover all the perfo
         |-------|--------|
         | **Open the tab `ABAP Trace Requests`:** <br> <br> <img src="images/atr1.png" alt="generate UI service" width="100%"> |<ul><li> Press **`CTRL+3`** in ADT to open the Quick Access for Eclipse Views. </li> <li>  Search there for the View called **`ABAP Trace Requests`**, <br> which you will find either under `Views` or `Previous Choices`.</li> <li> A new tab `ABAP Trace Request` opens. </li> </ul>| 
         | **Start the creation of a Trace Request:** <br> <br> <img src="images/ATR2.png" alt="generate UI service" width="100%"> | <ul><li> In this new tab `ABAP Trace Request`: </li> <li> Right-click on your Cloud Project and click on: <br> **`Create Trace Request...` <br> (a pop-up for profiling will open)** </li> </ul> |
-        | **Set the following filters (do not change user):** <br> <br> <img src="images/ATR3.png" alt="generate UI service" width="100%"> <br> Click **`Next >`**. |  Enter the following values: <ul> <li> _Which requests do you want to trace?_ <code>Web requests (HTTP)</code>  <ul> <li> trace only HTTP requests arriving at ABAP back-end</li> </ul> </li> <br> <li> _Limit to > URI Pattern:_  **`*ZUI_DT266*`** (URL of the request contains our binding service **ZUI_DT266_CARR_000_O4**)  <ul> <li> trace only for specific URL string pattern</li> </ul></li> <li> _Limit to > User:_ Default is your user with which your are logged in your project (do not change!) </li> <br> <li> _Maximum number of trace files per server:_ **`3`**  (leave default) </li> <br> <li> _Title of the trace file:_  arbitrary  (enter e.g. _`before`_) <ul>  <li> important is to find later again the correct trace for specific App and for a specific phase of development or code change </li> </ul> </li> </ul> <br> <br> Why filters? <br> - to avoid the cumbersome search for correct trace <br> - to reduce the overhead of tracing.   |
+        | **Set the following filters (do not change user):** <br> <br> <img src="images/ATR3.png" alt="generate UI service" width="100%"> <br> Click **`Next >`**. |  Enter the following values: <ul> <li> _Which requests do you want to trace?_ <code>Web requests (HTTP)</code>  <ul> <li> trace only HTTP requests arriving at ABAP back-end</li> </ul> </li> <br> <li> _Limit to > URI Pattern:_  **`*ZUI_DT266*`** (URL of the request contains our binding service **ZUI_DT266_CARR_###_O4**)  <ul> <li> trace only for specific URL string pattern</li> </ul></li> <li> _Limit to > User:_ Default is your user with which your are logged in your project (do not change!) </li> <br> <li> _Maximum number of trace files per server:_ **`3`**  (leave default) </li> <br> <li> _Title of the trace file:_  arbitrary  (enter e.g. _`before`_) <ul>  <li> important is to find later again the correct trace for specific App and for a specific phase of development or code change </li> </ul> </li> </ul> <br> <br> Why filters? <br> - to avoid the cumbersome search for correct trace <br> - to reduce the overhead of tracing.   |
         | **Define the following aggregation level and the following statements to trace:**  <br> <img src="images/ATR4.png" alt="generate UI service" width="100%"> <br> Click **`Finish`**. |  <ul> <li> _Perform aggregated measurement?_ **`Yes, I need the Aggregated Call Tree (minimum file size)`** </li> <ul>  <li>  trace events with same call stack accumulated in one entry. </li> <li> Other options: <ul> <li> `No, I need the Call Sequence`: each trace record is a separate trace entry (no aggregation).</li> <li> `Yes, Hit List is sufficient`: (trace events aggregated by call position) </li> </ul> </li> </ul> </li> <li> _Which ABAP statements should be traced?_ <br> **`Procedual units, SQL, internal tables`** <ul> <li> `Procedual units`: trace records ABAP modularization events like `CALL METHOD` and `CALL FUNCTION` </li> <li> `SQL`: trace records database activities like `SELECT` and `UPDATE` </li> <li> `internal tables`: trace records operations on internal tables like `READ TABLE` and `LOOP AT` and `APPEND` </li> </ul> </li> </ul>     |
 
             
@@ -824,9 +824,9 @@ In the first section we explain the usage of this Tool to discover all the perfo
 > - you have made yourself familiar with the **`ABAP Trace`** (with the filter options for `Trace Requests` and with the different `Analysis Tools`),
 > - you have used the ABAP trace called _`before`_  to analyze where most runtime is consumed and what we need to improve:
 > 
->   1. A long **`DB Fetch`** on table **`ZDT266_SUP_I_000`** (orange) which we improve in _Exercise 4.2._ 
+>   1. A long **`DB Fetch`** on table **`ZDT266_SUP_I_###`** (orange) which we improve in _Exercise 4.2._ 
 >      - after this we perform a further ABAP trace which we will call _`buffered`_.
->   2. Further three subsequent blocks of **`DB Fetches`** on table **`ZDT266_SUP_I_000`** which we improve in _Exercise 4.2. & 4.3._
+>   2. Further three subsequent blocks of **`DB Fetches`** on table **`ZDT266_SUP_I_###`** which we improve in _Exercise 4.2. & 4.3._
 >   3. A **`READ Where`** statement on an internal table **`lt_supplement`** which we improve in _Exercise 4.3._
 >      - after this we perform a further ABAP trace which we will call _`read table`_.
 >   4. A long `DB Fetch` on table **`/DMO/BOOK_SUPPL`** which we improve in _Exercise 4.4._ 
@@ -845,11 +845,11 @@ So let us start with improving the runtime in the following exercises._
 
 
 
-**In this exercise enable `Full Table Buffering` for table `ZDT266_SUP_I_000`**.
+**In this exercise enable `Full Table Buffering` for table `ZDT266_SUP_I_###`**.
 
 
-> In the previous exercise 4.1 we have identified long runtime for DB accesses to table **`ZDT266_SUP_I_000`** (_labeled as 2. and 3._).
-> - This database table **`ZDT266_SUP_I_000`** is just a master table containing only the different types of supplements and their categories and prices. 
+> In the previous exercise 4.1 we have identified long runtime for DB accesses to table **`ZDT266_SUP_I_###`** (_labeled as 2. and 3._).
+> - This database table **`ZDT266_SUP_I_###`** is just a master table containing only the different types of supplements and their categories and prices. 
 > - As this table rareley changes it is an optimal candidate for table buffering. 
 
 > [!IMPORTANT]    
@@ -857,7 +857,7 @@ So let us start with improving the runtime in the following exercises._
 > - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
 > - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
 
-**Alternatively, you can implement the code snippet provided above at the beginning of exercise 4 to speed up the process:** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_000`**, insert the code snippet provided above (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+**Alternatively, you can implement the code snippet provided above at the beginning of exercise 4 to speed up the process:** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided above (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
 
 
  <details>
@@ -867,16 +867,16 @@ So let us start with improving the runtime in the following exercises._
 
    <img src="images/4_Parts_2_3.png" alt="Open ABAP Trace Requests" width="55%">
 
-   1. **Activate Table Buffering for table  `ZDT266_SUP_I_000`:** 
+   1. **Activate Table Buffering for table  `ZDT266_SUP_I_###`:** 
 
-      - Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`000`** > `Dictionary`> `Database Tables` > <br> `ZDT266_SUP_I_`**`000`** >  `Technical Table Settings` > `ZDT266_SUP_I_`**`000`** 
+      - Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`###`** > `Dictionary`> `Database Tables` > <br> `ZDT266_SUP_I_`**`###`** >  `Technical Table Settings` > `ZDT266_SUP_I_`**`###`** 
       <!--
         - _where **`###`** is your suffix._
       <-->  
 
         <kbd><img src="images/Activate_Table_Buffer.png" alt="Open ABAP Trace Requests" width="100%"></kbd>  
       
-      - Then double-click on `ZDT266_SUP_I_`**`000`** and change the settings for **`Buffering`**: 
+      - Then double-click on `ZDT266_SUP_I_`**`###`** and change the settings for **`Buffering`**: 
         - Change first for `State`: From **`Buffering not allowed`** change to **`Buffering switched on`** 
         - Afterwards change for `Type`: From **`No buffering`** change to **`Full table is passed to buffer`**.       
         - ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
@@ -968,7 +968,7 @@ So let us start with improving the runtime in the following exercises._
 > - A similar issue we have for a READ TABLE statement where the table is defined as standard table.  
 
 > Improve by using secondary index / secondary sorted key the performance of both, 
-> - the selects on table **`ZDT266_SUP_I_000`** and 
+> - the selects on table **`ZDT266_SUP_I_###`** and 
 > - the **`READ TABLE lt_supplement ... WHERE supplement_id = ... and id = 1`**.  
 
 
@@ -1030,7 +1030,7 @@ So let us start with improving the runtime in the following exercises._
 
 <br>
 
-1. **First create an additional secondary key for table `LT_SUPPLEMENT` in the method `GET_PRICES_ABAP` of the class `ZCL_DT266_CARR_EXTENSION_000`:**
+1. **First create an additional secondary key for table `LT_SUPPLEMENT` in the method `GET_PRICES_ABAP` of the class `ZCL_DT266_CARR_EXTENSION_###`:**
    
 
    We need a secondary key for the READ TABLE on **`lt_supplement`** with **27,074 rows** (which are **not sorted**) as the statement is called frequently (**3170 times**) due to the outer loops:
@@ -1086,8 +1086,8 @@ So let us start with improving the runtime in the following exercises._
 
       | Steps to create Index | Background Information |
       |---|---|
-      |<img src="images/Index1.png" alt="Open ABAP Trace Requests" width="5200">| <ul> <li> Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`000`** > `Dictionary`> `Database Tables` > `ZDT266_SUP_I_`**`000`**  <!-- <ul><li> where **`000`** is your suffix </li> </ul> --> <li> Right-mouse-click on table `ZDT266_SUP_I_000` and click `New Table Index` </li> <li> A pop-up opens. </li></ul>|
-      | <img src="images/Index2.png" alt="generate UI service" width="120%"> |In the pop-up enter: <ul> <li> Package: **`ZDT266_000`** <!-- (with your suffix instead of 000) --> </li> <li> Name: **`ZDT266_SUP_I_000~CAT`** <!--(with your suffix instead of 000)-->  </li> <li> Description: _Arbitrary e.g. provide there the fields used which are Category and ID_  </li>  </ul> Then click on **`Next`** | 
+      |<img src="images/Index1.png" alt="Open ABAP Trace Requests" width="5200">| <ul> <li> Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`###`** > `Dictionary`> `Database Tables` > `ZDT266_SUP_I_`**`###`**  <!-- <ul><li> where **`000`** is your suffix </li> </ul> --> <li> Right-mouse-click on table `ZDT266_SUP_I_###` and click `New Table Index` </li> <li> A pop-up opens. </li></ul>|
+      | <img src="images/Index2.png" alt="generate UI service" width="120%"> |In the pop-up enter: <ul> <li> Package: **`ZDT266_###`** <!-- (with your suffix instead of 000) --> </li> <li> Name: **`ZDT266_SUP_I_###~CAT`** <!--(with your suffix instead of 000)-->  </li> <li> Description: _Arbitrary e.g. provide there the fields used which are Category and ID_  </li>  </ul> Then click on **`Next`** | 
       | <img src="images/Index3.png" alt="generate UI service" width="120%"></td>| As we are in local package no transport is required: <br> Directly click on **`Finish`** |
       | <img src="images/Index4.png" alt="generate UI service" width="120%"> | **Provide the index properties:** <ul> <li> As we only want to access the table buffer set the flag for  **`Index on Table Buffer only`**. </li></ul> **Provide the index fields `CLIENT`, `SUPPLEMENT_CATEGORY`, and `ID`:** <ul> <li> Via the **`Add`** Button you have to **add one by one subsequently** the index fields `CLIENT`, `SUPPLEMENT_CATEGORY`, and `ID` _(as only one field can be chosen and added)_ </li></ul>|
 
@@ -1127,8 +1127,8 @@ So let us start with improving the runtime in the following exercises._
       In the trace in figure above (_labeled as 1., 2., 3., 4._):
 
       - _Labeled as 1.:_ Remaining Performance Issue for the `DB Fetch` on table `/DMO/BOOK_SUPPL` (_will be improved in exercise 4.4._),
-      - _Labeled as 2.:_  With buffering very fast previously long running `DB Fetch` on table ` ZDT266_SUP_I_000`,
-      - _Labeled as 3.:_ With buffering and secondary index very fast the three subsequent blocks of `DB Fetches` on table `ZDT266_SUP_I_000`.
+      - _Labeled as 2.:_  With buffering very fast previously long running `DB Fetch` on table ` ZDT266_SUP_I_###`,
+      - _Labeled as 3.:_ With buffering and secondary index very fast the three subsequent blocks of `DB Fetches` on table `ZDT266_SUP_I_###`.
       - _Labeled as 4.:_ With ABAP Code change very fast `READ TABLE  Where` statement on  internal table `lt_supplement`.
       
   
@@ -1392,7 +1392,7 @@ So let us start with improving the runtime in the following exercises._
     To improve the runtime we use a `FOR ALL ENTRIES` statement replacing the single selects in the LOOP. 
     Via `FOR ALL ENTRIES` the results for the whole list of travel_id & booking_id values (in lt_booking) are retrieved in one or just a few array select.
 
- 2. **Change the code to a `FOR ALL ENTRIES` select in the method `GET_PRICES_ABAP` of the class `ZCL_DT266_CARR_EXTENSION_000`:**   
+ 2. **Change the code to a `FOR ALL ENTRIES` select in the method `GET_PRICES_ABAP` of the class `ZCL_DT266_CARR_EXTENSION_###`:**   
       
      - Comment out the code in lines 162 to 168 (mark them and press **`Ctrl+<`**) and 
      - Remove the comments in lines 170 to 174 (mark them and press **`Ctrl+>`**). 
@@ -1421,7 +1421,7 @@ So let us start with improving the runtime in the following exercises._
        <img src="images/Results_after_FAE.png" alt="generate UI service" width="80%">
  
 
- 5. **Go back to class `ZCL_DT266_CARR_EXTENSION_000` and implement 4 code changes to compare the differences:** 
+ 5. **Go back to class `ZCL_DT266_CARR_EXTENSION_###` and implement 4 code changes to compare the differences:** 
     - **First change (lines 162 to 168):** 
       - To have both (previous and new) selects for comparison, remove the comments in lines 162 to 168 (mark them and press **`Ctrl+>`**):
         <table>
@@ -1626,7 +1626,7 @@ So let us start with improving the runtime in the following exercises._
 > **This exercise is optional.**
 
 
-**Here we analyze 3 options to improve the runtime of a code part with three nested loops in the class `ZCL_DT266_CARR_EXTENSION_000`.**  
+**Here we analyze 3 options to improve the runtime of a code part with three nested loops in the class `ZCL_DT266_CARR_EXTENSION_###`.**  
 > - **Unoptimized:** Three nested `LOOP AT TABLE... WHERE` statements with all tables defined as STANDARD tables.
 > - **Optimizations:**
 > 1. Three nested `LOOP AT TABLE... WHERE` statements with all tables defined as SORTED tables,
@@ -1649,9 +1649,9 @@ So let us start with improving the runtime in the following exercises._
  <details>
   <summary>🔵 Click to expand!</summary>
 
-1. First we replace the current code in about lines 296 to 330 where we have the `READ TABLE` statement (analyzed in previous exercise 4.4) with a `LOOP AT TABLE`statement in the class `ZCL_DT266_CARR_EXTENSION_000`.
+1. First we replace the current code in about lines 296 to 330 where we have the `READ TABLE` statement (analyzed in previous exercise 4.4) with a `LOOP AT TABLE`statement in the class `ZCL_DT266_CARR_EXTENSION_###`.
     
-    For this replacement, go back to class `ZCL_DT266_CARR_EXTENSION_000`,   mark those lines 296 to 330 and press **`Ctrl+<`** to comment them:
+    For this replacement, go back to class `ZCL_DT266_CARR_EXTENSION_###`,   mark those lines 296 to 330 and press **`Ctrl+<`** to comment them:
       <table>
        <tr>
            <td><img src="images/Nested_Loop0.png" alt="generate UI service" width="99%"></td>
@@ -1714,7 +1714,7 @@ So let us start with improving the runtime in the following exercises._
      <br>
     
 
-4. Go back to class `ZCL_DT266_CARR_EXTENSION_000`  and implement code change providing three alternative performance optimizations:
+4. Go back to class `ZCL_DT266_CARR_EXTENSION_###`  and implement code change providing three alternative performance optimizations:
 
 
     This coding is in lines 365 to 452 and one just has to remove the comment and activate it.
