@@ -863,7 +863,7 @@ So let us start with improving the runtime in the following exercises._
  <details>
   <summary>🔵 Click to expand!</summary>
    
-   In this exercise we turn on **Table Buffering** for table **`ZDT266_SUP_I_000`** used in two different selects (_labeled with 2. and 3._) in the figure below:  
+   In this exercise we turn on **Table Buffering** for table **`ZDT266_SUP_I_###`** used in two different selects (_labeled with 2. and 3._) in the figure below:  
 
    <img src="images/4_Parts_2_3.png" alt="Open ABAP Trace Requests" width="55%">
 
