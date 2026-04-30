@@ -801,7 +801,7 @@ In the first section we explain the usage of this Tool to discover the performan
       - besides the previous filter condition `MANDT = 1`, 
       - there is now a further filter condition `ID = 1`. 
     
-    So we do not anymore select the whole table with 162,110,000 rows but only 16,211 records.
+    So we do not anymore select the whole table with 64,844,000 rows but only 14,807 records.
 
     <img src="images/Plan_Graph_after3.png" alt="Open ABAP Trace Requests" width="100%"> 
 
