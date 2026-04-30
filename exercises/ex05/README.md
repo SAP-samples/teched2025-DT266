@@ -787,7 +787,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
     - We only need 28 ms now:
     
-      <img src="images/Overview_after.png" alt="Open ABAP Trace Requests" width="75%">
+      <img src="images/Overview_after.png" alt="Open ABAP Trace Requests" width="50%">
 
     - In the **`Plan Graph`** check again the **`Column Search`** below:
 
