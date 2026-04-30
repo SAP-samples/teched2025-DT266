@@ -601,7 +601,7 @@ In the first section we explain the usage of this Tool to discover the performan
        </tr>
       </table> 
 
-    - Navigate then to  tab **`TABLE ACCESS`** (in the lower part of the screen shown right to **`TIMELINE`**) and sort the list descending by **`Processing Time (ms)`**. The most runtime is for column searches on 2 tables: **`ZDT266_SUP_L_000`** and **`ZDT266_BO_SU_000`**.
+    - Navigate then to  tab **`TABLE ACCESS`** (in the lower part of the screen shown right to **`TIMELINE`**) and sort the list descending by **`Execution Time (ms)`**. The most runtime is for column searches on 2 tables: **`ZDT266_BO_SU_000`** and **`ZDT266_SUP_L_000`**.
 
       <img src="images/Plan_Graph_before5.png" alt="Open ABAP Trace Requests" width="70%"> 
 
