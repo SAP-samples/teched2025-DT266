@@ -597,7 +597,7 @@ In the first section we explain the usage of this Tool to discover the performan
       <table>
        <tr>
            <td><img src="images/Overview_HANA_SQL_Analyzer_click.png" alt="Open ABAP Trace Requests" width="1000"></td>
-           <td><img src="images/Overview_before.png" alt="generate UI service" width="2000"></td></td>
+           <td><img src="images/Overview_before.png" alt="generate UI service" width="1000"></td></td>
        </tr>
       </table> 
 
