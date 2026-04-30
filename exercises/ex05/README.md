@@ -593,7 +593,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
     <img src="images/Overview_HANA_SQL_Analyzer.png" alt="Open ABAP Trace Requests" width="85%"> 
 
-    - Click first on the Overview to see the total runtime on HANA DB of e.g. 7,8 s:<br>      
+    - Click first on the Overview to see the total runtime on HANA DB of e.g. 6,1 s:<br>      
       <table>
        <tr>
            <td><img src="images/Overview_HANA_SQL_Analyzer_click.png" alt="Open ABAP Trace Requests" width="1000"></td>
