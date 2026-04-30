@@ -623,17 +623,17 @@ In the first section we explain the usage of this Tool to discover the performan
 
       In the **`Summary`**  the  filter condition is shown: 
       - which is just:  **`MANDT = 1`**  
-      - **we select accordingly the whole table (_FULL TABLE SCAN_) with 162,110,000 rows.**
+      - **we select accordingly the whole table (_FULL TABLE SCAN_) with 64,844,000 rows.**
 
     <br>
 
-    - The other time is in JEStep2 where those 162,110,000 rows are joined with the 48 results from table **`ZDT266_SUP_L_000`**:
+    - The other time is in JEStep2 where those 64,844,000 rows are joined with the 48 results from table **`ZDT266_SUP_L_000`**:
       <img src="images/JEStep2.png" alt="Open ABAP Trace Requests" width="100%"> 
 
   >🟠**To summarize:** The issue is as follwos:
   > - The value specified for the table field id of table **`ZDT266_BO_SU_000`** could not be pushed down
   >    - only the client is used for filtering and 
-  >    - we perform accordingly a full table scan where we get 162,110,000 records.    
+  >    - we perform accordingly a full table scan where we get 64,844,000 records.    
   > - Those results have then to be joined with the results from the other tables taking significant amount of time.
 
 
