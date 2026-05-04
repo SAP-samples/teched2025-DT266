@@ -66,6 +66,18 @@ This session introduces attendees how to analyze custom extensions in SAP Fiori 
 
 In our example we want to provide a list of Airline IDs = Carrier_Id(s) for which we get in the result list additional column fields calculated by customer extension.
 
+
+
+The additional column fields calculated by customer extension are the following:
+- the total of all corresponding flight prices 
+- the total price of all corresponding supplements (like meal, beverage, luggage) 
+- the percentages %Meals, %Beverages, %Luggage with which those supplement categories contribute to the total price of the supplements
+
+<kbd><img src="images/Intro_App.png" alt="Open ABAP Trace Requests" width="100%"></kbd>
+
+---
+The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
+
 > [!Note]
 > **Runtime error for specific Airlines:**    
 > If you click on **`Go`** without specification of any Airline or e.g. choose Airline ID = 'AC' you get a runtime error: <br>
@@ -78,16 +90,6 @@ In our example we want to provide a list of Airline IDs = Carrier_Id(s) for whic
 
 
 
-
-The additional column fields calculated by customer extension are the following:
-- the total of all corresponding flight prices 
-- the total price of all corresponding supplements (like meal, beverage, luggage) 
-- the percentages %Meals, %Beverages, %Luggage with which those supplement categories contribute to the total price of the supplements
-
-<kbd><img src="images/Intro_App.png" alt="Open ABAP Trace Requests" width="100%"></kbd>
-
----
-The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
 
 
    🟠 _**REMARK:**_ The following overviews are only provided as optional to read information. This information is **not required** to execute the exercises. 
