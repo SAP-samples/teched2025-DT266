@@ -627,7 +627,7 @@ In the first section we explain the usage of this Tool to discover the performan
       - which is just:  **`MANDT = 1`**  
       - **we select accordingly the whole table (_FULL TABLE SCAN_) with 64,844,000 rows.**
 
-    - Then click on the **COLUMN TABLE** on the right side of the previous. This shows a column search on table **`ZDT266_SUP_L_000`** with 48 results. Again on the right side the filter used the column search is shown (in the **`Summary`**). 
+    - Then click on the **COLUMN TABLE** next to the previous. This shows a column search on table **`ZDT266_SUP_L_000`** with 48 results. Again on the right side the filter used the column search is shown (in the **`Summary`**). 
 
       <img src="images/Plan_Graph_before7.png" alt="Open ABAP Trace Requests" width="100%"> 
 
