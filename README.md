@@ -64,19 +64,14 @@ This session introduces attendees how to analyze custom extensions in SAP Fiori 
 ## Overview of the Model and ABAP Code
 [^Top of page](#)
 
-In our example we want to provide a list of Airline IDs = Carrier_Id(s) for which we get in the result list additional column fields calculated by customer extension.
-
-
-
-The additional column fields calculated by customer extension are the following:
+In our example we want to provide a list of Airline IDs = Carrier_Id(s) for which we get in the result list additional column fields calculated by customer extension:
 - the total of all corresponding flight prices 
 - the total price of all corresponding supplements (like meal, beverage, luggage) 
 - the percentages %Meals, %Beverages, %Luggage with which those supplement categories contribute to the total price of the supplements
 
 <kbd><img src="images/Intro_App.png" alt="Open ABAP Trace Requests" width="100%"></kbd>
 
----
-The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
+
 
 > [!Note]
 > **Runtime error for specific Airlines:**    
@@ -86,8 +81,7 @@ The calculation is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_000`_ 
 > This error is analyzed and fixed in** [Exercise 1](../ex01/README.md).
 
 > 🟠 _**REMARK:**_  The scenario of these exercises is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).  For an overview of the available database tables, see [``ABAP Flight Reference Scenario Database Tables``](https://help.sap.com/docs/abap-cloud/abap-rap/abap-flight-reference-scenario). 
-
-
+> The calculation for the additional fields is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
 
 
 
