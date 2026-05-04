@@ -633,8 +633,8 @@ In the first section we explain the usage of this Tool to discover the performan
 
       In the **`Summary`**  the  filter condition is shown: 
       - which contains a calculation:  **`ZDT266_SUP_L_000.ID + 1 = 2`**  
-      - **we have accordingly calculated fiels on ID which is also used in a join-condition:** <br>
-      <img src="images/Change_CDS_before.png" alt="generate UI service" width="100%">
+      - **we have accordingly calculated fields on ID which are used in a join-condition:** <br>
+      <img src="images/Change_CDS_before_calc.png" alt="generate UI service" width="100%">
 
     <br>    
 
