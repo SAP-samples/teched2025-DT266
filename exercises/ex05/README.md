@@ -585,7 +585,7 @@ In the first section we explain the usage of this Tool to discover the performan
     >   - For example, which join type (_NestedLoop_ or _HashJoin_),...
 
     We will only use the **`logical`** plan mode: 
-    - Click on the Settings Button <img src="images/Button_Setting.png" alt="Open ABAP Trace Requests" width="3%"> on the upper right corner and flag **`logical`**:
+    - Click on the Settings Button <img src="images/Button_Setting.png" alt="Open ABAP Trace Requests" width="3%"> on the upper right corner and flag **`logical`** and **`Cumulative Active Time`**:
       
       <img src="images/Switch_to_logical.png" alt="Switch_to_logical" width="60%"> 
 
