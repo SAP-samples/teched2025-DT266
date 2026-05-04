@@ -627,7 +627,16 @@ In the first section we explain the usage of this Tool to discover the performan
       - which is just:  **`MANDT = 1`**  
       - **we select accordingly the whole table (_FULL TABLE SCAN_) with 64,844,000 rows.**
 
-    <br>
+    - Then click on the **COLUMN TABLE** on the right side of the previous. This shows a column search on table **`ZDT266_SUP_L_000`** with 48 results. Again on the right side the filter used the column search is shown (in the **`Summary`**). 
+
+      <img src="images/Plan_Graph_before7.png" alt="Open ABAP Trace Requests" width="100%"> 
+
+      In the **`Summary`**  the  filter condition is shown: 
+      - which contains a calculation:  **`ZDT266_SUP_L_000.ID + 1 = 2`**  
+      - **we have accordingly calculated fiels on ID which is also used in a join-condition:** <br>
+      <img src="images/Change_CDS_before.png" alt="generate UI service" width="100%">
+
+    <br>    
 
     - The other time is in JEStep2 where those 64,844,000 rows are joined with the 48 results from table **`ZDT266_SUP_L_000`**:
       <img src="images/JEStep2.png" alt="Open ABAP Trace Requests" width="100%"> 
