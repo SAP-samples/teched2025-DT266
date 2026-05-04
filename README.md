@@ -73,7 +73,7 @@ In our example we want to provide a list of Airline IDs = Carrier_Id(s) for whic
 > **Currently it is only working without error for some specific airlines e.g. Airline ID = 'AA'.
 > This error is analyzed and fixed in** [Exercise 1](../ex01/README.md).
 
-> [!Info] The scenario of these exercises is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).  For an overview of the available database tables, see [``ABAP Flight Reference Scenario Database Tables``](https://help.sap.com/docs/abap-cloud/abap-rap/abap-flight-reference-scenario). 
+> 🟠 _**REMARK:**_  The scenario of these exercises is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).  For an overview of the available database tables, see [``ABAP Flight Reference Scenario Database Tables``](https://help.sap.com/docs/abap-cloud/abap-rap/abap-flight-reference-scenario). 
 
 
 
