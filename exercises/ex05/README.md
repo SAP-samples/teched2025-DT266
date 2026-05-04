@@ -572,7 +572,9 @@ In the first section we explain the usage of this Tool to discover the performan
 
 
     <br>  
- 2. Choose the plan mode logical.
+ 2. Choose for:
+    - the plan mode: Logical 
+    - for the node execution time mode: Cumulative Active Time
     
     > 🟠 _**Remark:**_ The SQL query plan has two types of plan modes: **`logical`** and **`physical`**.
     > - _Logical operators:_ define the sequence of operations required to perform the query.
