@@ -572,9 +572,7 @@ In the first section we explain the usage of this Tool to discover the performan
 
 
     <br>  
- 2. Choose for:
-    - the plan mode: Logical 
-    - for the node execution time mode: Cumulative Active Time
+ 2. Choose for the 'Plan Mode' the setting 'Logical' and for the 'Node Execution Time Mode' the setting 'Cumulative Active Time'.
 
     <br>
     
