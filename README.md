@@ -103,7 +103,7 @@ We use in the Exercises the following tables:
 | Table | Content | Number of Entries | Key Fields | Other Fields used in Model / Where used | 
 |---|---|---|---|---|
 |/DMO/CARRIER| Different Carriers, e.g. AA, AC,... | 16 Airline IDs = Carrier IDs | CLIENT, CARRIER_ID | | 
-|  `ZDT266_CARR_000` | _Copy of /DMO/CARRIER_ |16 Airline IDs = Carrier IDs | CLIENT, CARRIER_ID | | 
+|  `ZDT266_CARR_###` | _Copy of /DMO/CARRIER_ |16 Airline IDs = Carrier IDs | CLIENT, CARRIER_ID | | 
 |/DMO/CONNECTION| Connections of the Carriers | 20 rows: Combinations of Carrier & Connection | CLIENT, CARRIER_ID, CONNECTION_ID | |
 |/DMO/BOOKING | Booking IDs and travel IDs for each combination of carrer and connection | 9161 rows | CLIENT, TRAVEL_ID, BOOKING_ID | CARRIER_ID, CONNECTION_ID, FLIGHT_PRICE |
 |/DMO/BOOK_SUPPL | Supplements like meal, beverage, luggage | 16211 entries | CLIENT, TRAVEL_ID, BOOKING_ID, BOOKING_SUPPLEMENT_ID | SUPPLEMENT_ID|
@@ -120,9 +120,9 @@ We use in the Exercises the following tables:
         <summary>Click here for an Overview of the ABAP Code</summary>  
 
  In a similar way to [``Create Database Table and Generate UI Service``](https://developers.sap.com/tutorials/abap-environment-rap100-generate-ui-service.html) 
- we have created a copy of /DMO/CARRIER with the name `ZDT266_CARR_000` and generated a UI service.
+ we have created a copy of /DMO/CARRIER with the name `ZDT266_CARR_###`, e.g. for `ZDT266_CARR_000` and generated a UI service.
 
- Following [``Using Virtual Elements in CDS Projection Views``](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/319380e0cef94051ae9aa292ffadb59a.html?version=201909.latest&q=ObjectModel.filter.transformedBy) we created ``Virtual Elements`` declared in the CDS projection view ``ZC_DT266_CARR_000`` created in the previous step:
+ Following [``Using Virtual Elements in CDS Projection Views``](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/319380e0cef94051ae9aa292ffadb59a.html?version=201909.latest&q=ObjectModel.filter.transformedBy) we created ``Virtual Elements`` declared in the CDS projection view ``ZC_DT266_CARR_###`` (`ZDT266_CARR_000`) created in the previous step:
  
  <kbd><img src="images/Virtual_Element.png" alt="Open ABAP Trace Requests" width="80%"></kbd>
 
