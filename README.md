@@ -37,7 +37,7 @@ This session introduces attendees how to analyze custom extensions in SAP Fiori 
 <!--* Watch the live jump-start session on 📅 Wednesday, Nov 5 | 🕐 3:30 PM - 5:30 PM CET.  
   [DT266 | Troubleshoot and optimize extensions for ABAP Cloud in cloud ERP](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749650347432001y6fi)   -->   
   
-- Access the presentation: 📄[DT266@SAPTechEd2025.pdf (extended version)](/exercises/images/DT266@SAPTechEd2025.pdf)↗
+- Access the presentation: 📄[DSAG_DT266.pdf (extended version)](/exercises/images/DSAG_DT266_greyed_out.pdf)↗
 
 
 ## Requirements for attending this workshop
