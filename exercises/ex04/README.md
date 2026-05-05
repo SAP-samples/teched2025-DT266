@@ -781,7 +781,7 @@ In the first section we explain the usage of this Tool to discover all the perfo
       <kbd><img src="images/Scroll_Aggregate_TL.png" alt="Open ABAP Trace Requests" width="100%"></kbd> <br>
 
       Here we see 4 main contributions to the runtime: 
-      |1. Long DB Fetch on DB table `DMO_BOOK_SUPPL` (orange) |2. A long DB Fetch on DB table `ZDT266_SUP_I_000` (orange) | 3. Three subsequent blocks of DB Fetches on DB table `ZDT266_SUP_I_000` (orange) | 4. A `READ Where` statement on an internal table `lt_supplement` (grey) |
+      |1. Long DB Fetch on DB table `DMO_BOOK_SUPPL` (orange) |2. A long DB Fetch on DB table `ZDT266_SUP_I_###` (orange) | 3. Three subsequent blocks of DB Fetches on DB table `ZDT266_SUP_I_###` (orange) | 4. A `READ Where` statement on an internal table `lt_supplement` (grey) |
       |---|---|---|---|
       |12% to 17% of runtime <ul> <li> for 1794 calls <br> (_Hit count_) </li>  </ul> |  ~22% of runtime <ul> <li> for 3170 calls (_Hit count_) </li> </ul> <br>| 18% of runtime <br> (3 times 3.5% to 8% of time) <ul> <li> for 3 x 498 calls (_Hit count_) </li>  </ul>|~37% of runtime <ul> <li> for 3170 calls (_Hit count_) </li>  </ul> <br> |
       |Improvement in <br> _Exercise 4.4_ |  Improvement in <br> _Exercise 4.2_ | Improvement in <br> _Exercise 4.2 & 4.3_ |Improvement in <br> _Exercise 4.3_ |
@@ -905,7 +905,7 @@ So let us start with improving the runtime in the following exercises._
 
       **Comparison of Traces:**
 
-      | The DB Select (_labeled as 2._) on the table **`ZDT266_SUP_I_000`** | The 3 blocks of DB selects (_labeled as 3._) on the same table |
+      | The DB Select (_labeled as 2._) on the table **`ZDT266_SUP_I_###`** | The 3 blocks of DB selects (_labeled as 3._) on the same table |
       |---|---|
       | **Before buffering (for label 2):** <ul> <li>  shown in orange color (as DB access) </li> <li> taking ~1.5 s </li> </ul> | **Before buffering (for label 3):**  <ul> <li> shown in orange color (as DB access) </li> <li> each taking 0.2 s - 0.6 s </li> </ul> |
       | <img src="images/Buffer_Compare2.png" alt="Open ABAP Trace Requests" width="1700"> | <img src="images/Buffer_Compare3.png" alt="Open ABAP Trace Requests" width="1500"> |
