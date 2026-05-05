@@ -418,7 +418,7 @@ In the first section we explain the usage of this Tool to discover the performan
     
       <kbd><img src="images/SC_fill_output.png" alt="generate UI service" width="70%"></kbd>
 
-  The JOIN of the tables and the calculation of the totals of the prices we have pushed into the CDS views: **`Z_I_PRICE_FLIGHT`** and **`Z_I_PRICE_###`**:
+  The JOIN of the tables and the calculation of the totals of the prices we have pushed into the CDS views: **`Z_I_PRICE_###`** and **`Z_I_PRICE_FLIGHT`**:
   <table>
       <tr>
           <td><img src="images/Expensive_Z_I_PRICE.png" alt="generate UI service" width="100%"></td>
