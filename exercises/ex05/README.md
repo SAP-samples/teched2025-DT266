@@ -57,7 +57,7 @@ In the first section we explain the usage of this Tool to discover the performan
   <summary>🔵 Click to expand!</summary>
 
  
- 1. Ensure that in you implementation class **`ZCL_DT266_CARR_EXTENSION_000`** ![class](images/adt_class.png)  the interface method **`IF_SADL_EXIT_CALC_ELEMENT_READ~CALCULATE`** calls the method **`get_prices_CDS`** instead of method **`get_prices_ABAP`**:
+ 1. Ensure that in you implementation class **`ZCL_DT266_CARR_EXTENSION_###`** ![class](images/adt_class.png)  the interface method **`IF_SADL_EXIT_CALC_ELEMENT_READ~CALCULATE`** calls the method **`get_prices_CDS`** instead of method **`get_prices_ABAP`**:
 
     | Change of Code| |
     |---|---|
@@ -398,12 +398,12 @@ In the first section we explain the usage of this Tool to discover the performan
  <details>
   <summary>🟠 Additional background information. </summary>
     
-  In the method **`get_prices_CDS`** of **`ZCL_DT266_CARR_EXTENSION_000`**:  
+  In the method **`get_prices_CDS`** of **`ZCL_DT266_CARR_EXTENSION_###`**:  
   - after the data declarations:
     
     <kbd><img src="images/SC_DATA_declare.png" alt="generate UI service" width="40%"></kbd>
 
-  - we have the 2 Selects from the CDS views **`Z_I_PRICE_000`** and **`Z_I_PRICE_FLIGHT`** 
+  - we have the 2 Selects from the CDS views **`Z_I_PRICE_###`** and **`Z_I_PRICE_FLIGHT`** 
     - to get the supplements and flight priceses for specific carrier 
     - all the totals of the prices for each carrier we calculate in those CDS views
 
@@ -418,7 +418,7 @@ In the first section we explain the usage of this Tool to discover the performan
     
       <kbd><img src="images/SC_fill_output.png" alt="generate UI service" width="70%"></kbd>
 
-  The JOIN of the tables and the calculation of the totals of the prices we have pushed into the CDS views: **`Z_I_PRICE_FLIGHT`** and **`Z_I_PRICE_000`**:
+  The JOIN of the tables and the calculation of the totals of the prices we have pushed into the CDS views: **`Z_I_PRICE_FLIGHT`** and **`Z_I_PRICE_###`**:
   <table>
       <tr>
           <td><img src="images/Expensive_Z_I_PRICE.png" alt="generate UI service" width="100%"></td>
@@ -426,7 +426,7 @@ In the first section we explain the usage of this Tool to discover the performan
       </tr>
   </table>
 
-  where **`Z_I_PRICE_000`** calls 2 other CDS views **`Z_I_BOOK_SUPPL`** and **`Z_I_SUPPL`**:
+  where **`Z_I_PRICE_###`** calls 2 other CDS views **`Z_I_BOOK_SUPPL`** and **`Z_I_SUPPL`**:
 
   <table>
       <tr>
@@ -445,7 +445,7 @@ In the first section we explain the usage of this Tool to discover the performan
 > [!NOTE] 
 > **This exercise is optional and only one active SQL trace on a system is possible.** <br>
 
-> In an `ABAP Trace` you would just see a runtime of about 9 seconds and that most time is for a database statement: **`Open Z_I_PRICE_000`**. But no further details are shown... <br>
+> In an `ABAP Trace` you would just see a runtime of about 9 seconds and that most time is for a database statement: **`Open Z_I_PRICE_###`**. But no further details are shown... <br>
 > **For performance investigation of the CDS views we need an `SQL trace` and analyze it in the `SQL Analyzer`.**
 
 
@@ -663,7 +663,7 @@ In the first section we explain the usage of this Tool to discover the performan
   <summary>🔵 Click to expand!</summary>
 
  
- 1. Open the CDS view **`Z_i_PRICE_000`** and define the ID without any calculation. So we have to change: 
+ 1. Open the CDS view **`Z_i_PRICE_###`** and define the ID without any calculation. So we have to change: 
     - Mark line 12  and comment it by pressing **`Ctrl+<`**
     - Mark line 13 and remove the comment by pressing **`Ctrl+>`**.
 
