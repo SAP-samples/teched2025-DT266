@@ -572,14 +572,14 @@ In the first section we explain the usage of this Tool to discover the performan
 
 
     <br>  
- 2. Choose for the 'Plan Mode' the setting 'Logical' and for the 'Node Execution Time Mode' the setting 'Cumulative Active Time'.
+ 2. Choose for the **Plan Mode** the setting `Logical` and for the **Node Execution Time Mode** the setting `Cumulative Active Time`.
 
     <br>
     
     > 🟠 _**Remark:**_ The SQL query plan has two types of plan modes: **`logical`** and **`physical`**.
-    > - _Logical operators:_ define the sequence of operations required to perform the query.
+    > - `_Logical operators:_` define the sequence of operations required to perform the query.
     >   - They are a good starting point to understand the logic of the execution plan
-    > - _Physical operators:_ execute operations defined by logical operators on the physical storage of the database. 
+    > - `_Physical operators:_` execute operations defined by logical operators on the physical storage of the database. 
     >   - For example, which join type (_NestedLoop_ or _HashJoin_),...
 
     We will only use the **`logical`** plan mode: 
