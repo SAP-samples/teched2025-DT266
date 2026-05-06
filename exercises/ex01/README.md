@@ -675,7 +675,7 @@ Finally we solve the issue by a small change of ABAP code.
 
       | Call of the Fiori App | Details |
       |---|---|
-      | <img src="images/Navigate_to_Preview.png" alt="generate UI service" width="3000">| Navigate to `<SID>_EN` > `Favorite Packages` > `ZLOCAL` > `ZDT266` > `ZDT266_`**`###`**  <br> > `Business Services` > **`Service Bindings`**. <br> <br> Double-click on **`ZUI_DT266_CARR_###_O4`**.  |
+      | <img src="images/Navigate_to_Preview.png" alt="generate UI service" width="3000">| Navigate to `<SID>_EN` > `Favorite Packages` > `ZDT266_`**`###`**  <br> > `Business Services` > **`Service Bindings`**. <br> <br> Double-click on **`ZUI_DT266_CARR_###_O4`**.  |
       | <img src="images/Show_Preview.png" alt="generate UI service" width="100%"> | In the new screen click on **`Preview...`**|
 
       - Run the Fiori App first for **Airline ID = 'AA'** by entering the ID and clicking on **`Go`** where you get a reponse:
