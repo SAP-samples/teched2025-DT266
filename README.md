@@ -1,6 +1,6 @@
 
 
-# DT266 - Troubleshoot and Optimize ABAP Cloud Extensions in Cloud ERP
+# Session DT266 - Troubleshoot and Optimize ABAP Cloud Extensions in Cloud ERP
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2025-DT266)](https://api.reuse.software/info/github.com/SAP-samples/teched2025-DT266)
 
