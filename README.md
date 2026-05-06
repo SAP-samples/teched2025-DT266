@@ -1,13 +1,14 @@
 
 
-# Teched2025_DT266 - Troubleshoot and Optimize ABAP Cloud Extensions in Cloud ERP
+# DT266 - Troubleshoot and Optimize ABAP Cloud Extensions in Cloud ERP
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2025-DT266)](https://api.reuse.software/info/github.com/SAP-samples/teched2025-DT266)
 
 ## Description
 
-This repository contains the material originally created for the SAP TechEd 2025 session [DT266 | Troubleshoot and optimize extensions for ABAP Cloud in cloud ERP](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749650347432001y6fi).
-
+<!--- This repository contains the material originally created for the SAP TechEd 2025 session [DT266 | Troubleshoot and optimize extensions for ABAP Cloud in cloud ERP](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749650347432001y6fi).
+-->
+This repository contains the material for the Session **DT266 | Troubleshoot and optimize extensions for ABAP Cloud in cloud ERP**.
 
 - [Overview](#overview)
 - [Presentation](#presentation)
