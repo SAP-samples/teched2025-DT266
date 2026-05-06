@@ -869,7 +869,7 @@ So let us start with improving the runtime in the following exercises._
 
    1. **Activate Table Buffering for table  `ZDT266_SUP_I_###`:** 
 
-      - Navigate to `APB_EN` >  `Favorite Packages` > `ZLOCAL` > `ZDT266_`**`###`** > `Dictionary`> `Database Tables` > <br> `ZDT266_SUP_I_`**`###`** >  `Technical Table Settings` > `ZDT266_SUP_I_`**`###`** 
+      - Navigate to `<SID>_EN` >  `Favorite Packages` > `ZDT266_`**`###`** > `Dictionary`> `Database Tables` > <br> `ZDT266_SUP_I_`**`###`** >  `Technical Table Settings` > `ZDT266_SUP_I_`**`###`** 
       <!--
         - _where **`###`** is your suffix._
       <-->  
