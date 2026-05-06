@@ -45,7 +45,7 @@ We outline how to logon to the system and how to access your package for these e
 </table>
 
 > [!IMPORTANT]
-> **Check the suffix `###` of your demo user (e.g. DT266-###@education.cloud.sap).**
+> **Check the suffix `###` of your demo user (e.g. devday-###@abapcloud.sap).**
 > Only perform changes in your package `ZDT266_###`. 
 
 > [!NOTE]    
@@ -68,7 +68,7 @@ We outline how to logon to the system and how to access your package for these e
 
 
 4. Logon with your provided user ( ### group number )
-- User: DT266-###@education.cloud.sap
+- User: devday-###@abapcloud.sap
 - Password: Password provided in the session.
 
   <kbd><img src="images/0_LogonScreen.png" alt="Logon with User" width="50%"></kbd>
@@ -777,7 +777,7 @@ All the ABAP code and database tables to change are in:
 
 
 > [!IMPORTANT]
-> **Check the suffix `###` of your demo user (e.g. DT266-###@education.cloud.sap).**
+> **Check the suffix `###` of your demo user (e.g. devday-###@abapcloud.sap).**
 > Only perform changes in your package `ZDT266_###`. 
 
 
