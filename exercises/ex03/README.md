@@ -181,9 +181,9 @@ With the previous search for **`failed`** guided us to the RAP procedure "Call H
 
 <img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="20%">.
 
-Here we have just the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="2%"> of the hierarchy for this validation. Now we want to see also the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="20%"> of the hierarchy for this validation. 
+Here we have just the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="2%"> of the hierarchy for this validation. Now we want to see also the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="2%"> of the hierarchy for this validation. 
 
-The reason is that in the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="20%">  the processed object (like draft tables, custom validations, etc. ) are shown:
+The reason is that in the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="2%">  the processed object (like draft tables, custom validations, etc. ) are shown:
 
  <kbd><img src="images/CrossTrace_Begin_Processed_Objects.png" alt="Search for validate" width="70%"></kbd>
 
