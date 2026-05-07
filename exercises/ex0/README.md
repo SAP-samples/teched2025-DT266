@@ -135,11 +135,10 @@ We outline how to logon to the system and how to access your package for these e
    > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, 
    > - insert the code snippet provided below (🟡📄), 
    > - and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
-     
-   > ℹ️ Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
    > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
    > - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+   > ℹ️ Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
 ```<ABAP>
 CLASS zcl_dt266_carr_extension_### DEFINITION
