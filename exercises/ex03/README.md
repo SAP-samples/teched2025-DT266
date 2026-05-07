@@ -178,10 +178,10 @@ When inspecting the traced content of the record, we can find the error message 
 #### 3b. New Search for the Validation Call
 
 With the previous search for **`failed`** guided us to the RAP procedure "Call Handler (Validation On Save)":
-<img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="100%">
-Here we have just the **End** (Hierarchy) <img src="images/CrossTrace_End.png" alt="Search for validate" width="100%"> for this validation. Now we want to see also the **Begin of the Hierarchy** <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="100%">. The reason is that in the **Begin** the processed object (like draft tables, custom validations, etc. ) are shown:
+<img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="10%">
+Here we have just the **End** (Hierarchy) <img src="images/CrossTrace_End.png" alt="Search for validate" width="5%"> for this validation. Now we want to see also the **Begin of the Hierarchy** <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="10%">. The reason is that in the **Begin** the processed object (like draft tables, custom validations, etc. ) are shown:
 
- <kbd><img src="images/CrossTrace_Begin_Processed_Objects.png" alt="Search for validate" width="100%"></kbd>
+ <kbd><img src="images/CrossTrace_Begin_Processed_Objects.png" alt="Search for validate" width="50%"></kbd>
 
 So we perform a new search, this time for **validation** to display both, the begin and the end of the RAP procedure "Call Handler (Validation On Save)". 
 
