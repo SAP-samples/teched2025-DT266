@@ -629,7 +629,7 @@
 **Difference of ABAP Trace Tool to the ABAP Cross Trace**: <br>
 In the previous exercise 3, you've made yourself familiar with the ABAP Cross Trace. (see [Exercise 3](../ex03/README.md)). 
 
-The focus of this exercise 4 is on performance analysis using the ``ABAP Trace``. There we learn different techniques to improve the runtime in ABAP code. In addition with help of the ``Table Comparison Tool`` we analye a functional error introduced with one of our optimizations. 
+The focus of this exercise 4 is on performance analysis using the ``ABAP Trace``. There we learn different techniques to improve the runtime in ABAP code. In addition with help of the ``Table Comparison Tool`` we analyze a functional error introduced with one of our optimizations. 
 
 While the _ABAP Cross Trace_  
 - provides specific analysis tools for insight in OData requests and interaction between ABAP Cloud Framework and custom code, 
