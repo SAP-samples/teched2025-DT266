@@ -189,7 +189,7 @@ The reason is that in the **Begin** the processed object (like draft tables, cus
 So we perform a new search, this time for **validation** to display both, the begin and the end of the RAP procedure "Call Handler (Validation On Save)". 
 
 - There we see for the procedure "Call Handler (Validation On Save) an entry in the column **`Processed Objects`** at the begin of the hierarchy. 
-- And at the end for the record properties of the validation trace record we can see again that this validation outputs 1 failed key and two reported messages in the column **`Record Properties`**. 
+- And at the end of for thís validation trace record for the procedure "Call Handler (Validation On Save) we can see again that this validation outputs 1 failed key and two reported messages (in the column **`Record Properties`**). 
 
 Therefore, we want to inspect this validation further by navigating to the validation implementation shown in the column **`Processed Objects`**. You can reach the context menu of the record via right-click. There first select **`Navigate to Processed Objects`** and then select click on the mentioned method implementation to navigate.
 
