@@ -16,9 +16,10 @@ Finally we solve the issue by a small change of ABAP code.
 
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`** as outlined in point 9 of [Getting Started](../ex0/README.md).
+> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`** as outlined in section **Logon and Connect: Adapt the source code in class ZCL_DT266_CARR_EXTENSION_###** of [Getting Started](../ex0/README.md).
 >  
-> **If you have not already implemented the code snippet in point 9 of [Getting Started](../ex0/README.md) please implement the code snippet which is provided below:** 
+> **If you have not already implemented the code snippet in [Getting Started](../ex0/README.md) please perform this before continuing with the exercises.** 
+<!--
 > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, 
 > - insert the code snippet provided below (🟡📄), 
 > - and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
@@ -631,7 +632,7 @@ Finally we solve the issue by a small change of ABAP code.
 
    </details>
 
-
+-->
 
 > [!IMPORTANT]    
 > Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
