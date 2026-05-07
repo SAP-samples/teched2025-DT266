@@ -713,7 +713,7 @@ Finally we solve the issue by a small change of ABAP code.
 
         ---
 
-        🟠 _**REMARK:**_ For a **list of shortcuts** (like **`CTRL+3`**) refer to [``Keyboard Shortcuts for ABAP Development``](https://help.sap.com/docs/ABAP_PLATFORM_NEW/c238d694b825421f940829321ffa326a/4ec299d16e391014adc9fffe4e204223.html) and [``Useful Keyboard Shortcuts for ABAP in Eclipse``](https://community.sap.com/t5/application-development-and-automation-blog-posts/useful-keyboard-shortcuts-for-abap-in-eclipse/ba-p/13072397).
+        🟠 _**REMARK:**_ For a **list of shortcuts** (like **`CTRL+3`**) refer to [`Keyboard Shortcuts for ABAP Development`](https://help.sap.com/docs/ABAP_PLATFORM_NEW/c238d694b825421f940829321ffa326a/4ec299d16e391014adc9fffe4e204223.html) and [`Useful Keyboard Shortcuts for ABAP in Eclipse`](https://community.sap.com/t5/application-development-and-automation-blog-posts/useful-keyboard-shortcuts-for-abap-in-eclipse/ba-p/13072397).
       
         ---
         
