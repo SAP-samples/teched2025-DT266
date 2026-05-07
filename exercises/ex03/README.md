@@ -178,6 +178,7 @@ When inspecting the traced content of the record, we can find the error message 
 #### 3b. New Search for the Validation Call
 
 With the previous search for **`failed`** guided us to the RAP procedure "Call Handler (Validation On Save)":
+
 <img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="20%">.
 
 Here we have just the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="2%"> of the hierarchy for this validation. Now we want to see also the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="20%"> of the hierarchy for this validation. 
