@@ -180,13 +180,13 @@ When inspecting the traced content of the record, we can find the error message 
 With the previous search for **`failed`** guided us to the RAP procedure "Call Handler (Validation On Save)":
 <img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="20%">.
 
-Here we have just the **End** (Hierarchy) <img src="images/CrossTrace_End.png" alt="Search for validate" width="2%"> for this validation. Now we want to see also the **Begin of the Hierarchy** <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="20%">. 
+Here we have just the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="2%"> of the hierarchy for this validation. Now we want to see also the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="20%"> of the hierarchy for this validation. 
 
-The reason is that in the **Begin** the processed object (like draft tables, custom validations, etc. ) are shown:
+The reason is that in the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="20%">  the processed object (like draft tables, custom validations, etc. ) are shown:
 
  <kbd><img src="images/CrossTrace_Begin_Processed_Objects.png" alt="Search for validate" width="70%"></kbd>
 
-So we perform a new search, this time for **validation** to display both, the begin and the end of the RAP procedure "Call Handler (Validation On Save)". 
+So we perform a new search, this time for **validation** to display both, the begin and the end of the RAP procedure "Call Handler (Validation On Save)" (you could also search for _call handler_, _validation on save_). 
 
 - There we see for the procedure "Call Handler (Validation On Save) an entry in the column **`Processed Objects`** at the begin of the hierarchy. 
 - And at the end of for thís validation trace record for the procedure "Call Handler (Validation On Save) we can see again that this validation outputs 1 failed key and two reported messages (in the column **`Record Properties`**). 
