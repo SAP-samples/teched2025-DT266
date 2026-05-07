@@ -302,9 +302,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
 
 
     " Exercise 4.4: Compare with FAE -START
-
 *********************************************************************
-
     " Get the Supplements (like beverages, meals, luggages) additionally booked.
     LOOP AT lt_booking INTO ls_booking.
       SELECT  travel_id, booking_id, supplement_id, price FROM /dmo/book_suppl
