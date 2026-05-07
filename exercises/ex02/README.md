@@ -168,7 +168,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
             <kbd><img src="images/Terminate.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
 
-         - Switch back to the `ABAP perspective` via the Quick Access (<img src="../images/abap_perspective.png" alt="Open ABAP Trace Requests" width="10%">).    
+ 
 
       -----      
 
@@ -343,7 +343,9 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
  <details>
   <summary>🔵 Click to expand!</summary>
 
-   1. For this you only have to remove the comments for the CLEAR statements and also you can now delete the breakpoint:
+   1. Switch back to the `ABAP perspective` via the Quick Access (<img src="../images/abap_perspective.png" alt="Open ABAP Trace Requests" width="10%">).   
+
+   2. To correct the ABAP code you only have to remove the comments for the CLEAR statements and also you can now delete the breakpoint:
        <table>
        <tr>
            <td><img src="images/Without_Clear.png" alt="generate UI service" width="99%"></td>
@@ -357,7 +359,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
       
  
 
-   2. ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** 
+   3. ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** 
       <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
       
       This will solve the issue. When you rerun the Fiori app you will see no memory issue anymore.
