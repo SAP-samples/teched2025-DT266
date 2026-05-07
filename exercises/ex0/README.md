@@ -236,7 +236,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
 
 
   METHOD get_supplements_ABAP.
-    SELECT supplement_id,id, supplement_category, price FROM zdt266_sup_i_803
+    SELECT supplement_id,id, supplement_category, price FROM zdt266_sup_i_###
         FOR ALL ENTRIES IN @lt_id
         WHERE supplement_category = @supplement_category AND id = @lt_id-id
   APPENDING TABLE @lt_supplement.
@@ -246,7 +246,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
   METHOD get_prices_ABAP.
 
     DATA:
-      group_id              TYPE string VALUE '803',
+      group_id              TYPE string VALUE '###',
       id                    TYPE int4,
       ls_id                 TYPE ty_id,
       lt_id                 TYPE STANDARD TABLE OF ty_id,
@@ -344,7 +344,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
       " Exercise 2.1: Memory Analysis -START
 **********************************************************************
       " Get all prices and categories
-      SELECT supplement_id,id, supplement_category, price FROM zdt266_sup_i_803
+      SELECT supplement_id,id, supplement_category, price FROM zdt266_sup_i_###
       APPENDING TABLE @lt_supplement.
 
       SORT lt_supplement BY supplement_id id.
@@ -353,7 +353,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
 
       " Get the prices and categories only for the booked supplements
 *    LOOP AT lt_book_suppl INTO ls_book_suppl.
-*      SELECT supplement_id,id, supplement_category, price FROM zdt266_sup_i_803
+*      SELECT supplement_id,id, supplement_category, price FROM zdt266_sup_i_###
 *      WHERE supplement_id = @ls_book_suppl-supplement_id
 *      AND id = 1
 *      APPENDING TABLE @lt_supplement.
@@ -636,7 +636,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
       suppl_price_sum_bev  TYPE /dmo/supplement_price,
       suppl_price_sum_lugg TYPE /dmo/supplement_price,
       flight_price_sum     TYPE /dmo/supplement_price,
-      group_id             TYPE string VALUE '803',
+      group_id             TYPE string VALUE '###',
       lt_carrier_price_sum TYPE STANDARD TABLE OF ty_carrier_price_sum.
 
     SELECT
@@ -646,7 +646,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
       suppl_price_sum_meal,
       suppl_price_sum_lugg
     FROM
-      z_i_price_803
+      z_i_price_###
     FOR ALL ENTRIES IN @lt_carrier WHERE carrierid = @lt_carrier-carrier_id AND id = 2
     %_HINTS HDB 'NO_USE_HEX_PLAN'
     INTO TABLE @DATA(lt_cds_result_suppl).
@@ -705,7 +705,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
       lt_carrier TYPE tt_carrier_id,
       ls_carrier TYPE ty_carrier.
 
-    DATA lt_original_data TYPE STANDARD TABLE OF zc_dt266_carr_803 WITH DEFAULT KEY.
+    DATA lt_original_data TYPE STANDARD TABLE OF zc_dt266_carr_### WITH DEFAULT KEY.
 
     lt_original_data = CORRESPONDING #( it_original_data ).
 
