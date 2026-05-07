@@ -58,6 +58,9 @@ We outline how to logon to the system and how to access your package for these e
 
  -----
 ### Logon and Connect 
+
+<details>
+     <summary>🟡Click to expand</summary>
 1. Start ABAP Development Tools
 2. Create a new Cloud Project via `Create an ABAP cloud project`
 
@@ -78,21 +81,54 @@ We outline how to logon to the system and how to access your package for these e
 
    <img src="images/0_FinishProject.png" alt="FinishProject" width="50%">   
 
-7. Add your exercise package to `Favorite Packages`
+</details>
+
+<!--
+### Generate your own exercise package `ZDT266_###` (not needed for SAP lead events) 
+
+1. Right click on the folder `Favorite objects` and choose `Add Object`. 
+
+   <img src="images/9_1_generate_exercise_package.png" alt="FinishProject" width="50%">
+
+2. Choose `zdmo_gen_dt266_single` and choose **OK**.  
+
+   <img src="images/9_2_generate_exercise_package.png" alt="FinishProject" width="50%">
+
+3. Right click on `zdmo_gen_dt266_single` and select **Run as** > **Application Console (ABAP)** or simply press **F9** having the class selected.
+
+   <img src="images/9_3_generate_exercise_package.png" alt="FinishProject" width="50%">
+
+4. Wait for the generation process to end
+
+-->
+
+### Add the exercise package `ZDT266_###` to your favorite packages 
+
+<details>
+     <summary>🟡Click to expand</summary>
+
+1. Add your exercise package to `Favorite Packages`
 
    <img src="images/0_AddPackageSelect.png" alt="Add package Nr" width="25%">   
 
-8. Make sure to add the package matched to your group number ### and add it
+2. Make sure to add the package matched to your group number ### and add it
 
    <img src="images/0_AddPackage.png" alt="Add package" width="50%">
 
 
-9. Expand your favorite packages to access your package
+3. Expand your favorite packages to access your package
 
    <img src="images/0_Expand_Favorite.png" alt="Expand Favorite" width="50%">   
 
 
-10. **Perform the following coding change:**
+</details>
+
+### ⚠️ Adapt the source code in class **`ZCL_DT266_CARR_EXTENSION_###`**
+
+<details>
+     <summary>🟡Click to expand</summary>
+
+1. **Perform the following coding change:**
    > [!IMPORTANT]    
    > **Prerequisite for this exercise is that you implement the code snippet in class `ZCL_DT266_CARR_EXTENSION_###`**.
    > **A code snippet is provided below to speed up the process:** 
@@ -712,6 +748,8 @@ We outline how to logon to the system and how to access your package for these e
    > [!IMPORTANT]    
    > Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
+
+</details>
  -----
 
 <!--
