@@ -141,7 +141,7 @@ We outline how to logon to the system and how to access your package for these e
    > - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.
    > - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
 
-
+```<ABAP>
       CLASS zcl_dt266_carr_extension_### DEFINITION
       PUBLIC
       FINAL
@@ -737,6 +737,7 @@ We outline how to logon to the system and how to access your package for these e
       ENDMETHOD.
     ENDCLASS.
 
+```
    
 
 
