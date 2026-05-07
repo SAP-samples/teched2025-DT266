@@ -177,11 +177,11 @@ When inspecting the traced content of the record, we can find the error message 
 
 #### 3b. New Search for the Validation Call
 
-With the previous search for **`failed`** guided us to the RAP procedure "Call Handler (Validation On Save)":
+The previous search for **`failed`** guided us to the RAP procedure "Call Handler (Validation On Save)":
 
 <img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="20%">.
 
-Here we have just the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the hierarchy for this validation. Now we want to see also the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> of the hierarchy for this validation. 
+Here we have just the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the hierarchy for this validation on save. Now we want to search also for the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> of the hierarchy for this validation on save. 
 
 The reason is that in the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%">  the processed object (like draft tables, custom validations, etc. ) are shown:
 
@@ -192,7 +192,7 @@ So we perform a new search, this time for **validation** to display both, the be
 - There we see for the procedure "Call Handler (Validation On Save) an entry in the column **`Processed Objects`** at the begin of the hierarchy. 
 - And at the end of for thís validation trace record for the procedure "Call Handler (Validation On Save) we can see again that this validation outputs 1 failed key and two reported messages (in the column **`Record Properties`**). 
 
-Therefore, we want to inspect this validation further by navigating to the validation implementation shown in the column **`Processed Objects`**. You can reach the context menu of the record via right-click. There first select **`Navigate to Processed Objects`** and then select click on the mentioned method implementation to navigate.
+Now we can inspect this validation further by navigating to the validation implementation shown in the column **`Processed Objects`**. You can reach the context menu of the record via right-click. There first select **`Navigate to Processed Objects`** and then select click on the mentioned method implementation to navigate.
 
  <kbd><img src="images/CrossTrace_Search_Validate.png" alt="Search for validate" width="100%"></kbd> 
 
