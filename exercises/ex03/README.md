@@ -14,7 +14,7 @@
 > **We have provided a code snippet below to directly start with this Exercise 3 and/or with the** [Exercise 4](../ex04/README.md):
 > - To insert directly the code containing all prerequisites first delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, then insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
 
-**Code Snippet for** [Exercise 3](../ex03/README.md) **and/or** [Exercise 4](../ex04/README.md) **in case the code changes of the previous exercises were not yet implemented:**
+**Code Snippet for** [Exercise 3](../ex03/README.md) **and/or** [Exercise 4](../ex04/README.md) **in the previous exercises were not completed:**
 
  <details>
   <summary>🟡 Click to expand </summary>
