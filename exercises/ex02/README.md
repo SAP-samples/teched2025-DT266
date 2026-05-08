@@ -47,7 +47,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
 Here you can either exchange the coding completely (Version 1)  or perform manually the delta of changes (Version 2):
 
-Version 1: Exchange the Code completely in class ZCL_DT266_CARR_EXTENSION_###:
+**Version 1: Exchange the Code completely in class ZCL_DT266_CARR_EXTENSION_###:**
 
  <details>
   <summary>🔵 Click to expand </summary>
@@ -658,7 +658,7 @@ ENDCLASS.
 ```
  </details>
  
- Version2: Perform manually the delta changes
+ **Version 2: Perform manually the delta changes**
  <details>
   <summary>🔵 Click to expand</summary>
 
@@ -698,11 +698,13 @@ ENDCLASS.
    3. ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** 
       <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
-   4. Run again the Fiori App for **Airline ID = 'AA'**. Now it fails with the Out-of-Memory error **`TSV_TNEW_PAGE_ALLOC_FAILED`**:
+</details>
+
+
+Afterwards run again the Fiori App for **Airline ID = 'AA'**. Now it fails with the Out-of-Memory error **`TSV_TNEW_PAGE_ALLOC_FAILED`**:
 
       <img src="images/Out_of_Memory_Error1.png" alt="Open ABAP Trace Requests" width="60%">
 
-</details>
 
 
 
