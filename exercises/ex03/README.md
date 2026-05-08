@@ -5,19 +5,18 @@
 ## Introduction
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you have at least implemented the code change:
-> - Code change of exercise [1.1 - Runtime Error Analysis with the Feed Reader](../ex01/README.md##exercise-11-runtime-error-analysis-with-the-feed-reader)
->   - This would be sufficient for this Exercise 3. 
->   - But for [Exercise 4: Performance Analysis and Improvement using ABAP Trace and Table Comparison Tool](../ex04/README.md) you will also need to have implemented:
+> Prerequisite for this exercise is that you have at least implemented the code change of exercise [1.1 - Runtime Error Analysis with the Feed Reader](../ex01/README.md##exercise-11-runtime-error-analysis-with-the-feed-reader)
+> - This would be sufficient for this Exercise 3. 
+> - But for [Exercise 4](../ex04/README.md) you will also need to have implemented:
 >     - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
 >     - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
-> - **In case those recommendations are not yet implemented a code snippet is provided below to directly start with** [Exercise 3: Usage of the ABAP Cross Trace](../ex03/README.md) **and** [Exercise 4: Performance Analysis and Improvement using ABAP Trace and Table Comparison Tool](../ex04/README.md):
+> - **In case those recommendations are not yet implemented a code snippet is provided below to directly start with this** [Exercise 3](../ex03/README.md) **and with** [Exercise 4](../ex04/README.md):
 >   - **In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
 
-**Code Snippet for** [Exercise 3: Usage of the ABAP Cross Trace](../ex03/README.md) **and** [Exercise 4: Performance Analysis and Improvement using ABAP Trace and Table Comparison Tool](../ex04/README.md) **in case the code changes of the previous exercises were not yet implemented:**
+**Code Snippet for** [Exercise 3](../ex03/README.md) **and/or** [Exercise 4](../ex04/README.md) **in case the code changes of the previous exercises were not yet implemented:**
 
  <details>
-  <summary>🔵 Click to expand </summary>
+  <summary>🟡 Click to expand </summary>
   
   To completely exchange the coding in class ZCL_DT266_CARR_EXTENSION_###:**
   > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**. 
