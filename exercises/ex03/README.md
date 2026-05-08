@@ -149,18 +149,22 @@ There we can see two created traces. By double-clicking, we navigate to the trac
  <kbd><img src="images/CrossTrace_Trace.png" alt="Cross Trace Overview" width="90%"></kbd> 
  
 - In the Search field, the Trace can be searched
-- The column **`Procedure`** on the left gives both a first indication what step was processed and how the step is nested in relation to the other procedures.
-- In the column **`Processed Objects`**, specific ABAP objects that were processed during the procedure are listed, e.g. specific draft table or even action implementation. Via **`CTRL`** + click, you can even navigate to the ABAP object listed in the Processed Objects column.
+- The column **`Procedure`** on the left gives both a first indication what step was processed and how the step is nested in relation to the other procedures. It specifies the original step of the trace record, e.g. the RAP method.
+  - Each **`Procedure`** trace record is shown within the call hierarchy where the begin and then end are marked by <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> and <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%">.
+- In the column **`Processed Objects`**, the specific ABAP development objects that were processed during the procedure are shown, e.g. specific draft table, the class name of the exit handlers or even action implementations. Via **`CTRL`** + click, you can even navigate to the ABAP object listed in the Processed Objects column.
+  - The **`Processed Objects`** the class name of the exit handlers which are called directly from the **`Procedure`** are shown at the beginning <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%">.
 - The column **`Message`** gives a more detailed but brief explanation what happened during the procedure.
-- In the column **`Record Properties`**, further information is logged, such as RAP messages thrown during the transaction
-- The controls in the right upper corner expand and collapse sections of the trace.
+- In the column **`Record Properties`**, further information is logged, such as RAP messages thrown during the transaction. The record properties are key-value pairs and provide the keywords for filtering. 
+  - The RAP messages thrown during the transaction in the column **`Record Properties`** are shown at the end <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the **`Procedure`** trace record: <br>
+    <kbd><img src="images/CrossTrace_Record_Properties.png" alt="Search for validate" width="3%"> and <img src="images/CrossTrace_End.png" alt="Search for validate" width=100%"></kbd>.
+- The controls in the right upper corner expand and collapse sections of the trace. 
 
-#### 3a. Search for failed key(s) to find the error message in ABAP CROSS Trace
+#### 3a. Search for failed key(s) to find the error message in ABAP Cross Trace
 
 The trace with all its properties can be overwhelming. Luckily there is a search feature included in the trace view which we can use to search for the error behavior we have encountered.
 
 The error message on the UI could be created in the business object implementation, as it tries to highlight data inconsistencies. Therefore, in case of error messages on the UI, it makes a lot of sense to search for the message in the cross trace.
-To do so, we use the search bar above the table and search for **`failed`** (In RAP, errors are propagated trough failed keys, they are marked as such and are searchable in the cross trace).  
+To do so, we use the search bar above the table and search for **`failed`** (In RAP, errors are propagated trough failed keys, they are marked as such and shown in the column **`Record Properties`** and are searchable in the cross trace).  
 
  <kbd><img src="images/CrossTrace_Search_Failed.png" alt="Search for failed" width="100%"></kbd> 
 
