@@ -196,7 +196,7 @@ We need also the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" al
 
  <kbd><img src="images/CrossTrace_Begin_Processed_Objects.png" alt="Search for validate" width="70%"></kbd>
 
-So we perform a new search, this time for **`validation`** to have both displayed, the begin and the end of the RAP procedure "Call Handler (Validation On Save)" (you could also search for _call handler_, _validation on save_). 
+So we perform a new search, this time for **`validation`** to have both displayed, the begin and the end of the RAP procedure **`Call Handler (Validation On Save)`** (you could also search for _call handler_, _validation on save_). 
 
 - There we see for the procedure **`Call Handler (Validation On Save)`** an entry in the column **`Processed Objects`** at the begin of the trace record. 
 - And at the end of for thís trace record we can see again that this validation outputs 1 failed key and two reported messages (in the column **`Record Properties`**). 
