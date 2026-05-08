@@ -150,7 +150,8 @@ There we can see two created traces. By double-clicking, we navigate to the trac
  
 - In the Search field, the Trace can be searched.
 - The column **`Procedure`** on the left gives both a first indication what step was processed and how the step is nested in relation to the other procedures in a hierarchical display. It specifies the original step of the trace record, e.g. the RAP method. In this hierarchy the begin and then end of each trace record are marked by <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> and <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%">. 
-- In the column **`Processed Objects`**, the specific ABAP development objects that were processed during the procedure are shown, e.g. specific draft table, the class name of the exit handlers or even action implementations. <br> Via **`CTRL`** + click, you can even navigate to the ABAP object listed in the Processed Objects column.
+- In the column **`Processed Objects`**, the specific ABAP development objects that were processed during the procedure are shown, e.g. specific draft table, the class name of the exit handlers or even action implementations. 
+  - Via **`CTRL`** + click, you can even navigate to the ABAP object listed in the Processed Objects column.
   - In the **`Processed Objects`** column the class name of the exit handlers which are called directly from the **`Procedure`** are shown at the beginning <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%">.
 - The column **`Message`** gives a more detailed but brief explanation what happened during the procedure.
 - In the column **`Record Properties`**, further information is logged, such as RAP messages thrown during the transaction. The record properties are key-value pairs and provide the keywords for filtering. 
@@ -158,12 +159,12 @@ There we can see two created traces. By double-clicking, we navigate to the trac
     <kbd><img src="images/CrossTrace_Record_Properties.png" alt="Search for validate" width="100%"></kbd>.
 - The controls in the right upper corner expand and collapse sections of the trace. 
 
-#### 3a. Search for failed key(s) to find the error message in ABAP Cross Trace
-
 The trace with all its properties can be overwhelming. Luckily there is a search feature included in the trace view which we can use to search for the error behavior we have encountered.
 
+#### 3a. Search for failed key(s) to find the error message in ABAP Cross Trace
+
 The error message on the UI could be created in the business object implementation, as it tries to highlight data inconsistencies. Therefore, in case of error messages on the UI, it makes a lot of sense to search for the message in the cross trace.
-To do so, we use the search bar above the table and search for **`failed`** (In RAP, errors are propagated trough failed keys, they are marked as such and shown in the column **`Record Properties`** and are searchable in the cross trace).  
+To do so, we use the search bar above the table and search for **`failed`** (In RAP, errors are propagated through failed keys, they are marked as such and shown in the column **`Record Properties`**. They are searchable in the cross trace).  
 
  <kbd><img src="images/CrossTrace_Search_Failed.png" alt="Search for failed" width="100%"></kbd> 
 
@@ -176,7 +177,7 @@ With a right-click on the trace record in the cross trace, we open a context men
 
  <kbd><img src="images/CrossTraceIssue1.png" alt="Search for validate" width="100%"></kbd> 
 
-When inspecting the traced content of the record, we can find the error message "Airline Name should not be initial" in the trace, which was logged additionally to the reported failed key. The procedure under inspection is called "Call Handler (Validation On Save)", which hints that the error message might originate from a validation on save. Therefore, we continue to search for validation procedures in the trace by searching for "validation" in the search bar.
+When inspecting the traced content of the record, we can find the error message `Airline Name should not be initial` in the trace, which was logged additionally to the reported failed key. The procedure under inspection is called `Call Handler (Validation On Save)`, which hints that the error message might originate from a validation on save. Therefore, we continue to search for validation procedures in the trace by searching for `validation` in the search bar.
 
 #### 3b. New Search for the Validation Call
 
@@ -190,14 +191,14 @@ The reason is that in the **Begin**  <img src="images/CrossTrace_Begin_Validatio
 
  <kbd><img src="images/CrossTrace_Begin_Processed_Objects.png" alt="Search for validate" width="70%"></kbd>
 
-So we perform a new search, this time for **validation** to display both, the begin and the end of the RAP procedure "Call Handler (Validation On Save)" (you could also search for _call handler_, _validation on save_). 
+So we perform a new search, this time for `validation` to display both, the begin and the end of the RAP procedure "Call Handler (Validation On Save)" (you could also search for _call handler_, _validation on save_). 
 
 - There we see for the procedure "Call Handler (Validation On Save) an entry in the column **`Processed Objects`** at the begin of the hierarchy. 
 - And at the end of for thís validation trace record for the procedure "Call Handler (Validation On Save) we can see again that this validation outputs 1 failed key and two reported messages (in the column **`Record Properties`**). 
 
-Now we can inspect this validation further by navigating to the validation implementation shown in the column **`Processed Objects`**. You can reach the context menu of the record via right-click. There first select **`Navigate to Processed Objects`** and then select click on the mentioned method implementation to navigate.
+<kbd><img src="images/CrossTrace_Search_Validate.png" alt="Search for validate" width="100%"></kbd> 
 
- <kbd><img src="images/CrossTrace_Search_Validate.png" alt="Search for validate" width="100%"></kbd> 
+Now we can inspect this validation further by navigating to the validation implementation shown in the column **`Processed Objects`**. You can reach the context menu of the record via right-click. There first select **`Navigate to Processed Objects`** and then select click on the mentioned method implementation to navigate.
 
 
 After navigation, we can inspect the validation implementation:
