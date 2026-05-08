@@ -166,7 +166,7 @@ The trace with all its properties can be overwhelming. Luckily there is a search
 The error message on the UI could be created in the business object implementation, as it tries to highlight data inconsistencies. Therefore, in case of error messages on the UI, it makes a lot of sense to search for the message in the cross trace.
 To do so, we use the search bar above the table and search for **`failed`**.
 
-🟠 _**REMARK:**_ In RAP, errors are propagated through failed keys, they are marked as such and shown in the column **`Record Properties`**. They are searchable in the cross trace.  
+🟠 _**REMARK:**_ In RAP, errors are propagated through **`failed keys`**, they are marked as such and shown in the column **`Record Properties`**. They are searchable in the cross trace.  
 
  <kbd><img src="images/CrossTrace_Search_Failed.png" alt="Search for failed" width="100%"></kbd> 
 
