@@ -275,7 +275,7 @@ We now can go back to ADT and deactivate the trace configuration again to preven
 
 <kbd><img src="images/ADT_Error2_DeactivateTrace.png" alt="Deactivate Trace" width="90%"></kbd> 
 
-We now see that the Number of Traces has increased. In case the trace does not yet appear, refresh the trace records by clicking either **`F5`** or right-click **`Refresh`**To inspect the new trace, we switch to the tab **`Trace Results`** and select the most recent, new trace and open it via right-click and open:
+We now see that the Number of Traces has increased. In case the trace does not yet appear, refresh the trace records by clicking either **`F5`** or right-click **`Refresh`**. To inspect the new trace, we switch to the tab **`Trace Results`** and select the most recent, new trace and open it via right-click and open:
 
   
 <td><kbd><img src="images/ADT_MoveToResults2.png" alt="Move to Cross Trace Results" width="99%"></kbd></td>
