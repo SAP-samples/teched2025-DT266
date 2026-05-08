@@ -80,6 +80,13 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
       <kbd><img src="images/Coding_for_specific_supplements2.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
 
+      Alternatively, you can also completely exchange the coding in class ZCL_DT266_CARR_EXTENSION_###:
+
+      <details>
+
+      bla
+      </details>
+
    3. ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** 
       <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
