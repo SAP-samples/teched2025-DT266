@@ -156,7 +156,7 @@ There we can see two created traces. By double-clicking, we navigate to the trac
 - The column **`Message`** gives a more detailed but brief explanation what happened during the procedure.
 - In the column **`Record Properties`**, further information is logged, such as RAP messages thrown during the transaction. The record properties are key-value pairs and provide the keywords for filtering. 
   - The RAP messages thrown during the transaction in the column **`Record Properties`** are shown at the end <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the **`Procedure`** trace record: <br>
-    <kbd><img src="images/CrossTrace_Record_Properties.png" alt="Search for validate" width="3%"> and <img src="images/CrossTrace_End.png" alt="Search for validate" width="100%"></kbd>.
+    <kbd><img src="images/CrossTrace_Record_Properties.png" alt="Search for validate" width="3%">.
 - The controls in the right upper corner expand and collapse sections of the trace. 
 
 #### 3a. Search for failed key(s) to find the error message in ABAP Cross Trace
