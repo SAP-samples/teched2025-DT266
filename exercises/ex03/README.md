@@ -166,7 +166,7 @@ The trace with all its properties can be overwhelming. Luckily there is a search
 The error message on the UI could be created in the business object implementation, as it tries to highlight data inconsistencies. Therefore, in case of error messages on the UI, it makes a lot of sense to search for the message in the cross trace.
 To do so, we use the search bar above the table and search for **`failed`**.
 
-🟠 _**REMARK:**_ In RAP, errors are propagated through **`failed keys`**, they are marked as such and shown in the column **`Record Properties`**. They are searchable in the cross trace.  
+🟠 _**REMARK:**_ In RAP, errors are propagated through **`failed`** keys, they are marked as such and shown in the column **`Record Properties`**. They are searchable in the cross trace.  
 
  <kbd><img src="images/CrossTrace_Search_Failed.png" alt="Search for failed" width="100%"></kbd> 
 
@@ -178,11 +178,11 @@ With a right-click on the trace record in the cross trace, we open a context men
 
 <kbd><img src="images/CrossTrace_Search_Failed2.png" alt="Search for failed" width="50%"></kbd> 
 
-There we click on **`Open Content`**. This opens a view Properties in the bottom section of ADT were we can explore the Record Properties logged in the trace record. 
+There we click on **`Open Content`**. This opens a view Properties in the bottom or in the right section of ADT were we can explore the Record Properties logged in the trace record. 
 
 <kbd><img src="images/CrossTraceIssue1.png" alt="Search for validate" width="100%"></kbd> 
 
-When inspecting the traced content of the record, we can find the error message `Airline Name should not be initial` in the trace, which was logged additionally to the reported failed key. The procedure under inspection is called **`Call Handler (Validation On Save)`**, which hints that the error message might originate from a validation on save. Therefore, we continue to search for validation procedures in the trace using the search term **`validation`** in the search bar.
+When inspecting the traced content of the record, we can find the error message **`Airline Name should not be initial`** in the trace, which was logged additionally to the reported failed key. The procedure under inspection is called **`Call Handler (Validation On Save)`**, which hints that the error message might originate from a validation on save. Therefore, we continue to search for validation procedures in the trace using the search term **`validation`** in the search bar.
 
 #### 3b. New Search for the Validation Call
 
@@ -190,16 +190,16 @@ The previous search for **`failed`** guided us to the RAP procedure **`Call Hand
 
 <img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="20%">.
 
-Here we have just the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the trace record for this validation on save. Now we want to search also for the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> of this validation on save. 
+With this filter we just see the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the trace record for this validation on save. Now we want to search also for the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> of this validation on save. 
 
-The reason is that in the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%">  the processed object (like draft tables, custom validations, etc. ) are shown:
+We need also the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> as there the processed objects (like draft tables, custom validations, etc. ) are shown:
 
  <kbd><img src="images/CrossTrace_Begin_Processed_Objects.png" alt="Search for validate" width="70%"></kbd>
 
-So we perform a new search, this time for `validation` to display both, the begin and the end of the RAP procedure "Call Handler (Validation On Save)" (you could also search for _call handler_, _validation on save_). 
+So we perform a new search, this time for **`validation`** to have both displayed, the begin and the end of the RAP procedure "Call Handler (Validation On Save)" (you could also search for _call handler_, _validation on save_). 
 
-- There we see for the procedure "Call Handler (Validation On Save) an entry in the column **`Processed Objects`** at the begin of the hierarchy. 
-- And at the end of for thís validation trace record for the procedure "Call Handler (Validation On Save) we can see again that this validation outputs 1 failed key and two reported messages (in the column **`Record Properties`**). 
+- There we see for the procedure **`Call Handler (Validation On Save)`** an entry in the column **`Processed Objects`** at the begin of the trace record. 
+- And at the end of for thís trace record we can see again that this validation outputs 1 failed key and two reported messages (in the column **`Record Properties`**). 
 
 <kbd><img src="images/CrossTrace_Search_Validate.png" alt="Search for validate" width="100%"></kbd> 
 
