@@ -80,7 +80,7 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
       <kbd><img src="images/Coding_for_specific_supplements2.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
 
-    3. **Alternatively to the steps 1.-2. , you can also completely exchange the coding in class ZCL_DT266_CARR_EXTENSION_###:**
+   3. **Alternatively to the steps 1.-2. , you can also completely exchange the coding in class ZCL_DT266_CARR_EXTENSION_###:**
 
       <details>
 
