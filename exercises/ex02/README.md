@@ -703,7 +703,7 @@ ENDCLASS.
 
 Afterwards run again the Fiori App for **Airline ID = 'AA'**. Now it fails with the Out-of-Memory error **`TSV_TNEW_PAGE_ALLOC_FAILED`**:
 
-      <img src="images/Out_of_Memory_Error1.png" alt="Open ABAP Trace Requests" width="60%">
+<img src="images/Out_of_Memory_Error1.png" alt="Open ABAP Trace Requests" width="60%">
 
 
 
