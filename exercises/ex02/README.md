@@ -689,7 +689,7 @@ ENDCLASS.
 ```
 
 
-      </details>
+  </details>
 
    4. ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** 
       <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
