@@ -50,7 +50,7 @@ Here you can either exchange the coding completely (Version 1)  or perform manua
 **Version 1: Exchange the Code completely in class ZCL_DT266_CARR_EXTENSION_###:**
 
  <details>
-  <summary>🔵 Click to expand </summary>
+  <summary>🟡 Click to expand </summary>
   
   To completely exchange the coding in class ZCL_DT266_CARR_EXTENSION_###:**
   > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**. 
