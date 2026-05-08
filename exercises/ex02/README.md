@@ -45,50 +45,19 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 
 **Accordingly, we implement code changes introducing a `WHERE`-clause in which we specfiy the selection of only the supplements for the bookings for the Airline ID specified or selection only for the specific supplement categories which we show in the output of the Fiori App.**
 
+Here you can either exchange the coding completely (Version 1)  or perform manually the delta of changes (Version 2):
+
+Version 1: Exchange the Code completely in class ZCL_DT266_CARR_EXTENSION_###:
+
  <details>
-  <summary>🔵 Click to expand!</summary>
-
-   1. To change the ABAP code just comment the old ABAP code by marking the lines and pressing **`Ctrl+<`**: 
-      - in the code shown below mark the lines 200 to 205, 
-      - and press **`Ctrl+<`**.
-
-        <table>
-          <tr>
-           <td><kbd><img src="images/Coding_unspecific.png" alt="Open ABAP Trace Requests" width="150%"></kbd></td>
-           <td><kbd><img src="images/Coding_unspecific_comment.png" alt="Open ABAP Trace Requests" width="60%"></kbd></td>
-          </tr>
-        </table>      
-
-      By this we remove the old code where all the supplement prices and categories are selected from table **`ZDT266_SUP_I_###`**:
-      - even if for the Airline ID there are no connections or bookings, so we also have no bookings,
-      - independent of the supplement categories of interest (``meal, beverages, luggage``).
-    
-   2. Replace it with new coding where we only select by the relevant bookings (part 1 of code) or by the relevant categories (part 2 of code).
-
-      ℹ️ **It is enough to mark in the ABAP code the lines 208 to 265 and press ``Ctrl+>`` as the new coding shown below is already provided in the method but commented out:**.
-      
-       <table>
-       <tr>
-           <td><img src="images/Coding_for_specific_supplements0.png" alt="Open ABAP Trace Requests" width="100%"></td>
-           <td><img src="images/Coding_for_specific_supplements1.png" alt="Open ABAP Trace Requests" width="100%"></td>
-       </tr>
-      </table> 
-      
-      <br>
-      
-      In the second part shown above on the right side we call for all three different categories (`luggage, beverages, meal`) another method of class **`ZCL_DT266_CARR_EXTENSION_###`** called **`get_supplements_ABAP`**:
-
-      <kbd><img src="images/Coding_for_specific_supplements2.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
-
-   3. **Alternatively to the steps 1.-2. , you can also completely exchange the coding in class ZCL_DT266_CARR_EXTENSION_###:**
-
-      <details>
-
-      > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**. 
-      > - Insert the code snippet provided below (🟡📄) by: 
-      >   - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.  
-      >   - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
-      > - ℹ️ Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
+  <summary>🔵 Click to expand </summary>
+  
+  To completely exchange the coding in class ZCL_DT266_CARR_EXTENSION_###:**
+  > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**. 
+  > - Insert the code snippet provided below (🟡📄) by: 
+  >   - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.  
+  >   - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+  > - ℹ️ Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
 ```<ABAP>
 CLASS zcl_dt266_carr_extension_### DEFINITION
@@ -687,18 +656,57 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
 ENDCLASS.
 
 ```
+ </details>
+ 
+ Version2: Perform manually the delta changes
+ <details>
+  <summary>🔵 Click to expand</summary>
 
 
-      </details>
+   1. To change the ABAP code just comment the old ABAP code by marking the lines and pressing **`Ctrl+<`**: 
+      - in the code shown below mark the lines 200 to 205, 
+      - and press **`Ctrl+<`**.
 
-   4. ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** 
+        <table>
+          <tr>
+           <td><kbd><img src="images/Coding_unspecific.png" alt="Open ABAP Trace Requests" width="150%"></kbd></td>
+           <td><kbd><img src="images/Coding_unspecific_comment.png" alt="Open ABAP Trace Requests" width="60%"></kbd></td>
+          </tr>
+        </table>      
+
+      By this we remove the old code where all the supplement prices and categories are selected from table **`ZDT266_SUP_I_###`**:
+      - even if for the Airline ID there are no connections or bookings, so we also have no bookings,
+      - independent of the supplement categories of interest (``meal, beverages, luggage``).
+    
+   2. Replace it with new coding where we only select by the relevant bookings (part 1 of code) or by the relevant categories (part 2 of code).
+
+      ℹ️ **It is enough to mark in the ABAP code the lines 208 to 265 and press ``Ctrl+>`` as the new coding shown below is already provided in the method but commented out:**.
+      
+       <table>
+       <tr>
+           <td><img src="images/Coding_for_specific_supplements0.png" alt="Open ABAP Trace Requests" width="100%"></td>
+           <td><img src="images/Coding_for_specific_supplements1.png" alt="Open ABAP Trace Requests" width="100%"></td>
+       </tr>
+      </table> 
+      
+      <br>
+      
+      In the second part shown above on the right side we call for all three different categories (`luggage, beverages, meal`) another method of class **`ZCL_DT266_CARR_EXTENSION_###`** called **`get_supplements_ABAP`**:
+
+      <kbd><img src="images/Coding_for_specific_supplements2.png" alt="Open ABAP Trace Requests" width="55%"></kbd>
+
+   3. ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** 
       <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
-   5. Run again the Fiori App for **Airline ID = 'AA'**. Now it fails with the Out-of-Memory error **`TSV_TNEW_PAGE_ALLOC_FAILED`**:
+   4. Run again the Fiori App for **Airline ID = 'AA'**. Now it fails with the Out-of-Memory error **`TSV_TNEW_PAGE_ALLOC_FAILED`**:
 
       <img src="images/Out_of_Memory_Error1.png" alt="Open ABAP Trace Requests" width="60%">
 
 </details>
+
+
+
+
 
 
  ## Exercise 2.2: Analysis of the Out of Memory Error with the Memory Inspector
