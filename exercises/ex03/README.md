@@ -188,7 +188,7 @@ When inspecting the traced content of the record, we can find the error message 
 
 The previous search for **`failed`** guided us to the RAP procedure **`Call Handler (Validation On Save)`**:
 
-<kbd><img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="20%"></kbd>.
+<kbd><img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="100%"></kbd>.
 
 With this filter we just see the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the trace record for this validation on save. Now we want to search also for the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> of this validation on save. 
 
