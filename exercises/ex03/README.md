@@ -10,7 +10,8 @@
 > - Prerequisite for the [Exercise 4](../ex04/README.md) is that you implemented in addition the code changes of 
 >   - [Exercise 2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements) 
 >   - [Exercise 2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
-> **We have provided a code snippet below to directly start with this Exercise 3 and with the** [Exercise 4](../ex04/README.md):
+> 
+> **We have provided a code snippet below to directly start with this Exercise 3 and/or with the** [Exercise 4](../ex04/README.md):
 > - To insert directly the code containing all prerequisites first delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, then insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
 
 **Code Snippet for** [Exercise 3](../ex03/README.md) **and/or** [Exercise 4](../ex04/README.md) **in case the code changes of the previous exercises were not yet implemented:**
