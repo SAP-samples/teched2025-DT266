@@ -171,26 +171,26 @@ To do so, we use the search bar above the table and search for **`failed`**.
  <kbd><img src="images/CrossTrace_Search_Failed.png" alt="Search for failed" width="100%"></kbd> 
 
 
-The trace is filtered to entries applicable to our search term. We see that the processing of the changeset has failed. The reason for this failed execution lays in the trace entries before. There we see that the procedure `Call Handler ( Validation On Save )` has a record property containing failed keys ( `FAILED:1` ).
+The trace is filtered to entries applicable to our search term. We see that the processing of the changeset has failed. The reason for this failed execution lays in the trace entries before. There we see that the procedure **`Call Handler ( Validation On Save )`** has a record property containing failed keys ( **`FAILED:1`** ).
 
 
 With a right-click on the trace record in the cross trace, we open a context menu.
 
 <kbd><img src="images/CrossTrace_Search_Failed2.png" alt="Search for failed" width="50%"></kbd> 
 
-There we click either **`Open Content`**. This opens a view Properties in the bottom section of ADT were we can explore the Record Properties logged in the trace record. 
+There we click on **`Open Content`**. This opens a view Properties in the bottom section of ADT were we can explore the Record Properties logged in the trace record. 
 
 <kbd><img src="images/CrossTraceIssue1.png" alt="Search for validate" width="100%"></kbd> 
 
-When inspecting the traced content of the record, we can find the error message `Airline Name should not be initial` in the trace, which was logged additionally to the reported failed key. The procedure under inspection is called **`Call Handler (Validation On Save)`**, which hints that the error message might originate from a validation on save. Therefore, we continue to search for validation procedures in the trace by searching for **`validation`** in the search bar.
+When inspecting the traced content of the record, we can find the error message `Airline Name should not be initial` in the trace, which was logged additionally to the reported failed key. The procedure under inspection is called **`Call Handler (Validation On Save)`**, which hints that the error message might originate from a validation on save. Therefore, we continue to search for validation procedures in the trace using the search term **`validation`** in the search bar.
 
 #### 3b. New Search for the Validation Call
 
-The previous search for **`failed`** guided us to the RAP procedure "Call Handler (Validation On Save)":
+The previous search for **`failed`** guided us to the RAP procedure **`Call Handler (Validation On Save)`**:
 
 <img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="20%">.
 
-Here we have just the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the hierarchy for this validation on save. Now we want to search also for the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> of the hierarchy for this validation on save. 
+Here we have just the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the trace record for this validation on save. Now we want to search also for the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> of this validation on save. 
 
 The reason is that in the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%">  the processed object (like draft tables, custom validations, etc. ) are shown:
 
