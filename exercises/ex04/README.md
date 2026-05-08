@@ -776,8 +776,8 @@ In the first section we explain the usage of this Tool to discover all the perfo
       - From those tools one of the most useful is the **`Aggregated Timeline`**: 
       
         - There you can scroll down the call stack using the **`Scroll Icon`** <img src="images/Scroll_Icon.png" alt="Open ABAP Trace Requests" width="20">  to the lowest ABAP code parts in the call stacks consuming most runtime.   <br>
-          <img src="images/Scroll_Down.png" alt="Open ABAP Trace Requests" width="100%"> <br>
-          <img src="images/Scrolled_Down.png" alt="Open ABAP Trace Requests" width="100%">
+          <img src="images/Scroll_Down.png" alt="Open ABAP Trace Requests" width="30%"> <br>
+          <img src="images/Scrolled_Down.png" alt="Open ABAP Trace Requests" width="30%">
         - By hovering the mouse you can see details of those ABAP code parts
 
       <kbd><img src="images/Scroll_Aggregate_TL.png" alt="Open ABAP Trace Requests" width="100%"></kbd> <br>
