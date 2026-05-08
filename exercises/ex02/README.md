@@ -658,7 +658,7 @@ ENDCLASS.
 ```
  </details>
  
- **Version 2: Perform manually the delta changes**
+ **Version 2: Perform manually only the delta changes in class ZCL_DT266_CARR_EXTENSION_###**
  <details>
   <summary>🔵 Click to expand</summary>
 
