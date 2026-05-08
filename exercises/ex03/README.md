@@ -190,9 +190,9 @@ The previous search for **`failed`** guided us to the RAP procedure **`Call Hand
 
 <kbd><img src="images/CrossTrace_Validation_on_Save.png" alt="Search for validate" width="100%"></kbd>.
 
-With this filter we just see the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the trace record for this validation on save. Now we want to search also for the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> of this validation on save. 
+With this filter we just see the **End**  <img src="images/CrossTrace_End.png" alt="Search for validate" width="3%"> of the trace record for this validation on save. 
 
-We need also the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> as there the processed objects (like draft tables, custom validations, etc. ) are shown:
+But we need also the **Begin**  <img src="images/CrossTrace_Begin_Validation.png" alt="Search for validate" width="3%"> of the trace record as there the processed objects (like draft tables, custom validations, etc. ) are shown:
 
  <kbd><img src="images/CrossTrace_Begin_Processed_Objects.png" alt="Search for validate" width="70%"></kbd>
 
