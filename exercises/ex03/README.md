@@ -5,16 +5,16 @@
 ## Introduction
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you have either have implemented at least the code change:
+> Prerequisite for this exercise is that you have at least implemented the code change:
 > - Code change of exercise [1.1 - Runtime Error Analysis with the Feed Reader](../ex01/README.md##exercise-11-runtime-error-analysis-with-the-feed-reader)
-> This would be sufficient for this Exercise 3. 
-> But for [Exercise 4: Performance Analysis and Improvement using ABAP Trace and Table Comparison Tool](../ex04/README.md) you will also need to have implemented:
-> - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
-> - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
-> **In case those recommendations are not yet implemented a code snippet is provided below to directly start with [Exercise 3: Usage of the ABAP Cross Trace](../ex03/README.md) and [Exercise 4: Performance Analysis and Improvement using ABAP Trace and Table Comparison Tool](../ex04/README.md):
-> - ** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+>   - This would be sufficient for this Exercise 3. 
+>   - But for [Exercise 4: Performance Analysis and Improvement using ABAP Trace and Table Comparison Tool](../ex04/README.md) you will also need to have implemented:
+>     - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
+>     - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
+> - **In case those recommendations are not yet implemented a code snippet is provided below to directly start with** [Exercise 3: Usage of the ABAP Cross Trace](../ex03/README.md) **and** [Exercise 4: Performance Analysis and Improvement using ABAP Trace and Table Comparison Tool](../ex04/README.md):
+>   - **In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
 
-**Version 1: Exchange the Code completely in class ZCL_DT266_CARR_EXTENSION_###:**
+**Code Snippet for** [Exercise 3: Usage of the ABAP Cross Trace](../ex03/README.md) **and** [Exercise 4: Performance Analysis and Improvement using ABAP Trace and Table Comparison Tool](../ex04/README.md) **in case the code changes of the previous exercises were not yet implemented:**
 
  <details>
   <summary>🔵 Click to expand </summary>
@@ -255,8 +255,8 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
           lt_supplement       = lt_supplement2.
       id = id + 1.
       APPEND LINES OF lt_supplement2 TO lt_supplement.
-*      CLEAR lt_id.
-*      CLEAR lt_supplement2.
+      CLEAR lt_id.
+      CLEAR lt_supplement2.
     ENDWHILE.
 
 
@@ -272,8 +272,8 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
           lt_supplement       = lt_supplement2.
       id = id + 1.
       APPEND LINES OF lt_supplement2 TO lt_supplement.
-*      CLEAR lt_id.
-*      CLEAR lt_supplement2.
+      CLEAR lt_id.
+      CLEAR lt_supplement2.
     ENDWHILE.
 
 
@@ -289,8 +289,8 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
           lt_supplement       = lt_supplement2.
       id = id + 1.
       APPEND LINES OF lt_supplement2 TO lt_supplement.
-*      CLEAR lt_id.
-*      CLEAR lt_supplement2.
+      CLEAR lt_id.
+      CLEAR lt_supplement2.
     ENDWHILE.
 
 
@@ -309,7 +309,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
 
     " Sorting tables for using BINARY SEARCH before the first LOOP starts.
     SORT lt_supplement BY supplement_id id.
-*    SORT lt_book_suppl BY travel_id booking_id supplement_id.
+    SORT lt_book_suppl BY travel_id booking_id supplement_id.
 *    SORT lt_booking BY carrier_id.
 
     LOOP AT lt_carrier INTO ls_carrier.
