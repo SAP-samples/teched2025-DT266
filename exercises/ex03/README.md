@@ -5,13 +5,11 @@
 ## Introduction
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you have at least implemented the code change of exercise [1.1 - Runtime Error Analysis with the Feed Reader](../ex01/README.md##exercise-11-runtime-error-analysis-with-the-feed-reader)
-> - This would be sufficient for this Exercise 3. 
-> - But for [Exercise 4](../ex04/README.md) you will also need to have implemented:
->     - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
->     - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
-> - **In case those recommendations are not yet implemented a code snippet is provided below to directly start with this** [Exercise 3](../ex03/README.md) **and with** [Exercise 4](../ex04/README.md):
->   - **In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+> **As the code changes in the previous exercises are prerequisites for** [Exercise 3](../ex03/README.md) **and/or** [Exercise 4](../ex04/README.md)**:**
+> - Prerequisite for this [Exercise 3](../ex03/README.md)  is that you have at least implemented the code change of  [Exercise 1.1 - Runtime Error Analysis with the Feed Reader](../ex01/README.md##exercise-11-runtime-error-analysis-with-the-feed-reader).
+> - Prerequisite for the [Exercise 4](../ex04/README.md) is that you implemented in addition the code changes of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements) and of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
+> we have provided a code snippet below to directly start with this** [Exercise 3](../ex03/README.md) **and with** [Exercise 4](../ex04/README.md):
+> - **To insert directly the code containing all prerequisites** first delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, then insert the code snippet provided below (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
 
 **Code Snippet for** [Exercise 3](../ex03/README.md) **and/or** [Exercise 4](../ex04/README.md) **in case the code changes of the previous exercises were not yet implemented:**
 
