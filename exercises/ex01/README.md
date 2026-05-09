@@ -18,7 +18,8 @@ Finally we solve the issue by a small change of ABAP code.
 > [!IMPORTANT]    
 > Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`** as outlined in section <br>
 > **Logon and Connect: Adapt the source code in class ZCL_DT266_CARR_EXTENSION_### of Getting Started 0.1: About the Session.** <br> <br> 
-> **If you have not already implemented the code snippet in [Getting Started 0.1: About the Session - Adapt the source code in class ZCL_DT266_CARR_EXTENSION_###](../ex0/README.md#️-adapt-the-source-code-in-class-zcl_dt266_carr_extension_) please perform this before continuing with the exercises.** 
+> **If you have not already implemented the code snippet in [Getting Started 0.1: About the Session - Adapt the source code in class ZCL_DT266_CARR_EXTENSION_###](../ex0/README.md#️-adapt-the-source-code-in-class-zcl_dt266_carr_extension_) please perform this before continuing with the exercises. And activate the ABAP Code by pressing `Ctrl+F3` or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.**
+
 <!--
 > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, 
 > - insert the code snippet provided below (🟡📄), 
@@ -634,8 +635,7 @@ Finally we solve the issue by a small change of ABAP code.
 
 -->
 
-> [!IMPORTANT]    
-> Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
+
 
 
 ### Exercises
