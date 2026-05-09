@@ -16,8 +16,8 @@ Finally we solve the issue by a small change of ABAP code.
 
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`** as outlined in secion <br>
-> **Logon and Connect: Adapt the source code in class ZCL_DT266_CARR_EXTENSION_### of Getting Started 0.1: About the Session** <br> <br> 
+> Prerequisite for this exercise is that you implement **the code snippet** in class **`ZCL_DT266_CARR_EXTENSION_###`** as outlined in section <br>
+> **Logon and Connect: Adapt the source code in class ZCL_DT266_CARR_EXTENSION_### of Getting Started 0.1: About the Session.** <br> <br> 
 > **If you have not already implemented the code snippet in [Getting Started 0.1: About the Session - Adapt the source code in class ZCL_DT266_CARR_EXTENSION_###](../ex0/README.md#️-adapt-the-source-code-in-class-zcl_dt266_carr_extension_) please perform this before continuing with the exercises.** 
 <!--
 > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, 
