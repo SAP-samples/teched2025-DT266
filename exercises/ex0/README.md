@@ -839,7 +839,7 @@ In our example we want to provide a list of Airline IDs = Carrier_Id(s) for whic
 
 
 
-   🟠 _**REMARK:**_ The following overviews are only provided as **optional to read information**. This information is **not required** to execute the exercises. 
+   🟠 _**REMARK:**_ **The following overviews are only provided as optional to read information. This information is not required to execute the exercises!** 
    <!--
    We recommend to skip reading this additional information and directly continue with [Exercise 1](../ex01/README.md).
    -->
