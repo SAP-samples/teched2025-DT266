@@ -8,9 +8,6 @@ We outline how to logon to the system and how to access your package for these e
 
 
 - [0.1 - About the Session](#getting-started-01-about-the-session)
-<!--
-- [0.1 - Getting the scenario into your ABAP system ](#getting-started-01-getting-the-scenario-into-your-ABAP-system)
--->
 - [0.2 - Overview of the Model and ABAP Code](#getting-started-02-overview-of-the-model-and-abap-code)
 
 
@@ -817,7 +814,7 @@ All the ABAP code and database tables to change are in:
 > **Check the suffix `###` of your demo user (e.g. devday-###@abapcloud.sap).**
 > Only perform changes in your package `ZDT266_###`. 
 
-## Overview of the Model and ABAP Code
+## Getting Started 0.2: Overview of the Model and ABAP Code
 [^Top of page](#)
 
 In our example we want to provide a list of Airline IDs = Carrier_Id(s) for which we get in the result list additional column fields calculated by customer extension:
