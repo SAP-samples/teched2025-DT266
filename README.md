@@ -13,9 +13,6 @@ This repository contains the material for the Session **DT266 | Troubleshoot and
 - [Overview](#overview)
 - [Presentation](#presentation)
 - [Requirements for attending this workshop](#requirements-for-attending-this-workshop)
-<!--
-- [Overview of the Model and ABAP Code](#overview-of-the-model-and-abap-code)
--->
 - [Exercises](#-exercises)
 - [How to obtain support](#how-to-obtain-support) 
 
