@@ -627,7 +627,7 @@ ENDCLASS.
 ```
  </details>
 
-**Introduction to the ABAP Cross Trace:**
+### Introduction to the ABAP Cross Trace:
 
 In exercise 1, we have learned how to work with the **`Feed Reader`** for analysis of runtime errors. (see [Exercise 1](../ex01/README.md)). With the feed reader, you can navigate to errors in case there is already a specific error location assigned to the error. 
 
