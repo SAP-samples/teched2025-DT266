@@ -661,8 +661,8 @@ ENDCLASS.
  </details>
  
  - **Version 2: Perform manually only the delta changes in class ZCL_DT266_CARR_EXTENSION_###**
- <details>
-  <summary>🔵 Click to expand</summary>
+   <details>
+    <summary>🔵 Click to expand</summary>
 
 
    1. To change the ABAP code just comment the old ABAP code by marking the lines and pressing **`Ctrl+<`**: 
@@ -700,8 +700,8 @@ ENDCLASS.
    3. ℹ️ **The change then has to be activated by pressing ``Ctrl+F3`` or by clicking on the match icon** 
       <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
-</details>
 
+   </details>
 
 Afterwards run again the Fiori App for **Airline ID = 'AA'**. Now it fails with the Out-of-Memory error **`TSV_TNEW_PAGE_ALLOC_FAILED`**:
 
