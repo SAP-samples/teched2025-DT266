@@ -51,14 +51,14 @@ Here you can either exchange the coding completely (**Version 1**) or perform ma
 
 - **Version 1: Exchange the Code completely in class ZCL_DT266_CARR_EXTENSION_###:**
 
-<details>
+  <details>
   <summary>🟡 Click to expand </summary>
   
   To completely exchange the coding in class ZCL_DT266_CARR_EXTENSION_###:**
   > - Delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**. 
   > - Insert the code snippet provided below (🟡📄) by: 
   >   - 💡 Make use of the _Copy Raw Content_ (<img src="../images/copyrawfile.png" alt="" width="3%">) function to copy the provided code snippet.  
-  >   - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
+  >  - 💡 Replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
   > - ℹ️ Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
 ```<ABAP>
@@ -658,7 +658,7 @@ CLASS zcl_dt266_carr_extension_### IMPLEMENTATION.
 ENDCLASS.
 
 ```
- </details>
+   </details> 
  
  - **Version 2: Perform manually only the delta changes in class ZCL_DT266_CARR_EXTENSION_###**
    <details>
