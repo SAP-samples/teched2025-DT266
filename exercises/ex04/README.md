@@ -243,12 +243,7 @@ So let us start with improving the runtime in the following exercises._
 > - This database table **`ZDT266_SUP_I_###`** is just a master table containing only the different types of supplements and their categories and prices. 
 > - As this table rareley changes it is an optimal candidate for table buffering. 
 
-> [!IMPORTANT]    
-> Prerequisite for this exercise is that you have implemented **both specific subsequent** code changes 
-> - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
-> - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
 
-**Alternatively, you can implement the code snippet provided above at the beginning of exercise 4 to speed up the process:** In this case delete the complete current source code in the class **`ZCL_DT266_CARR_EXTENSION_###`**, insert the code snippet provided above (🟡📄), and replace all occurrences of the placeholder **`###`** with your personal suffix using the ADT function _**Replace All**_ (_**Ctrl+F**_).
 
 
  <details>
@@ -364,9 +359,7 @@ So let us start with improving the runtime in the following exercises._
 
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you have implemented **three specific subsequent** changes: 
-> - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
-> - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
+> Prerequisite for this exercise is that you have implemented the table buffering: 
 > - Activation of Buffering [4.2 - Use Table Buffering to Improve the Performance](#exercise-42-use-table-buffering-to-improve-the-performance)
 
 
@@ -744,12 +737,6 @@ So let us start with improving the runtime in the following exercises._
 > - Then we correct this issue.
 
 
-> [!IMPORTANT]    
-> Prerequisite for this exercise is that you have implemented **three specific subsequent** changes: 
-> - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
-> - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
-> - Activation of Buffering [4.2 - Use Table Buffering to Improve the Performance](#exercise-42-use-table-buffering-to-improve-the-performance)
-> - Creation of the secondary key & index [4.3 - Use Secondary Index & Key to Improve the Performance](#exercise-43-use-secondary-index--key-to-improve-the-performance)
 
 
 
@@ -1029,9 +1016,7 @@ So let us start with improving the runtime in the following exercises._
 >      - and LOOP FROM this start value USING the sorted key.
 
 > [!IMPORTANT]    
-> Prerequisite for this exercise is that you have implemented **three specific subsequent** changes: 
-> - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
-> - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
+> Prerequisite for this exercise is that you have implemented the changes: 
 > - Activation of Buffering [4.2 - Use Table Buffering to Improve the Performance](#exercise-42-use-table-buffering-to-improve-the-performance)
 > - Creation of the secondary key & index [4.3 - Use Secondary Index & Key to Improve the Performance](#exercise-43-use-secondary-index--key-to-improve-the-performance)
 > - Usage of the FOR ALL ENTRIES select [4.4 - Usage of the Table Comparison Tool](#exercise-44-usage-of-the-table-comparison-tool)
