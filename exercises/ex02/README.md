@@ -47,11 +47,9 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 - **of only the supplements for the bookings for the Airline ID specified or**  
 - **only for the specific supplement categories which we show in the output of the Fiori App.**
 
-Here you can either: 
-- exchange the coding completely (Version 1)  
-- or perform manually the delta of changes (Version 2).
+Here you can either exchange the coding completely (**Version 1**) or perform manually the delta of changes (**Version 2**).
 
-**Version 1: Exchange the Code completely in class ZCL_DT266_CARR_EXTENSION_###:**
+- **Version 1: Exchange the Code completely in class ZCL_DT266_CARR_EXTENSION_###:**
 
 <details>
   <summary>🟡 Click to expand </summary>
@@ -662,7 +660,7 @@ ENDCLASS.
 ```
  </details>
  
- **Version 2: Perform manually only the delta changes in class ZCL_DT266_CARR_EXTENSION_###**
+ - **Version 2: Perform manually only the delta changes in class ZCL_DT266_CARR_EXTENSION_###**
  <details>
   <summary>🔵 Click to expand</summary>
 
