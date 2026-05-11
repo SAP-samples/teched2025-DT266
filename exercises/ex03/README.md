@@ -12,8 +12,8 @@
 >   - [Exercise 2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements) 
 >   - [Exercise 2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
 > 
-> ⚠️ **In case you have performed succesfully all the previous exercised you can directly continues with** [Exercise 3.1](../ex03/README.md#exercise-31-learn-about-the-abap-cross-trace-and-set-up-a-trace-configuration) <br>
-> **Else we have provided a code snippet below which contains all those changes to directly start with this Exercise 3 or** [Exercise 4](../ex04/README.md).
+> 💡 **In case you have performed succesfully all the previous exercises you can directly continue with** [Exercise 3.1](../ex03/README.md#exercise-31-learn-about-the-abap-cross-trace-and-set-up-a-trace-configuration). <br>
+> ⚠️ **Else we have provided a code snippet below which contains all those changes to directly start with this Exercise 3 or** [Exercise 4](../ex04/README.md).
 
 **Code Snippet for** [Exercise 3](../ex03/README.md) **and/or** [Exercise 4](../ex04/README.md) **if the previous exercises were not completed:**
 
