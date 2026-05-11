@@ -9,7 +9,7 @@
 > - Code change of exercise [2.1 - Coding Change for Reading the Supplements](../ex02/README.md#exercise-21-coding-change-for-reading-the-supplements)
 > - Code change of exercise [2.3 - Correction of the ABAP Code](../ex02/README.md#exercise-23-correction-of-the-abap-code)
 >
-> **In case they are not yet implemented a code snippet is provided in the Introduction of the previous** [Exercise 3](../ex03/README.md#code-snippet).    
+> ⚠️ **In case they are not yet implemented a code snippet is provided in the Introduction of the previous** [Exercise 3](../ex03/README.md#code-snippet).    
 > ℹ️ Activate the ABAP Code by pressing **`Ctrl+F3`** or by clicking on the match icon <img src="images/Match.png" alt="Open ABAP Trace Requests" width="2%">.
 
 
