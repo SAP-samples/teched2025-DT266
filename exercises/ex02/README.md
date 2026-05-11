@@ -43,11 +43,11 @@ We start with a code change in method _`GET_PRICES_ABAP`_  of ABAP class _`ZCL_D
 > Even the ABAP Test Cockpit (ATC) check shows this finding that there is no **`WHERE`**-condition:
 > <kbd><img src="images/ATC1.png" alt="Open ABAP Trace Requests" width="70%"></kbd>
 
-**Accordingly, we implement code changes introducing a `WHERE`-clause in which we specfiy the selection** 
-- **of only the supplements for the bookings for the Airline ID specified or**  
-- **only for the specific supplement categories which we show in the output of the Fiori App.**
+**Accordingly, we implement code changes introducing a `WHERE`-clause in which we specfiy the selection of only the supplements** 
+- for the bookings for the Airline ID specified or 
+- only for the specific supplement categories which we show in the output of the Fiori App.
 
-**Here you can either exchange the coding completely (Version 1) or perform manually the delta of changes (Version 2).**
+**Here you can either exchange the coding completely (Version 1) or perform manually the delta of changes (Version 2):**
 
 - **Version 1: Exchange the Code completely in class ZCL_DT266_CARR_EXTENSION_###:**
 
