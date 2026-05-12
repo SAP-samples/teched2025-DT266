@@ -830,8 +830,8 @@ In our example we want to provide a list of Airline IDs = Carrier_Id(s) for whic
 > **Runtime error for specific Airlines:**    
 > If you click on **`Go`** without specification of any Airline or e.g. choose Airline ID = 'AC' you get a runtime error: <br>
 > <kbd><img src="images/runtime_error.png" alt="Add package" width="70%"></kbd> <br>
-> **Currently it is only working without error for some specific airlines e.g. Airline ID = 'AA'.
-> This error is analyzed and fixed in** [Exercise 1](exercises/ex01/README.md).
+> **Currently it is only working without error for some specific airlines e.g. Airline ID = 'AA'.**
+> **This error is analyzed and fixed in** [Exercise 1](exercises/ex01/README.md).
 
 > 🟠 _**REMARK:**_  The scenario of these exercises is based on a RAP application using the [``ABAP Flight Reference Scenario``](https://github.com/SAP-samples/abap-platform-refscen-flight).  For an overview of the available database tables, see [``ABAP Flight Reference Scenario Database Tables``](https://help.sap.com/docs/abap-cloud/abap-rap/abap-flight-reference-scenario). 
 > The calculation for the additional fields is performed in the ABAP class _`ZCL_DT266_CARR_EXTENSION_###`_ where we call in exercise 1 to 4 the method _`GET_PRICES_ABAP`_ and for exercise 5 the method _`GET_PRICES_CDS`_.
